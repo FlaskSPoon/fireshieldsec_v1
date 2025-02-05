@@ -1,14 +1,14 @@
-name: SonarQube Pipeline CI/CD Workfows
+name: Pipeline Workflows
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'myProject/**' # monorepo projects paths from the monorepo root directory
   pull_request:
-    branches:
-      - main
-  workflow_dispatch:
-  
+    types: [opened, synchronize, reopened]
+
 jobs:
   sonarQubeScan1:
     name: sonarQubeScan1
@@ -20,7 +20,12 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: SonarQube Scan 1
         uses: SonarSource/sonarqube-scan-action@v4
-
         env:
           SONAR_TOKEN: "a039eb77fd82f30bab37a0b974d1d30bd251dc88"
           SONAR_HOST_URL: "http://13.48.135.244:9000"
+        with:
+          projectBaseDir: myProject/ # the path to your project from the monorepo root directory
+      - uses: SonarSource/sonarqube-quality-gate-action@v1
+        timeout-minutes: 5
+        env:
+          SONAR_TOKEN: "a039eb77fd82f30bab37a0b974d1d30bd251dc88"
