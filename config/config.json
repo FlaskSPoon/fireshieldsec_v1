@@ -1,0 +1,49 @@
+{
+  "site": {
+    "title": "Fireshield Security",
+    "base_url": "/",
+    "favicon": "/assets/img/favicon.png",
+    "logo": "/assets/img/logo-dark.png",
+    "logo_width": "215",
+    "logo_height": "60",
+    "logo_text": "Fireshieldsec"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "Un cabinet d'experts en cybersécurité qui accompagne les entreprises dans leur proccessus de digitalisation et ontribue à l'accélération de leur adoption des technologies à valeur ajoutées.",
+    "copyright": "Tous droits réservés. © 2025 | "
+  },
+
+  "contact_info": {
+    "phone1": "00 (221) 33 801 57 16",
+    "phone2": "00 (221) 77 928 66 82",
+    "email1": "contact@fireshieldsec.com",
+    "email2": "training@fireshieldsec.com",
+    "location": "Mermoz Pyrotechnique Villa N°22, Dakar, Senegal",
+    "opening": "Lundi-Vendredi, 08h00-17h00"
+  },
+
+  "metadata": {
+    "meta_author": "Fireshield Security",
+    "meta_image": "/assets/img/logo-dark.png",
+    "meta_description": "Cybersécurité et gestion des systèmes d'information (SI) - Détection et prévention des menaces"
+  },
+
+  "call_to_action": {
+    "scroll": false,
+    "title": "“Together let’s build your defense”",
+    "content": " ",
+    "button": {
+      "label": "S'ABONNER!",
+      "link": "/"
+    }
+  }
+}
