@@ -3,93 +3,85 @@ export const services = [
     id: 1,
     imageSrc: "/assets/img/icon/serviceIcon1_1.png",
     title: "Database Security",
-    description: "Database Security involves examining raw",
+    description: "Database Security involves examining raw"
   },
   {
     id: 2,
     imageSrc: "/assets/img/icon/serviceIcon1_2.png",
     title: "IT Consultancy",
-    description: "IT Consultancy involves examining raw",
+    description: "IT Consultancy involves examining raw"
   },
   {
     id: 3,
     imageSrc: "/assets/img/icon/serviceIcon1_3.png",
     title: "Cyber Security",
-    description: "Cyber Security involves examining raw",
+    description: "Cyber Security involves examining raw"
   },
   {
     id: 4,
     imageSrc: "/assets/img/icon/serviceIcon1_4.png",
     title: "App Development",
-    description: "App Development involves examining raw",
+    description: "App Development involves examining raw"
   },
   {
     id: 5,
     imageSrc: "/assets/img/icon/serviceIcon1_1.png",
     title: "Database Security",
-    description: "Database Security involves examining raw",
+    description: "Database Security involves examining raw"
   },
   {
     id: 6,
     imageSrc: "/assets/img/icon/serviceIcon1_2.png",
     title: "IT Consultancy",
-    description: "IT Consultancy involves examining raw",
+    description: "IT Consultancy involves examining raw"
   },
   {
     id: 7,
     imageSrc: "/assets/img/icon/serviceIcon1_3.png",
     title: "Cyber Security",
-    description: "Cyber Security involves examining raw",
+    description: "Cyber Security involves examining raw"
   },
   {
     id: 8,
     imageSrc: "/assets/img/icon/serviceIcon1_4.png",
     title: "App Development",
-    description: "App Development involves examining raw",
-  },
+    description: "App Development involves examining raw"
+  }
 ];
 
 export const services2 = [
   {
     id: 9,
     icon: "/assets/img/icon/serviceIcon1_1.png",
-    title: "Data Analytics",
-    description: "Data analytics involves examining raw data.",
+    title: "Confidentialité et Intégrité",
+    description: "En savoir plus",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
-    delay: ".2s",
+    delay: ".2s"
   },
   {
     id: 10,
     icon: "/assets/img/icon/serviceIcon1_2.png",
-    title: "UI/UX Design",
-    description: "UI/UX design is a crucial aspect of",
+    title: "Excellence Technique",
+    description: "En savoir plus",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
-    delay: ".4s",
+    delay: ".4s"
   },
   {
     id: 11,
     icon: "/assets/img/icon/serviceIcon1_3.png",
-    title: "Cybersecurity",
-    description: "Cybersecurity is the practice of protecting",
+    title: "Transparence et Communication",
+    description: "En savoir plus",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
-    delay: ".6s",
+    delay: ".6s"
   },
   {
     id: 12,
     icon: "/assets/img/icon/serviceIcon1_4.png",
-    title: "App development",
-    description: "App development is the process of",
+    title: "Innovation Continue",
+    description: "En savoir plus",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
-    delay: ".8s",
-  },
-  {
-    id: 13,
-    icon: "/assets/img/icon/serviceIcon1_1.png",
-    title: "Dedicated Teams",
-    description: "Dedicated teams are a model of outsourcing",
-    bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
-    delay: "1s",
-  },
+    delay: ".8s"
+  }
 ];
 
 export const servicesStyle2 = [
@@ -100,7 +92,7 @@ export const servicesStyle2 = [
     description: "Software services encompass a wide range of",
     icon: "/assets/img/icon/serviceIcon2_1.png",
     iconTwo: "/assets/img/icon/serviceIcon2_5.png",
-    delay: ".3s",
+    delay: ".3s"
   },
   {
     id: 15,
@@ -109,7 +101,7 @@ export const servicesStyle2 = [
     description: "We provide new and emerging technologies",
     icon: "/assets/img/icon/serviceIcon2_2.png",
     iconTwo: "/assets/img/icon/serviceIcon2_6.png",
-    delay: ".6s",
+    delay: ".6s"
   },
   {
     id: 16,
@@ -118,7 +110,7 @@ export const servicesStyle2 = [
     description: "Web development is the work involved in",
     icon: "/assets/img/icon/serviceIcon2_3.png",
     iconTwo: "/assets/img/icon/serviceIcon2_7.png",
-    delay: ".8s",
+    delay: ".8s"
   },
   {
     id: 17,
@@ -127,8 +119,8 @@ export const servicesStyle2 = [
     description: "Database security is the processes, tools",
     icon: "/assets/img/icon/serviceIcon2_4.png",
     iconTwo: "/assets/img/icon/serviceIcon2_8.png",
-    delay: "1s",
-  },
+    delay: "1s"
+  }
 ];
 
 export const services3 = [
@@ -138,7 +130,7 @@ export const services3 = [
     title: "Core Feature",
     description:
       "The core features of a website can vary based on its purpose, audience, and goals. However, here",
-    delay: ".2s",
+    delay: ".2s"
   },
   {
     id: 19,
@@ -146,7 +138,7 @@ export const services3 = [
     title: "Easy Customizable",
     description:
       "One of the core features of this website is its easy customizability, which allows users to effortlessly",
-    delay: ".5s",
+    delay: ".5s"
   },
   {
     id: 20,
@@ -154,8 +146,8 @@ export const services3 = [
     title: "Fast Support",
     description:
       "One of the standout features of this website is its commitment to providing fast and reliable support",
-    delay: ".8s",
-  },
+    delay: ".8s"
+  }
 ];
 
 export const serviceItems = [
@@ -164,57 +156,57 @@ export const serviceItems = [
     imgSrc: "/assets/img/icon/serviceIcon1_1.png",
     title: "Database Security",
     text: "Database Security involves examining raw",
-    delay: ".3s",
+    delay: ".3s"
   },
   {
     id: 22,
     imgSrc: "/assets/img/icon/serviceIcon1_2.png",
     title: "IT Consultancy",
     text: "IT Consultancy involves examining raw",
-    delay: ".6s",
+    delay: ".6s"
   },
   {
     id: 23,
     imgSrc: "/assets/img/icon/serviceIcon1_3.png",
     title: "Cyber Security",
     text: "Cyber Security involves examining raw",
-    delay: ".9s",
+    delay: ".9s"
   },
   {
     id: 24,
     imgSrc: "/assets/img/icon/serviceIcon1_4.png",
     title: "App Development",
     text: "App Development involves examining raw",
-    delay: "1s",
+    delay: "1s"
   },
   {
     id: 25,
     imgSrc: "/assets/img/icon/serviceIcon1_6.png",
     title: "UI/UX Design",
     text: "UI/UX Design involves examining raw",
-    delay: "1.3s",
+    delay: "1.3s"
   },
   {
     id: 26,
     imgSrc: "/assets/img/icon/serviceIcon1_7.png",
     title: "IT Management",
     text: "IT Management involves examining raw",
-    delay: "1.7s",
+    delay: "1.7s"
   },
   {
     id: 27,
     imgSrc: "/assets/img/icon/serviceIcon1_8.png",
     title: "Digital Marketing",
     text: "Digital Marketing involves examining raw",
-    delay: "1.8s",
+    delay: "1.8s"
   },
   {
     id: 28,
     imgSrc: "/assets/img/icon/serviceIcon1_9.png",
     title: "Data Analysis",
     text: "Data Analysis involves examining raw",
-    delay: "2s",
-  },
+    delay: "2s"
+  }
 ];
 
 export const serviceCards = [
@@ -226,7 +218,7 @@ export const serviceCards = [
     title: "Software Services",
     text: "Software services encompass a wide range of",
     delay: ".3s",
-    hasRipple: true,
+    hasRipple: true
   },
   {
     id: 30,
@@ -235,7 +227,7 @@ export const serviceCards = [
     iconTwoSrc: "/assets/img/icon/serviceIcon2_6.png",
     title: "IT Consultancy",
     text: "We provide new and emerging technologies",
-    delay: ".6s",
+    delay: ".6s"
   },
   {
     id: 31,
@@ -244,7 +236,7 @@ export const serviceCards = [
     iconTwoSrc: "/assets/img/icon/serviceIcon2_7.png",
     title: "Web Development",
     text: "Web development is the work involved in",
-    delay: ".9s",
+    delay: ".9s"
   },
   {
     id: 32,
@@ -253,7 +245,7 @@ export const serviceCards = [
     iconTwoSrc: "/assets/img/icon/serviceIcon2_8.png",
     title: "Database Security",
     text: "Database security is the processes, tools",
-    delay: "1.2s",
+    delay: "1.2s"
   },
   {
     id: 33,
@@ -263,7 +255,7 @@ export const serviceCards = [
     title: "Digital Marketing",
     text: "Software services encompass a wide range of",
     delay: "1.3s",
-    hasRipple: true,
+    hasRipple: true
   },
   {
     id: 34,
@@ -272,7 +264,7 @@ export const serviceCards = [
     iconTwoSrc: "/assets/img/icon/serviceIcon2_14.png",
     title: "Data Analysis",
     text: "We provide new and emerging technologies",
-    delay: "1.5s",
+    delay: "1.5s"
   },
   {
     id: 35,
@@ -281,7 +273,7 @@ export const serviceCards = [
     iconTwoSrc: "/assets/img/icon/serviceIcon2_15.png",
     title: "UI/UX Design",
     text: "Web development is the work involved in",
-    delay: "1.7s",
+    delay: "1.7s"
   },
   {
     id: 36,
@@ -290,8 +282,8 @@ export const serviceCards = [
     iconTwoSrc: "/assets/img/icon/serviceIcon2_16.png",
     title: "IT Management",
     text: "Database security is the processes, tools",
-    delay: "1.9s",
-  },
+    delay: "1.9s"
+  }
 ];
 
 export const allService = [
@@ -300,7 +292,7 @@ export const allService = [
   ...servicesStyle2,
   ...services3,
   ...serviceItems,
-  ...serviceCards,
+  ...serviceCards
 ];
 
 export const sericeCategories = [
@@ -308,12 +300,12 @@ export const sericeCategories = [
   { label: "IT Consultancy", active: false },
   { label: "App Development", active: true },
   { label: "UI/UX Design", active: false },
-  { label: "Cyber Security", active: false },
+  { label: "Cyber Security", active: false }
 ];
 
 export const hours = [
   { iconClass: "fa-regular fa-clock", text: "Mon - Sat: 10.00 AM - 4.00 PM" },
   { iconClass: "fa-regular fa-clock", text: "Sun: 09.00 AM - 4.00 PM" },
   { iconClass: "fa-regular fa-clock", text: "Friday: Closed" },
-  { iconClass: "fa-regular fa-clock", text: "Emergency: 24 hours" },
+  { iconClass: "fa-regular fa-clock", text: "Emergency: 24 hours" }
 ];

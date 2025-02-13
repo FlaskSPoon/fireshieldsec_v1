@@ -18,7 +18,7 @@
   border-bottom-left-radius: 500px;
   border-right: 14px solid #d1c5fe;
   box-shadow: 14px 0px 0px 0px #d1c5fe inset;
-  background: linear-gradient(90deg, #384bff 0%, #b42af3 123.82%);
+  background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
   z-index: 5;
   position: relative;
 
@@ -67,7 +67,7 @@
     border-right: 14px solid rgba(212, 197, 253, 0.9);
 
     box-shadow: 14px 0px 0px 0px rgba(212, 197, 2534, 0.5) inset;
-    background: linear-gradient(90deg, #384bff 0%, #b42af3 123.82%);
+    background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
     z-index: 5;
     position: relative;
   }

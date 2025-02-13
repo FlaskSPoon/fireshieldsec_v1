@@ -10,44 +10,40 @@ import { usePathname } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import PopupSearch from "@/components/headers/PopupSearch";
 
-// import "bootstrap/dist/js/bootstrap.bundle";
-
 export default function RootLayout({ children }) {
   const path = usePathname();
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Import the script only on the client side
-      const path = window.location.pathname;
-      import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module is imported, you can access any exported functionality if
-      });
-    }
+    import("bootstrap/dist/js/bootstrap.bundle");
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", function () {
+    const handleScroll = () => {
       var topPos = window.scrollY || document.documentElement.scrollTop;
       var stickyWrapper = document.querySelector(".sticky-wrapper");
 
-      if (topPos > 500) {
-        stickyWrapper.classList.add("sticky");
-      } else {
-        stickyWrapper.classList.remove("sticky");
+      if (stickyWrapper) {
+        if (topPos > 500) {
+          stickyWrapper.classList.add("sticky");
+        } else {
+          stickyWrapper.classList.remove("sticky");
+        }
       }
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "instant"
-    });
-    const { WOW } = require("wowjs");
-    const wow = new WOW({
-      mobile: false,
-      live: false
-    });
-    wow.init();
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "instant" });
+
+      import("wowjs").then(({ WOW }) => {
+        const wow = new WOW({ mobile: false, live: false });
+        wow.init();
+      });
+    }
   }, [path]);
 
   return (

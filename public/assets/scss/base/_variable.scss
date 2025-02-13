@@ -15,7 +15,9 @@
   --light-color: #bdbdbd;
   --border-color: #e5e5e5;
   --title-font: "Montserrat", "Plus Jakarta Sans", sans-serif;
+  --title-font2: "Plus Jakarta Sans", sans-serif;
   --body-font: "Montserrat", "Plus Jakarta Sans", sans-serif;
+  --body-font2: "Plus Jakarta Sans", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1185px;
   --container-gutters: 30px;
@@ -45,7 +47,9 @@ $icon-font: var(--icon-font);
 
 // Typography
 $title-font: var(--title-font);
+$title-font2: var(--title-font2);
 $body-font: var(--body-font);
+$body-font2: var(--body-font2);
 $body-font-size: 16px;
 $body-line-Height: 26px;
 $body-font-weight: 400;

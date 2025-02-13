@@ -29,11 +29,7 @@ export default function Home() {
       <Header />
       <main className="main position-relative" id="mains">
         <Hero />
-
-        <main className="main" style={{ height: "100vh" }} />
-        <main className="main" style={{ height: "100vh" }} />
-
-        {/* <Services />
+        <Services />
         <About />
         <Services2 />
         <Offering />
@@ -44,7 +40,7 @@ export default function Home() {
         <Facts />
         <Pricing />
         <Testimonials />
-        <Blog /> */}
+        <Blog />
         <Cta />
       </main>
       <Footer />
