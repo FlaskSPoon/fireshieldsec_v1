@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import PopupSearch from "@/components/headers/PopupSearch";
 
-import "bootstrap/dist/js/bootstrap.bundle";
+// import "bootstrap/dist/js/bootstrap.bundle";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
       }
     });
   }, []);
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
