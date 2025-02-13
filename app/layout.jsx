@@ -1,4 +1,5 @@
 "use client";
+
 import "../public/assets/scss/styles.scss";
 import MobileNav from "@/components/headers/MobileNav";
 import { useEffect } from "react";
@@ -9,9 +10,45 @@ import { usePathname } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import PopupSearch from "@/components/headers/PopupSearch";
 
-// import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap/dist/js/bootstrap.bundle";
 
 export default function RootLayout({ children }) {
+  const path = usePathname();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Import the script only on the client side
+      const path = window.location.pathname;
+      import("bootstrap/dist/js/bootstrap.esm").then(() => {
+        // Module is imported, you can access any exported functionality if
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      var topPos = window.scrollY || document.documentElement.scrollTop;
+      var stickyWrapper = document.querySelector(".sticky-wrapper");
+
+      if (topPos > 500) {
+        stickyWrapper.classList.add("sticky");
+      } else {
+        stickyWrapper.classList.remove("sticky");
+      }
+    });
+  }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant"
+    });
+    const { WOW } = require("wowjs");
+    const wow = new WOW({
+      mobile: false,
+      live: false
+    });
+    wow.init();
+  }, [path]);
+
   return (
     <html lang="fr" className="bg-white">
       <head>
