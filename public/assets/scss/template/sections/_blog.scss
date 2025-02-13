@@ -1,3 +1,7 @@
+@use "../../base/variable" as *;
+@use "../../base/mixin" as *;
+@use "../../base/typography" as *;
+
 /*----------------------------------------------
     # Blog style here
 ----------------------------------------------*/
@@ -43,7 +47,6 @@
     @include md {
       grid-template-columns: repeat(1, 1fr);
     }
-
   }
 
   &.style2 {
@@ -82,7 +85,6 @@
     -o-border-radius: 16px;
 
     .blog-card-body {
-
       .btn-wrapper {
         a {
           color: $body-color;
@@ -166,7 +168,7 @@
   &.style2 {
     position: relative;
     border-radius: 20px;
-    border: 1px solid #E3E3E3;
+    border: 1px solid #e3e3e3;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -187,7 +189,7 @@
       align-items: center;
       gap: 6px;
       border-radius: 8px;
-      background: linear-gradient(90deg, #384BFF 0%, #B42AF3 123.82%);
+      background: linear-gradient(90deg, #384bff 0%, #b42af3 123.82%);
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
       -ms-border-radius: 8px;
@@ -216,7 +218,6 @@
 
     &:hover {
       .blog-card-thumb {
-
         img {
           transform: scale(1.2);
           -webkit-transform: scale(1.2);
@@ -234,7 +235,7 @@
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     border-radius: 20px;
-    border: 1px solid #E3E3E3;
+    border: 1px solid #e3e3e3;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -255,7 +256,7 @@
       align-items: center;
       gap: 6px;
       border-radius: 8px;
-      background: linear-gradient(90deg, #384BFF 0%, #B42AF3 123.82%);
+      background: linear-gradient(90deg, #384bff 0%, #b42af3 123.82%);
       -webkit-border-radius: 8px;
       -moz-border-radius: 8px;
       -ms-border-radius: 8px;
@@ -306,7 +307,6 @@
   }
 }
 
-
 .blog-card-thumb {
   &.style1 {
     overflow: hidden;
@@ -331,7 +331,6 @@
       -moz-transition: all 0.4s ease;
       -ms-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
-
     }
   }
 
@@ -368,7 +367,6 @@
       @include sm {
         width: 530px;
       }
-
     }
   }
 
@@ -401,7 +399,6 @@
       @include md {
         width: 300px;
       }
-
     }
 
     @include sm {

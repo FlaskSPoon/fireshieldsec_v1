@@ -83,9 +83,7 @@ export default function Footer() {
                 >
                   <div className="gt-widget-about">
                     <div className="about-logo">
-                      <Link scroll={false} href={`/`}>
-                        <Logo src={logo} />
-                      </Link>
+                      <Logo src={logo} />
                     </div>
                     <p className="about-text">{footer_content}</p>
                     <p className="about-text">

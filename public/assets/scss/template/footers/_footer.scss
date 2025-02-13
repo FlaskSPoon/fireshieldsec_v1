@@ -1,17 +1,19 @@
-
+@use "../../base/variable" as *;
+@use "../../base/mixin" as *;
+@use "../../base/typography" as *;
 
 .copyright-wrap {
-    padding: 20.5px 0;
-    border-top: 1px solid #444A56;
-    background-color: $theme-color2;
+  padding: 20.5px 0;
+  border-top: 1px solid #444a56;
+  background-color: $theme-color2;
 }
 .copyright-text {
-    margin: 0;
-    color: $white-color;
-    a {
-        color: $theme-color;
-        &:hover {
-            color: $white-color;
-        }
+  margin: 0;
+  color: $white-color;
+  a {
+    color: $theme-color;
+    &:hover {
+      color: $white-color;
     }
+  }
 }

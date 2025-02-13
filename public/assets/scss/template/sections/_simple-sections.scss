@@ -1,3 +1,7 @@
+@use "../../base/variable" as *;
+@use "../../base/mixin" as *;
+@use "../../base/typography" as *;
+
 /*----------------------------------------------
     # Simple Common style here
 ----------------------------------------------*/
@@ -131,7 +135,11 @@
       -o-transition: background 0.4s ease;
 
       &:hover {
-        background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
+        background: linear-gradient(
+          90deg,
+          $theme-color2 0%,
+          $theme-color 123.82%
+        );
       }
     }
 
@@ -139,7 +147,11 @@
       border-left: 4px solid $theme-color;
 
       .arrow-icon {
-        background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
+        background: linear-gradient(
+          90deg,
+          $theme-color2 0%,
+          $theme-color 123.82%
+        );
       }
     }
   }
@@ -484,7 +496,11 @@
       -o-transition: 0.4s ease-in-out;
 
       &:hover {
-        background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
+        background: linear-gradient(
+          90deg,
+          $theme-color2 0%,
+          $theme-color 123.82%
+        );
         color: $white-color;
         border: 1px solid $title-color;
       }
@@ -619,7 +635,6 @@
     &:hover {
       background: $title-color;
     }
-
   }
 }
 
@@ -636,7 +651,11 @@
         -o-border-radius: 5px;
 
         &.current {
-          background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
+          background: linear-gradient(
+            90deg,
+            $theme-color2 0%,
+            $theme-color 123.82%
+          );
           color: $white-color;
         }
 
@@ -664,7 +683,11 @@
         }
 
         &:hover {
-          background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
+          background: linear-gradient(
+            90deg,
+            $theme-color2 0%,
+            $theme-color 123.82%
+          );
           color: $white-color;
           border: 1px solid transparent;
         }

@@ -1,3 +1,7 @@
+@use "../../base/variable" as *;
+@use "../../base/mixin" as *;
+@use "../../base/typography" as *;
+
 /*----------------------------------------------
     # Popup Search style here
 ----------------------------------------------*/
@@ -15,7 +19,6 @@
   border-radius: 50%;
   transform: translateX(-50%);
   transition: all ease 0.4s;
-
 
   button.searchClose {
     width: 50px;
@@ -91,7 +94,6 @@
         transform: scale(1.1);
       }
     }
-
   }
 
   &.show {
@@ -107,5 +109,4 @@
       transform: translate(-50%, -50%) scale(1);
     }
   }
-
 }
