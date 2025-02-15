@@ -14,13 +14,13 @@ export default function Projects() {
       576: { slidesPerView: 1, centeredSlides: true },
       768: { slidesPerView: 2 },
       992: { slidesPerView: 3 },
-      1200: { slidesPerView: 4 },
+      1200: { slidesPerView: 4 }
     },
     modules: [Navigation],
     navigation: {
       prevEl: ".snbp1",
-      nextEl: ".snbn1",
-    },
+      nextEl: ".snbn1"
+    }
   };
 
   return (
@@ -44,7 +44,7 @@ export default function Projects() {
                     height="12"
                   />
                 </span>
-                Recently Work
+                NOS PROJETS
                 <span className="ms-1">
                   <Image
                     alt="icon"
@@ -58,7 +58,7 @@ export default function Projects() {
                 className="title text-start text-white wow fadeInUp"
                 data-wow-delay=".6s"
               >
-                Latest projects from our Techbe
+                Découvrez nos derniers projets
               </h2>
             </div>
             <div

@@ -9,6 +9,9 @@ import CursorFollor from "@/components/common/CursorFollor";
 import { usePathname } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import PopupSearch from "@/components/headers/PopupSearch";
+import Footer from "@/components/footers/Footer";
+import Header from "@/components/headers/Header";
+import HeaderTop from "@/components/headers/HeaderTop";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
@@ -73,9 +76,12 @@ export default function RootLayout({ children }) {
           draggable
           pauseOnHover
         />
+        <HeaderTop />
+        <Header />
         {children}
         <CursorFollor />
         <ScrollTop />
+        <Footer />
       </body>
     </html>
   );

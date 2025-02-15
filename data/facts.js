@@ -1,26 +1,26 @@
 export const counterBoxes = [
   {
     icon: "/assets/img/icon/counterIcon1_1.png",
-    number: 6561,
-    label: "Satisfied Clients",
-    delay: ".3s",
+    number: 656,
+    label: "Clients satisfaits",
+    delay: ".3s"
   },
   {
     icon: "/assets/img/icon/counterIcon1_2.png",
-    number: 600,
-    label: "Finished Projects",
-    delay: ".6s",
+    number: 60,
+    label: "Projets terminés",
+    delay: ".6s"
   },
   {
     icon: "/assets/img/icon/counterIcon1_1.png",
-    number: 250,
-    label: "Skilled Experts",
-    delay: ".9s",
+    number: 25,
+    label: "Employés qualifiés",
+    delay: ".9s"
   },
   {
     icon: "/assets/img/icon/counterIcon1_1.png",
-    number: 5900,
-    label: "Media Posts",
-    delay: "1s",
-  },
+    number: 130,
+    label: "Réseaux",
+    delay: "1s"
+  }
 ];

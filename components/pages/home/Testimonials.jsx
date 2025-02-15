@@ -29,8 +29,8 @@ export default function Testimonials() {
                     width="28"
                     height="12"
                   />
-                </span>{' '}
-                Testimonials{' '}
+                </span>{" "}
+                TEMOIGNAGES{" "}
                 <span className="ms-1">
                   <Image
                     alt="icon"
@@ -44,7 +44,7 @@ export default function Testimonials() {
                 className="title text-start wow fadeInUp"
                 data-wow-delay=".6s"
               >
-                What Happy Clients Says About Us?
+                Qu'est ce que nos clients disent à propos de nous ?
               </h2>
             </div>
             <div className="btn-wrapper">
@@ -53,7 +53,7 @@ export default function Testimonials() {
                 className="gt-btn gt-btn-icon"
                 href={`/testimonial`}
               >
-                See All Testimonials
+                Tous les témoignages
               </Link>
             </div>
           </div>
@@ -63,26 +63,26 @@ export default function Testimonials() {
               spaceBetween={30}
               breakpoints={{
                 0: {
-                  slidesPerView: 1,
+                  slidesPerView: 1
                 },
                 576: {
                   slidesPerView: 1,
-                  centeredSlides: true,
+                  centeredSlides: true
                 },
                 768: {
-                  slidesPerView: 1,
+                  slidesPerView: 1
                 },
                 992: {
-                  slidesPerView: 2,
+                  slidesPerView: 2
                 },
                 1200: {
-                  slidesPerView: 2,
-                },
+                  slidesPerView: 2
+                }
               }}
               modules={[Navigation]}
               navigation={{
                 prevEl: ".snbp2",
-                nextEl: ".snbn2",
+                nextEl: ".snbn2"
               }}
               className="gt-slider"
               id="testimonialSlider1"

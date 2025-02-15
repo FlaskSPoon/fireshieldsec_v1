@@ -31,8 +31,8 @@ export default function Blog() {
                   height="12"
                   src="/assets/img/icon/titleIcon.png"
                 />
-              </span>{' '}
-              News &amp; Article{' '}
+              </span>{" "}
+              Notre blog{" "}
               <span className="ms-1">
                 <Image
                   alt="icon"
@@ -46,7 +46,7 @@ export default function Blog() {
               className="title text-center mb-50 wow fadeInUp"
               data-wow-delay=".3s"
             >
-              Read our latest insights
+              Consulter nos dernières publications
             </h2>
           </div>
           <div className="blog-card-wrap style1">
@@ -87,7 +87,7 @@ export default function Blog() {
                   </h3>
                   <div className="btn-wrapper">
                     <Link scroll={false} href={`/blog-details/${card.id}`}>
-                      Read More
+                      Lire plus{" "}
                       <Image
                         alt="icon"
                         width="16"

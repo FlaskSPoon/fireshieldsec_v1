@@ -15,13 +15,13 @@ export default function Offering() {
               className="text-center text-white text-uppercase wow fadeInUp"
               data-wow-delay=".3s"
             >
-              Our offering
+              NOTRE VALEUR AJOUTÉE
             </h6>
             <h2
               className="title text-center mb-85 text-white wow fadeInUp"
               data-wow-delay=".6s"
             >
-              Enhance and Pioneer Using Technology Trends
+              FIRESHIELD SECURITY se distingue par :
             </h2>
           </div>
           <div className="offer-box-wrap">
@@ -37,6 +37,8 @@ export default function Offering() {
                       {box.title}
                     </Link>
                   </h3>
+
+                  <p className="box-content_text">{box.description}</p>
                 </div>
                 <div className="icon">
                   <Image src={box.icon} width={36} height={36} alt="icon" />

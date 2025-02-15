@@ -17,6 +17,9 @@
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -66,7 +69,7 @@
 
         .hero-sub-title {
           color: $white-color;
-          font-family: "Plus Jakarta Sans", sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-size: 18px;
           font-style: normal;
           font-weight: 600;
@@ -86,7 +89,7 @@
           .title2 {
             display: block;
             color: $white-color;
-            font-family: "Plus Jakarta Sans";
+            font-family: "Montserrat";
             font-size: 80px;
             font-style: normal;
             font-weight: 800;
@@ -99,7 +102,7 @@
             .title2 {
               display: block;
               color: $white-color;
-              font-family: "Plus Jakarta Sans";
+              font-family: "Montserrat";
               font-size: 60px;
               font-style: normal;
               font-weight: 800;
@@ -111,7 +114,7 @@
 
         .hero-text {
           color: $white-color;
-          font-family: "Plus Jakarta Sans";
+          font-family: "Montserrat";
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
@@ -307,7 +310,7 @@
 
         .hero-sub-title {
           color: $white-color;
-          font-family: "Plus Jakarta Sans", sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-size: 18px;
           font-style: normal;
           font-weight: 600;
@@ -327,7 +330,7 @@
           .title2 {
             display: block;
             color: $white-color;
-            font-family: "Plus Jakarta Sans";
+            font-family: "Montserrat";
             font-size: 80px;
             font-style: normal;
             font-weight: 800;
@@ -340,7 +343,7 @@
             .title2 {
               display: block;
               color: $white-color;
-              font-family: "Plus Jakarta Sans";
+              font-family: "Montserrat";
               font-size: 60px;
               font-style: normal;
               font-weight: 800;
@@ -352,7 +355,7 @@
 
         .hero-text {
           color: $white-color;
-          font-family: "Plus Jakarta Sans";
+          font-family: "Montserrat";
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
@@ -626,8 +629,8 @@
           display: inline;
           background: linear-gradient(
             90deg,
-            $theme-color 0%,
-            $theme-color2 123.82%
+            $theme-color2 0%,
+            $theme-color 123.82%
           );
           background-clip: text;
           -webkit-background-clip: text;

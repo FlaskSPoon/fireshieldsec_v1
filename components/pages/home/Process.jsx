@@ -35,8 +35,8 @@ export default function Process() {
                   width="28"
                   height="12"
                 />
-              </span>{' '}
-              Work Process{' '}
+              </span>{" "}
+              Processus de Sécurisation{" "}
               <span>
                 <Image
                   alt="icon"
@@ -50,7 +50,7 @@ export default function Process() {
               className="title text-center mb-100 wow fadeInUp"
               data-wow-delay=".6s"
             >
-              Our software development process
+              Découvrez notre approche en quelques étapes
             </h2>
           </div>
           <div className="process-card-wrap">

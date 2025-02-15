@@ -22,8 +22,8 @@ export default function Services2() {
                 width="28"
                 height="12"
               />
-            </span>{' '}
-            Our Feathered Services{' '}
+            </span>{" "}
+            NOTRE EXPERTISE{" "}
             <span>
               <Image
                 alt="icon"
@@ -37,7 +37,7 @@ export default function Services2() {
             className="title text-center mb-50 wow fadeInUp"
             data-wow-delay=".4s"
           >
-            We Provide Exclusive Service For Your Business
+            Des Solutions Innovantes, une Expertise de Confiance
           </h2>
         </div>
         <div className="service-card-wrapper style2">
@@ -68,7 +68,7 @@ export default function Services2() {
                   className="link"
                   href={`/service-details/${service.id}`}
                 >
-                  Read More
+                  Plus de détails
                   <i className="fa-sharp fa-light fa-arrow-right-long" />
                 </Link>
               </div>

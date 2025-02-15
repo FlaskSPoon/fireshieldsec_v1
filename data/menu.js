@@ -1,13 +1,9 @@
 const menuItems = [
   {
-    title: "Accueil",
-    href: "/"
-  },
-  {
     title: "Plateformes",
-    href: "/#",
+    href: "/platforms",
     subMenu: [
-      { title: "Plateforme XDR", href: "/#" },
+      { title: "Plateforme XDR", href: "/platforms" },
       { title: "Plateforme de E-learning", href: "/#" },
       { title: "Plateforme pour la gestion des risques", href: "/#" }
     ]
@@ -52,8 +48,8 @@ const menuItems = [
     ]
   },
   {
-    title: "A propos",
-    href: "/about-us",
+    title: "A propos de",
+    href: "/",
     subMenu: [
       { title: "Qui sommes-nous ?", href: "/#" },
       { title: "Vision et mission", href: "/#" },

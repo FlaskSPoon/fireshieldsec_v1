@@ -53,32 +53,32 @@ export const services2 = [
   {
     id: 9,
     icon: "/assets/img/icon/serviceIcon1_1.png",
-    title: "Confidentialité et Intégrité",
-    description: "En savoir plus",
+    title: "Confidentialité",
+    description: "Protéger vos données contre toute altération.",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
     delay: ".2s"
   },
   {
     id: 10,
     icon: "/assets/img/icon/serviceIcon1_2.png",
-    title: "Excellence Technique",
-    description: "En savoir plus",
+    title: "Excellence",
+    description: "Des experts qualifiés et formés cybersécurité.",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
     delay: ".4s"
   },
   {
     id: 11,
     icon: "/assets/img/icon/serviceIcon1_3.png",
-    title: "Transparence et Communication",
-    description: "En savoir plus",
+    title: "Transparence",
+    description: "Informer rapidement sur toute menace.",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
     delay: ".6s"
   },
   {
     id: 12,
     icon: "/assets/img/icon/serviceIcon1_4.png",
-    title: "Innovation Continue",
-    description: "En savoir plus",
+    title: "Innovation",
+    description: "Fournir des solutions de cybersécurité avancées.",
     bgImage: "/assets/img/bg/serviceCardThumbBg1_1.png",
     delay: ".8s"
   }
@@ -88,8 +88,9 @@ export const servicesStyle2 = [
   {
     id: 14,
     thumb: "/assets/img/service/serviceThumb2_1.png",
-    title: "Software Services",
-    description: "Software services encompass a wide range of",
+    title: "MAÎTRISE",
+    description:
+      "Une maitrise en gestion stratégique et organisationnelle des risques en cybersécurité.",
     icon: "/assets/img/icon/serviceIcon2_1.png",
     iconTwo: "/assets/img/icon/serviceIcon2_5.png",
     delay: ".3s"
@@ -97,8 +98,9 @@ export const servicesStyle2 = [
   {
     id: 15,
     thumb: "/assets/img/service/serviceThumb2_2.png",
-    title: "IT Consultancy",
-    description: "We provide new and emerging technologies",
+    title: "ACCOMPAGNEMENT",
+    description:
+      "Un accompagnement sur mesure qui permet de mettre en place des solutions selon le contexte.",
     icon: "/assets/img/icon/serviceIcon2_2.png",
     iconTwo: "/assets/img/icon/serviceIcon2_6.png",
     delay: ".6s"
@@ -106,8 +108,9 @@ export const servicesStyle2 = [
   {
     id: 16,
     thumb: "/assets/img/service/serviceThumb2_3.png",
-    title: "Web Development",
-    description: "Web development is the work involved in",
+    title: "EXPÉRIENCE",
+    description:
+      "Eprouvée pour préserver la confidentialité et l’intégrité de vos données et votre infrastructure.",
     icon: "/assets/img/icon/serviceIcon2_3.png",
     iconTwo: "/assets/img/icon/serviceIcon2_7.png",
     delay: ".8s"
@@ -115,8 +118,9 @@ export const servicesStyle2 = [
   {
     id: 17,
     thumb: "/assets/img/service/serviceThumb2_4.png",
-    title: "Database Security",
-    description: "Database security is the processes, tools",
+    title: "SAVOIR-FAIRE",
+    description:
+      "Permettant de faire comprendre facilement les problématiques techniques les plus complexes.",
     icon: "/assets/img/icon/serviceIcon2_4.png",
     iconTwo: "/assets/img/icon/serviceIcon2_8.png",
     delay: "1s"
@@ -127,25 +131,25 @@ export const services3 = [
   {
     id: 18,
     icon: "/assets/img/icon/serviceIcon4_1.png",
-    title: "Core Feature",
+    title: "Fonctionnalités Clés",
     description:
-      "The core features of a website can vary based on its purpose, audience, and goals. However, here",
+      "Notre plateforme est conçue pour offrir une protection proactive et une gestion des risques optimisée, tout en s’adaptant à l’évolution constante des cybermenaces.",
     delay: ".2s"
   },
   {
     id: 19,
     icon: "/assets/img/icon/serviceIcon4_2.png",
-    title: "Easy Customizable",
+    title: "Personnalisation Facile",
     description:
-      "One of the core features of this website is its easy customizability, which allows users to effortlessly",
+      "Notre plateforme XDR se distingue par sa personnalisation facile, permettant aux entreprises d’adapter les paramètres de sécurité en fonction de leurs besoins spécifiques.",
     delay: ".5s"
   },
   {
     id: 20,
     icon: "/assets/img/icon/serviceIcon4_3.png",
-    title: "Fast Support",
+    title: "Support Réactif",
     description:
-      "One of the standout features of this website is its commitment to providing fast and reliable support",
+      "Nous nous engageons à offrir un support rapide et fiable, avec une équipe d'experts disponible pour vous accompagner 24/7 pour toute assistance.",
     delay: ".8s"
   }
 ];

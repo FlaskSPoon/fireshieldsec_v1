@@ -20,11 +20,11 @@
 
 .offer-box-wrap {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   place-items: center;
 
   @include lg {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     .offer-box {
       margin-bottom: 50px;
@@ -36,7 +36,7 @@
   }
 
   @include md {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     .offer-box {
       &:nth-child(4),
@@ -47,7 +47,7 @@
   }
 
   @include sm {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
     .offer-box {
       &:nth-child(4) {
@@ -77,8 +77,11 @@
   position: relative;
 
   .content {
-    width: 170px;
-    height: 102px;
+    padding: 0 10px;
+    max-width: 280px;
+    max-height: 285px;
+    width: 280px;
+    height: 302px;
     text-align: center;
     border-radius: 8px;
     border: 1px solid #525252;
@@ -88,12 +91,12 @@
     -o-border-radius: 8px;
 
     .title {
-      margin-top: 39px;
+      margin-top: 55px;
 
       a {
         color: $white-color;
         text-align: center;
-        font-family: "Plus Jakarta Sans", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -105,12 +108,22 @@
         }
       }
     }
+
+    p {
+      color: $white-color;
+      font-family: "Montserrat", sans-serif;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 14px;
+    }
   }
 
   .icon {
     position: absolute;
     top: -35px;
-    left: 50px;
+    left: 100px;
     display: inline-block;
     padding: 18px;
     background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
