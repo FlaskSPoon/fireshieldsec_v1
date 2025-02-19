@@ -1,26 +1,27 @@
-import { teamMembers2 } from "@/data/team";
-import React from "react";
+"use client";
+import { teamMembers } from "@/data/team";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Team() {
   return (
-    <section className="team-area space fix">
-      <div className="team-wrap style1">
+    <section className="team-area">
+      <div className="team-wrap style2 space fix">
         <div className="shape1_1">
           <Image
             alt="shape"
-            src="/assets/img/shape/teamShape1_1.png"
-            width="440"
-            height="879"
+            src="/assets/img/shape/teamShape2_1.png"
+            width="645"
+            height="395"
           />
         </div>
         <div className="shape1_2 movingX d-xl-block d-none">
           <Image
             alt="shape"
-            src="/assets/img/shape/teamShape1_2.png"
+            src="/assets/img/shape/teamShape2_2.png"
             width="248"
-            height="272"
+            height="321"
           />
         </div>
         <div className="container">
@@ -36,8 +37,8 @@ export default function Team() {
                   width="28"
                   height="12"
                 />
-              </span>{' '}
-              OUR TEAM MEMBER{' '}
+              </span>{" "}
+              NOTRE EQUIPE{" "}
               <span>
                 <Image
                   alt="icon"
@@ -48,45 +49,73 @@ export default function Team() {
               </span>
             </h5>
             <h2
-              className="title text-center mb-200 wow fadeInUp"
+              className="title text-center mb-50 wow fadeInUp"
               data-wow-delay=".6s"
             >
-              See Our Skilled Expert Team
+              Quelques membres de notre équipe
             </h2>
           </div>
-          <div className="row team-card-wrapper style1">
-            {teamMembers2.map((member, index) => (
-              <div
-                className="team-card style1 wow fadeInUp"
-                data-wow-delay={member.delay}
-                key={index}
-              >
-                <div className="team-thumb">
-                  <Image
-                    src={member.imgSrc}
-                    width={275}
-                    height={449}
-                    alt="thumb"
-                  />
-                </div>
-                <div className="profile-box">
-                  <h3 className="title">
-                    <Link scroll={false} href={`/team-details/${member.id}`}>
-                      {member.name}
-                    </Link>
-                  </h3>
-                  <div className="text">{member.role}</div>
-                </div>
-                <div className="bg">
-                  <Image
-                    src={member.bgImage}
-                    width={275}
-                    height={449}
-                    alt="bg"
-                  />
-                </div>
-              </div>
-            ))}
+          <div className="slider-area">
+            <Swiper
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                992: { slidesPerView: 3 },
+                1200: { slidesPerView: 4 }
+              }}
+              loop
+              spaceBetween={30}
+              className="swiper gt-slider team-slider pb-4 px-1"
+            >
+              {teamMembers.map((member, index) => (
+                <SwiperSlide className="swiper-slide mr-0" key={index}>
+                  <div className="team-card style2">
+                    <div className="team-thumb">
+                      <Image
+                        src={member.imgSrc}
+                        width={246}
+                        height={241}
+                        alt="team-img"
+                      />
+                      <div className="social-profile">
+                        <span className="plus-btn">
+                          <i className="fas fa-share-alt" />
+                        </span>
+                        <ul>
+                          <li>
+                            <a href="https://www.facebook.com/">
+                              <i className="fab fa-facebook-f" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.twitter.com/">
+                              <i className="fab fa-twitter" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.linkedin.com/">
+                              <i className="fa-brands fa-linkedin-in" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="team-content text-center">
+                      <h3>
+                        <Link
+                          scroll={false}
+                          href={`/team-details/${member.id}`}
+                        >
+                          {member.name}
+                        </Link>
+                      </h3>
+                      <p>{member.position}</p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

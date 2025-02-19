@@ -1,6 +1,7 @@
 "use client";
-import MobileNav from "@/components/headers/MobileNav";
+
 import "../public/assets/scss/styles.scss";
+import MobileNav from "@/components/headers/MobileNav";
 import { useEffect } from "react";
 import SiteMenu from "@/components/headers/SiteMenu";
 import ScrollTop from "@/components/common/ScrollTop";
@@ -8,10 +9,46 @@ import CursorFollor from "@/components/common/CursorFollor";
 import { usePathname } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import PopupSearch from "@/components/headers/PopupSearch";
-
-// import "bootstrap/dist/js/bootstrap.bundle";
+import Footer from "@/components/footers/Footer";
+import Header from "@/components/headers/Header";
+import HeaderTop from "@/components/headers/HeaderTop";
 
 export default function RootLayout({ children }) {
+  const path = usePathname();
+
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle");
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      var topPos = window.scrollY || document.documentElement.scrollTop;
+      var stickyWrapper = document.querySelector(".sticky-wrapper");
+
+      if (stickyWrapper) {
+        if (topPos > 500) {
+          stickyWrapper.classList.add("sticky");
+        } else {
+          stickyWrapper.classList.remove("sticky");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "instant" });
+
+      import("wowjs").then(({ WOW }) => {
+        const wow = new WOW({ mobile: false, live: false });
+        wow.init();
+      });
+    }
+  }, [path]);
+
   return (
     <html lang="fr" className="bg-white">
       <head>
@@ -39,9 +76,12 @@ export default function RootLayout({ children }) {
           draggable
           pauseOnHover
         />
+        <HeaderTop />
+        <Header />
         {children}
         <CursorFollor />
         <ScrollTop />
+        <Footer />
       </body>
     </html>
   );

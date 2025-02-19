@@ -1,3 +1,6 @@
+@use "../base/variable" as *;
+@use "../base/mixin" as *;
+
 @media (min-width: 1300px) {
   .row {
     --bs-gutter-x: 30px;

@@ -1,22 +1,23 @@
 // Bootstrap
-@import "../css/bootstrap.min.css";
+@use "../css/bootstrap.min.css";
 
 // Fontawesome Icon
-@import "../css/fontawesome.min.css";
+@use "../css/fontawesome.min.css";
 
 // Animate Css
-@import "../css/animate.css";
+@use "../css/animate.css";
 
 // Magnific Popup
-@import "../css/magnific-popup.min.css";
+@use "../css/magnific-popup.min.css";
 
 // Swiper Js
-@import "../css/swiper-bundle.min.css";
+@use "../css/swiper-bundle.min.css";
 
 // Theme Custom CSS
-@import "./main.scss";
+@use "./main.scss";
 
-@import "node_modules/react-modal-video/scss/modal-video.scss";
+@use "node_modules/react-modal-video/scss/modal-video.scss";
+
 a {
   cursor: pointer !important;
 }

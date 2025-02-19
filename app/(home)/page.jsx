@@ -1,6 +1,3 @@
-import Footer from "@/components/footers/Footer";
-import Header from "@/components/headers/Header";
-import HeaderTop from "@/components/headers/HeaderTop";
 import About from "@/components/pages/home/About";
 import Blog from "@/components/pages/home/Blog";
 import Cta from "@/components/footers/Cta";
@@ -25,15 +22,9 @@ export default function Home() {
   return (
     <>
       <SeoMeta title={metadata.title} />
-      <HeaderTop />
-      <Header />
       <main className="main position-relative" id="mains">
         <Hero />
-
-        <main className="main" style={{ height: "100vh" }} />
-        <main className="main" style={{ height: "100vh" }} />
-
-        {/* <Services />
+        <Services />
         <About />
         <Services2 />
         <Offering />
@@ -42,12 +33,10 @@ export default function Home() {
         <Projects />
         <Process />
         <Facts />
-        <Pricing />
         <Testimonials />
-        <Blog /> */}
+        <Blog />
         <Cta />
       </main>
-      <Footer />
     </>
   );
 }

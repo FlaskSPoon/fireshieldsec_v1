@@ -1,32 +1,30 @@
 export const offerBoxes = [
   {
-    title: "Website",
+    title: "EXPERTISE SPÉCIALISÉE",
+    description:
+      "Une équipe d'experts constamment formée aux dernières technologies et meilleures pratiques.",
     icon: "/assets/img/icon/offering1_1.png",
-    delay: ".3s",
+    delay: ".3s"
   },
   {
-    title: "Android",
-    icon: "/assets/img/icon/offering1_2.png",
-    delay: ".6s",
+    title: "APPROCHE PERSONNALISÉE",
+    description:
+      "Solutions sur mesure adaptées aux besoins spécifiques de chaque client.",
+    icon: "/assets/img/icon/offering1_1.png",
+    delay: ".6s"
   },
   {
-    title: "IOS",
-    icon: "/assets/img/icon/offering1_3.png",
-    delay: ".9s",
+    title: "PROACTIVITÉ",
+    description:
+      "Surveillance continue et interventions rapides pour minimiser les risques de pannes ou de cyberattaques.",
+    icon: "/assets/img/icon/offering1_1.png",
+    delay: ".9s"
   },
   {
-    title: "Watch",
-    icon: "/assets/img/icon/offering1_4.png",
-    delay: "1s",
-  },
-  {
-    title: "Tv",
-    icon: "/assets/img/icon/offering1_5.png",
-    delay: "1.3s",
-  },
-  {
-    title: "IOT",
-    icon: "/assets/img/icon/offering1_6.png",
-    delay: "1.6s",
-  },
+    title: "FORMATION CONTINUE",
+    description:
+      "Développement des compétences internes des clients pour transformer les employés en une ligne de défense efficace",
+    icon: "/assets/img/icon/offering1_1.png",
+    delay: "1s"
+  }
 ];

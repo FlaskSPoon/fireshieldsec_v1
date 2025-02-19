@@ -5,17 +5,17 @@ export const blogCards = [
     meta: [
       {
         icon: "/assets/img/icon/userIcon.png",
-        text: "By Admin",
+        text: "Par Fireshieldsec"
       },
       {
         icon: "/assets/img/icon/tagIcon.png",
-        text: "Technology",
-      },
+        text: "Technology"
+      }
     ],
     title: "Tackling the Changes of Retail Industry",
     date: "20",
     month: "June",
-    delay: ".3s",
+    delay: ".3s"
   },
   {
     id: 2,
@@ -23,17 +23,17 @@ export const blogCards = [
     meta: [
       {
         icon: "/assets/img/icon/userIcon.png",
-        text: "By Admin",
+        text: "Par Fireshieldsec"
       },
       {
         icon: "/assets/img/icon/tagIcon.png",
-        text: "Solutions",
-      },
+        text: "Solutions"
+      }
     ],
     title: "Keep Your Business Safe & Ensure High Availability.",
     date: "28",
     month: "March",
-    delay: ".6s",
+    delay: ".6s"
   },
   {
     id: 3,
@@ -41,18 +41,18 @@ export const blogCards = [
     meta: [
       {
         icon: "/assets/img/icon/userIcon.png",
-        text: "By Admin",
+        text: "Par Fireshieldsec"
       },
       {
         icon: "/assets/img/icon/tagIcon.png",
-        text: "UI/UX Design",
-      },
+        text: "UI/UX Design"
+      }
     ],
     title: "Which Yoga Hybrid Is Right For You?",
     date: "16",
     month: "June",
-    delay: ".9s",
-  },
+    delay: ".9s"
+  }
 ];
 
 export const blogPosts = [
@@ -66,7 +66,7 @@ export const blogPosts = [
     author: "Ralph Edwards",
     date: "20",
     month: "june",
-    delay: ".3s",
+    delay: ".3s"
   },
   {
     id: 5,
@@ -78,8 +78,8 @@ export const blogPosts = [
     author: "Esther Howard",
     date: "20",
     month: "june",
-    delay: "1.3s",
-  },
+    delay: "1.3s"
+  }
 ];
 
 export const blogPostsStyle2 = [
@@ -94,8 +94,8 @@ export const blogPostsStyle2 = [
     author: "Ronald Richards",
     date: "20",
     month: "june",
-    delay: ".4s",
-  },
+    delay: ".4s"
+  }
 ];
 
 export const blogCards2 = [
@@ -104,76 +104,76 @@ export const blogCards2 = [
     imgSrc: "/assets/img/blog/blogCardThumb1_1.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "By Admin",
+    userName: "Par Fireshieldsec",
     category: "Technology",
     title: "Tackling the Changes of Retail Industry",
     date: "20",
     month: "June",
     delay: ".2s",
-    comments: 2,
+    comments: 2
   },
   {
     id: 8,
     imgSrc: "/assets/img/blog/blogCardThumb1_2.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "By Admin",
+    userName: "Par Fireshieldsec",
     category: "Solutions",
     title: "Keep Your Business Safe & Ensure High Availability.",
     date: "28",
     month: "March",
     delay: ".4s",
-    comments: 2,
+    comments: 2
   },
   {
     id: 9,
     imgSrc: "/assets/img/blog/blogCardThumb1_3.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "By Admin",
+    userName: "Par Fireshieldsec",
     category: "UI/UX Design",
     title: "Which Yoga Hybrid Is Right For You?",
     date: "16",
     month: "June",
     delay: ".6s",
-    comments: 2,
+    comments: 2
   },
   {
     id: 10,
     imgSrc: "/assets/img/blog/blogCardThumb1_4.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "By Admin",
+    userName: "Par Fireshieldsec",
     category: "Technology",
     title: "Tackling the Changes of Retail Industry",
     date: "30",
     month: "June",
-    delay: ".2s",
+    delay: ".2s"
   },
   {
     id: 11,
     imgSrc: "/assets/img/blog/blogCardThumb1_6.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "By Admin",
+    userName: "Par Fireshieldsec",
     category: "Solutions",
     title: "Keep Your Business Safe & Ensure High Availability.",
     date: "24",
     month: "March",
-    delay: ".4s",
+    delay: ".4s"
   },
   {
     id: 12,
     imgSrc: "/assets/img/blog/blogCardThumb1_5.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "By Admin",
+    userName: "Par Fireshieldsec",
     category: "UI/UX Design",
     title: "Choose The Best IT Service Company in the City.",
     date: "17",
     month: "June",
-    delay: ".6s",
-  },
+    delay: ".6s"
+  }
 ];
 
 export const newsItems = [
@@ -182,37 +182,37 @@ export const newsItems = [
     imgSrc: "/assets/img/blog/blogCardThumb3_1.png",
     date: "27",
     month: "Feb",
-    user: "By Admin",
+    user: "Par Fireshieldsec",
     comments: "3 Comments",
     title: "Choose The Best IT Service Company in the City.",
     description:
       "Choosing the best IT service company in your city involves considering several key factors to ensure you receive high-quality and reliable services. Here are some tips to help you make the right decision.",
-    delay: ".2s",
+    delay: ".2s"
   },
   {
     id: 14,
     imgSrc: "/assets/img/blog/blogCardThumb3_2.png",
     date: "19",
     month: "Feb",
-    user: "By Admin",
+    user: "Par Fireshieldsec",
     comments: "2 Comments",
     title: "Keep Your Business Safe Ensure High Availability",
     description:
       "Ensuring the safety and high availability of your business is crucial in today’s competitive and digital-driven environment. Here are some key strategies to help you maintain security and reliability.",
-    delay: ".4s",
+    delay: ".4s"
   },
   {
     id: 15,
     imgSrc: "/assets/img/blog/blogCardThumb3_3.png",
     date: "28",
     month: "Feb",
-    user: "By Admin",
+    user: "Par Fireshieldsec",
     comments: "0 Comments",
     title: "Tackling the Changes of Retell Industry",
     description:
       "The retail industry is undergoing significant transformations driven by technological advancements, changing consumer preferences, and evolving market dynamics. To stay competitive and thrive in ...",
-    delay: ".6s",
-  },
+    delay: ".6s"
+  }
 ];
 
 export const recentItems = [
@@ -220,20 +220,20 @@ export const recentItems = [
     id: 16,
     imgSrc: "/assets/img/blog/blogRecentThumb3_1.png",
     date: "18 Dec, 2024",
-    title: "Keep Your Business Safe & \n Endure High Availability",
+    title: "Keep Your Business Safe & \n Endure High Availability"
   },
   {
     id: 17,
     imgSrc: "/assets/img/blog/blogRecentThumb3_2.png",
     date: "18 Dec, 2024",
-    title: "Tracking the Changes of \n Retail Industry",
+    title: "Tracking the Changes of \n Retail Industry"
   },
   {
     id: 18,
     imgSrc: "/assets/img/blog/blogRecentThumb3_3.png",
     date: "18 Dec, 2024",
-    title: "What’s Holding Back \n the IT Solution",
-  },
+    title: "What’s Holding Back \n the IT Solution"
+  }
 ];
 
 export const recentPosts = [
@@ -241,20 +241,20 @@ export const recentPosts = [
     id: 18,
     imageUrl: "/assets/img/footer/footerThumb2_1.png",
     date: "18 Dec, 2024",
-    title: "What’s Holding Back \n the IT Solution",
+    title: "What’s Holding Back \n the IT Solution"
   },
   {
     id: 19,
     imageUrl: "/assets/img/footer/footerThumb2_1.png",
     date: "15th April, 2024",
-    title: "Top 5 Most Famous Technology Trend In 2024",
+    title: "Top 5 Most Famous Technology Trend In 2024"
   },
   {
     id: 20,
     imageUrl: "/assets/img/footer/footerThumb2_2.png",
     date: "20th June, 2024",
-    title: "The Surfing Man Will Blow Your Mind",
-  },
+    title: "The Surfing Man Will Blow Your Mind"
+  }
 ];
 
 export const allBlogs = [
@@ -264,14 +264,14 @@ export const allBlogs = [
   ...blogCards2,
   ...newsItems,
   ...recentItems,
-  ...recentPosts,
+  ...recentPosts
 ];
 export const newsCategories = [
   { name: "Database Security", count: 8, isActive: false },
   { name: "IT Consultancy", count: 11, isActive: false },
   { name: "App Development", count: 12, isActive: true },
   { name: "UI/UX Design", count: 18, isActive: false },
-  { name: "Cyber Security", count: 7, isActive: false },
+  { name: "Cyber Security", count: 7, isActive: false }
 ];
 
 export const tags = [
@@ -283,5 +283,5 @@ export const tags = [
   { label: "Video" },
   { label: "UI/UX Design" },
   { label: "Startup" },
-  { label: "Services" },
+  { label: "Services" }
 ];

@@ -1,27 +1,29 @@
 export const fancyBoxes = [
   {
     icon: "/assets/img/icon/aboutIcon1_2.png",
-    title: "Problem Solving",
-    description: "Aliquam erat volutpat Nullam imperdiet",
+    title: "Notre Mission",
+    description:
+      "Assurer la protection continue de vos données sensibles, renforcer la securité et prévenir les cyberattaques."
   },
   {
     icon: "/assets/img/icon/aboutIcon1_3.png",
-    title: "Mission & Vision",
-    description: "Ut vehiculadictumst. Maecenas ante.",
-  },
+    title: "Notre Vision",
+    description:
+      "Assurer la protection continue de vos données sensibles, renforcer la securité et prévenir les cyberattaques."
+  }
 ];
 
 export const features = [
   {
     icon: "/assets/img/icon/signIcon2.png",
-    description: "Various analysis options.",
+    description: "Protection Multi-Couche Renforcée."
   },
   {
     icon: "/assets/img/icon/signIcon2.png",
-    description: "Page Load (time, size, number of requests).",
+    description: "Réaction Automatisée et Instantanée."
   },
   {
     icon: "/assets/img/icon/signIcon2.png",
-    description: "Advance Data analysis operation.",
-  },
+    description: "Anticipation et Prévention des Risques."
+  }
 ];

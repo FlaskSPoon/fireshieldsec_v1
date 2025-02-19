@@ -1,8 +1,11 @@
-// Padding
-@import 'padding';
+@use "../base/variable" as *;
+@use "../base/mixin" as *;
 
-// Margin 
-@import 'margin';
+// Padding
+@use "padding";
+
+// Margin
+@use "margin";
 
 // Section Space
-@import 'section-space';
+@use "section-space";

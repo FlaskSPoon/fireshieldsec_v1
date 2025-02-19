@@ -8,7 +8,6 @@ import { activeSideMenu } from "@/utlis/toggleSideMenu";
 import { activePopupSearch } from "@/utlis/togglePopupSearch";
 
 export default function Header() {
-
   // data source
   const { logo } = config.site;
 

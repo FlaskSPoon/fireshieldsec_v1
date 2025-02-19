@@ -66,10 +66,9 @@ export default function About() {
                   </div>
                   <div className="about-thumb-box counter-box_counter">
                     <div>
-                      <span className="counter-number">6,561</span>
-                      <span className="plus">+</span>
+                      <span className="counter-number">2018</span>
                     </div>
-                    <span>Satisfied Clients</span>
+                    <span>Création</span>
                   </div>
                 </div>
                 <div className="about-thumb-box line jump d-none d-sm-block" />
@@ -87,8 +86,8 @@ export default function About() {
                         width="28"
                         height="12"
                       />
-                    </span>{' '}
-                    What We Do{' '}
+                    </span>{" "}
+                    QUI SOMMES NOUS ?{" "}
                     <span>
                       <Image
                         alt="icon"
@@ -99,25 +98,22 @@ export default function About() {
                     </span>
                   </h5>
                   <h2 className="title text-start">
-                    We Are Increasing Business Success With Technology
+                    Présentation de Fireshield Security
                   </h2>
                   <p className="text">
-                    It is a long established fact that a reader will be
-                    distracted the readable content of a page when looking at
-                    layout the point.
+                    FIRESHIELD SECURITY est une entreprise spécialisée en
+                    cybersécurité et gestion des systèmes d'information (SI).
+                    Elle propose des services complets et personnalisés pour
+                    répondre aux besoins des petites et moyennes entreprises en
+                    matière de protection des données sensibles, prévention des
+                    cyberattaques, et continuité des opérations dans l’objectif
+                    de sécuriser leurs actifs numériques et assurer la
+                    continuité de leurs opérations.
                   </p>
                 </div>
                 <div className="fancy-box-wrapper">
                   {fancyBoxes.map((box, index) => (
                     <div className="fancy-box style1" key={index}>
-                      <div className="fancy-box_icon">
-                        <Image
-                          src={box.icon}
-                          width={44}
-                          height={44}
-                          alt="icon"
-                        />
-                      </div>
                       <div className="fancy-box_content">
                         <h4>{box.title}</h4>
                         <span>{box.description}</span>
@@ -131,7 +127,7 @@ export default function About() {
                     href={`/contact`}
                     className="gt-btn gt-btn-icon"
                   >
-                    GET IN TOUCH
+                    EN SAVOIR PLUS
                   </Link>
                   <div className="fancy-box style1">
                     <div className="fancy-box_icon">
@@ -143,8 +139,8 @@ export default function About() {
                       />
                     </div>
                     <div className="fancy-box_content">
-                      <h4>Ronald Richards</h4>
-                      <span>Co, Founder</span>
+                      <h4>Maurice ECHU</h4>
+                      <span>Fondateur</span>
                     </div>
                   </div>
                 </div>
