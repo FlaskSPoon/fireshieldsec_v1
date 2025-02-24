@@ -20,8 +20,6 @@ export default function Home(){
      <Expertise/>
         <About />
         <VideoArrier/>
-       
-        
       </main>
     </>
     )

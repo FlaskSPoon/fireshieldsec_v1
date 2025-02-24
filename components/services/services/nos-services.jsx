@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NosServices() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [handPosition, setHandPosition] = useState({ x: 0, y: 0, rotate: 0 }); // Position et rotation de l'icône de main
+  const [handPosition, setHandPosition] = useState({ x: 0, y: 0, rotate: 0 }); 
 
   const services = [
     { icon: "/assets/img/icon/aboutIcon1_1.png", title: "Stratégie de Sécurité", description: "Développement de stratégie de sécurité.\nAudit et conformité." },
@@ -29,7 +29,7 @@ export default function NosServices() {
     const angle = (index / services.length) * (2 * Math.PI); // Angle en radians
     const x = Math.cos(angle) * radius; // Position X
     const y = Math.sin(angle) * radius; // Position Y
-    const rotate = (angle * 180) / Math.PI - 90; // Rotation en degrés (ajustement pour pointer vers l'icône)
+    const rotate = (angle * 180) / Math.PI - 100; // Rotation en degrés (ajustement pour pointer vers l'icône)
     setHandPosition({ x, y, rotate });
   };
 
@@ -41,16 +41,17 @@ export default function NosServices() {
   }, [hoveredIndex]);
 
   return (
-    <section className="d-flex align-items-center justify-content-center min-vh-100 bg-light text-dark position-relative p-3">
+    <section className=" d-flex align-items-center justify-content-center min-vh-100 bg-light text-dark position-relative p-3">
+  
       {/* Cercle autour des icônes */}
       <div
         className="position-absolute"
         style={{
           width: "615px",
           height: "615px",
-          border: "0.5px solid #6c757d",
+          border: "1px solid #6c757d",
           borderRadius: "50%",
-          zIndex: 1, // z-index inférieur à celui des icônes
+          zIndex: 1, 
         }}
       ></div>
 
@@ -58,9 +59,9 @@ export default function NosServices() {
       <div className="position-relative d-flex align-items-center justify-content-center" style={{ width: "460px", height: "460px" }}>
         {services.map((service, index) => {
           const angle = (index / services.length) * (2 * Math.PI);
-          const x = Math.cos(angle) * radius; // Position X des icônes sur le cercle
-          const y = Math.sin(angle) * radius; // Position Y des icônes sur le cercle
-
+           // Position des icônes sur le cercle
+          const x = Math.cos(angle) * radius; 
+          const y = Math.sin(angle) * radius; 
           return (
             <div
               key={index}
@@ -70,7 +71,7 @@ export default function NosServices() {
                 transform: `translate(${x}px, ${y}px)`,
                 width: "100px", // Taille de l'icône
                 height: "100px",
-                zIndex: 2, // z-index supérieur à celui du cercle
+                zIndex: 1, 
               }}
               onMouseEnter={() => setHoveredIndex(index)} // On survole l'icône et on la rend active
             >
@@ -93,7 +94,7 @@ export default function NosServices() {
             </>
           ) : (
             <>
-              <p className="fs-5 fw-semibold text-danger p-2 rounded">NOS SERVICES</p>
+              <p className="fs-5 fw-semibold text-danger p-2 rounded-circle">NOS SERVICES</p>
               {/* Ajouter l'icône de main avec animation */}
               <div
                 className="hand-icon position-absolute"

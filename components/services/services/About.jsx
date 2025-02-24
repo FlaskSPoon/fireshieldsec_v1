@@ -11,6 +11,9 @@ export default function About() {
               VOTRE CYBERSECURITÉ, NOTRE PRIORITÉ
               <Image alt="icon" src="/assets/img/icon/titleIcon.png" width="28" height="12" />
             </h5>
+            <ul className="list-disc pl-6">
+        <li><Link href="/services/formations-certifications" className="text-blue-500 hover:underline">Formations & Certifications</Link></li>
+      </ul>
             <h3 className="title">Détection avancée et réponse automatisée aux cybermenaces</h3>
             <p className="text">
               Nous offrons des solutions avancées pour protéger vos systèmes, vos données et votre activité contre les cybermenaces.

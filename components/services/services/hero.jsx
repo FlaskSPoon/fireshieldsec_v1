@@ -1,48 +1,117 @@
 "use client"
-
-import { useEffect, useState } from "react";
-import ModalVideo from "react-modal-video";
+import Image from "next/image";
+import Link from "next/link";
 export default function HeroServices(){
-  const [isOpen, setOpen] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Import the script only on the client side
-     
-    }
-  }, []);
- 
-    return(
-      <>
-      <section className="hero-3 w-screen h-screen relative flex items-center justify-center text-white p-4" id="hero">
-  {/* Image en arrière-plan */}
-  <div 
-    className="absolute inset-0 bg-cover bg-center h-screen  w-screen" 
-    style={{ backgroundImage: "url('/assets/img/hero/catalogue.png')",
-      backgroundSize: "100% auto",
-      backgroundPosition: "top center",
-      backgroundRepeat: "no-repeat",
-      height: "100vh",
-     }}
-  />
 
-  {/* Texte centré sur l’image */}
- <div className="relative z-10 text-center max-w-1xl px-6">
-    <h1 className="text-1xl font-bold p-3 mt-3">DOMAINES
-    D'EXPERTISE</h1>
-    {/* <p className="mt-4 text-lg">Découvrez nos solutions avancées en cybersécurité</p> */}
-    <span className="block mt-2 font-semibold">FIRESHIELD SECURITY</span>
+   return(
+    <>
+   <div class="row p-2">
+  <div class="col-sm-6">
+    <div class="">
+      <div class="">
+        <h3>Conseil, Audit
+et Gouvernance
+du SI</h3>
+        <Image src="/assets/img/hero/cybersecurity.png" alt=""
+        width="1000" height="600"  
+        />
+        
+        <p>La sécurité des systèmes d'information
+est cruciale pour la pérennité de votre
+entreprise. Chez FIRESHIELD SECURITY,
+nous proposons des solutions complètes
+et adaptées aux besoins spécifiques des
+petites et moyennes entreprises. Notre 
+mission est de vous aider à protéger vos 
+données sensibles, à prévenir les 
+cyberattaques et à assurer la continuité 
+de vos opérations</p>
+<Link scroll={false} href={`/contact`} className="gt-btn gt-btn-icon">
+              En savoir +
+            </Link>
+      </div>
+    </div>
   </div>
-</section>
+  <div class="col-sm-3">
+    <div class="">
+      <div class=" bg-light">
+        <h5 class=" border">
+          <Image 
+                              alt="icon"
+                              src="/assets/img/icon/aboutIcon1_1.png"
+                              width="44"
+                              height="44"
+                            />AUDIT DE SÉCURITÉ<br/>
+        DE L'INFORMATION</h5>
+        <em class="">Un audit de sécurité est une évaluation 
+complète de vos systèmes d'information
+pour identifier les vulnérabilités et les
+risques. Il permet de fournir des
+recommandations spécifiques pour
+renforcer votre sécurité. Comprendre
+la maturité actuelle de votre SI est
+indispensable pour toute amélioration.</em>
+       <span>Nos experts réalisent :</span>
+       <h4 className="fs-6 fw-bold" >
+         <Image alt="icon" src="/assets/img/icon/chevron-right.svg" width="28" height="12" />
+        AUDITS COMPLETS DE
+VOTRE INFRASTRUCTURE
+ET DE VOS SYSTÈMES</h4>
 
-<ModalVideo
-  channel="youtube" 
-  youtube={{ mute: 0, autoplay: 0 }} 
-  isOpen={isOpen} 
-  videoId="f2Gzr8sAGB8"
-  onClose={() => setOpen(false)}
-/>
+<h6>Audit de sécurité :</h6>
+<span>Évaluation approfondie de la sécurité
+de votre système informatique</span>
+<h6>Audit de système : </h6>
+<span>Évaluation de l’infrastructure 
+informatique, des réseaux, des
+applications et des bases de données.</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="">
+      <div class="  bg-light">
+      <h4 className="fs-6 fw-bold" >
+         <Image alt="icon" src="/assets/img/icon/chevron-right.svg" width="28" height="12" />
+         ÉVALUATIONS DE 
+LA CONFORMITÉ AUX
+NORMES DE SÉCURITÉ
+ET DE RÉGLEMENTATION</h4>
+
+<h6>Audit de conformité : </h6>
+<span>Accompagnement dans votre
+processus de certification aux normes
+internationales ISO/IEC 27001, RGPD</span>
+
+<h4 className="fs-6 fw-bold" >
+         <Image alt="icon" src="/assets/img/icon/chevron-right.svg" width="28" height="12" />
+         ANALYSES DES
+PERFORMANCES POUR
+IDENTIFIER LES AXES
+D'OPTIMISATION</h4>
+<h6>Audit de processus :  </h6>
+<span>Examen des politiques et procédures
+de sécurité</span>
+<h5 class=" border py-2">
+          <Image className="bg"
+                              alt="icon"
+                              src="/assets/img/icon/aboutIcon1_2.png"
+                              width="44"
+                              height="44"
+                            />CONSEILS</h5>
+        <span>Nos services de conseil visent à créer
+une stratégie de sécurité sur mesure
+pour votre entreprise.</span>
+<h6>Nos experts réalisen:</h6>
+
+
+      </div>
+    </div>
+  </div>
+</div>
     </>
     
+   );
    
-    );
+   
 }
