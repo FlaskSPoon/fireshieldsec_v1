@@ -4,6 +4,7 @@ import SeoMeta from "@/components/common/SeoMeta";
 import About from "@/components/services/services/About";
 import VideoArrier from "@/components/services/services/videoArriere";
 import NosServices from "@/components/services/services/nos-services";
+import Expertise from "@/components/services/services/expertise";
 export const metadata = {
   title:
     "Nos Services  | Fireshield Security - Cybersécurité, protection et détection",
@@ -15,9 +16,11 @@ export default function Home(){
       <SeoMeta title={metadata.title} />
       <main className="main position-relative" id="mains">
         <HeroServices />
+        <NosServices/>
+     <Expertise/>
         <About />
         <VideoArrier/>
-        <NosServices/>
+       
         
       </main>
     </>
