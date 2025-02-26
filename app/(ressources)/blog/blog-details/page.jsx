@@ -1,23 +1,20 @@
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
-import HeaderTop from "@/components/headers/HeaderTop";
-
-import Cta from "@/components/common/Cta";
-import BlogDetails from "@/components/otherPages/blog/BlogDetails";
+import SeoMeta from "@/components/common/SeoMeta";
+import Cta from "@/components/footers/Cta";
+import BlogDetails from "@/components/pages/blog/BlogDetails";
 import Link from "next/link";
 import { allBlogs } from "@/data/blogs";
+
 export const metadata = {
-  title:
-    "Blog Details || Techbe-IT Solution & Technology Service Nextjs Template",
-  description: "Techbe-IT Solution & Technology Service Nextjs Template",
+  title: "Blog | Fireshield Security",
+  description:
+    "Cybersécurité, Gestion des systèmes d'information (SI), Conseil, Protection et Détection"
 };
 export default function Page({ params }) {
   const blogItem =
     allBlogs.filter((elm) => elm.id == params.id)[0] || allBlogs[0];
   return (
     <>
-      <HeaderTop />
-      <Header1 />
+      <SeoMeta title={metadata.title} />
       <main className="main position-relative" id="mains">
         <div className="breadcrumb-wrapper">
           <div
@@ -37,13 +34,13 @@ export default function Page({ params }) {
                   <li>
                     <Link scroll={false} href={`/`}>
                       {" "}
-                      Home{" "}
+                      Accueil{" "}
                     </Link>
                   </li>
                   <li>
                     <i className="fas fa-chevrons-right" />
                   </li>
-                  <li>Blog Details</li>
+                  <li>Détails</li>
                 </ul>
               </div>
             </div>
@@ -52,7 +49,6 @@ export default function Page({ params }) {
         <BlogDetails blogItem={blogItem} />
         <Cta />
       </main>
-      <Footer1 />
     </>
   );
 }

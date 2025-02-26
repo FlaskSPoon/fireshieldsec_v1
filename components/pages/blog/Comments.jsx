@@ -26,7 +26,7 @@ export default function Comments() {
             </div>
             <div className="btn">
               <a href={`#`} className="reply">
-                Reply
+                Répondre
               </a>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function Comments() {
             </div>
             <div className="btn">
               <a href={`#`} className="reply">
-                Reply
+                Répondre
               </a>
             </div>
           </div>

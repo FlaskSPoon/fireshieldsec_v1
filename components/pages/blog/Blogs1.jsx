@@ -34,12 +34,12 @@ export default function Blogs1() {
                   </div>
                 </div>
                 <h3 className="blog-title style1">
-                  <Link scroll={false} href={`/blog`}>
+                  <Link scroll={false} href={`/blog/blog-details`}>
                     {card.title}
                   </Link>
                 </h3>
                 <div className="btn-wrapper">
-                  <Link scroll={false} href={`/blog-details/${card.id}`}>
+                  <Link scroll={false} href={`/blog/blog-details`}>
                     Lire plus {""}
                     <FaArrowRightLong size={15} />
                   </Link>

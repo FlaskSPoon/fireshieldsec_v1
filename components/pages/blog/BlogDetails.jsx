@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import Comments from "./Comments";
 import CommentForm from "./CommentForm";
 import Image from "next/image";
+import { FaTag } from "react-icons/fa6";
 
 export default function BlogDetails({ blogItem }) {
   return (
@@ -18,7 +19,7 @@ export default function BlogDetails({ blogItem }) {
                     data-bg-src=""
                     style={{
                       backgroundImage:
-                        "url(/assets/img/blog/blogCardThumb3_1.png)",
+                        "url(/assets/img/blog/blogCardThumb3_1.png)"
                     }}
                   />
                   <div className="post-content">
@@ -28,19 +29,13 @@ export default function BlogDetails({ blogItem }) {
                     >
                       <li>
                         <i className="fa-light fa-user" />
-                        By Admin
+                        Par Fireshieldsec
                       </li>
                       <li>
-                        <i className="fa-light fa-comments" />2 Comments
+                        <i className="fa-light fa-comments" />2 Commentaires
                       </li>
                       <li>
-                        <Image
-                          alt="icon"
-                          src="/assets/img/icon/tagIcon.png"
-                          width="20"
-                          height="20"
-                        />
-                        IT Services
+                        <FaTag size={22} color="#e02234" /> IT Services
                       </li>
                     </ul>
                     <h3 className="wow fadeInUp" data-wow-delay=".4s">
@@ -149,10 +144,10 @@ export default function BlogDetails({ blogItem }) {
                 >
                   <div className="col-lg-8 col-12">
                     <div className="tagcloud">
-                      <h6 className="d-inline me-2">Tags:</h6>
-                      <a href={`#`}>News</a>
-                      <a href={`#`}>business</a>
-                      <a href={`#`}>marketing</a>
+                      <h6 className="d-inline me-2">Tags :</h6>
+                      <a href={`#`}>Securité</a>
+                      <a href={`#`}>Entreprise</a>
+                      <a href={`#`}>Marketing</a>
                     </div>
                   </div>
                   <div
@@ -160,7 +155,7 @@ export default function BlogDetails({ blogItem }) {
                     data-wow-delay="1.2s"
                   >
                     <div className="social-share">
-                      <span className="me-3">Share:</span>
+                      <span className="me-3">Partager :</span>
                       <a href="#">
                         <i className="fab fa-facebook-f" />
                       </a>
@@ -181,7 +176,7 @@ export default function BlogDetails({ blogItem }) {
                   className="comment-form-wrap pt-5 wow fadeInUp"
                   data-wow-delay="1.2s"
                 >
-                  <h3>Leave a comments</h3>
+                  <h3>Laisser un commentaire</h3>
                   <CommentForm />
                 </div>
               </div>
