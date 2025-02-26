@@ -13,10 +13,10 @@ const menuItems = [
     href: "/services",
     subMenu: [
       { title: "Formations et certifications", href: "/formations" },
-      { title: "Stratégie, Cybersécurité et Consulting", href: "/strategie" },
-      { title: "Sensibilisation en Cybersécurité", href: "/#" },
+      { title: "Stratégie, Cybersécurité et Consulting", href: "/strategies" },
+      { title: "Infogérence et Support SI", href: "/infogerance" },
       {
-        title: "Gouvernance des systèmes de sécurité de l’information",
+        title: "Gouvernance des systèmes ",
         href: "/#"
       },
       { title: "Audit et Mise en conformité réglementaire", href: "/#" },
