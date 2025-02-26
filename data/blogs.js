@@ -267,21 +267,21 @@ export const allBlogs = [
   ...recentPosts
 ];
 export const newsCategories = [
-  { name: "Database Security", count: 8, isActive: false },
-  { name: "IT Consultancy", count: 11, isActive: false },
-  { name: "App Development", count: 12, isActive: true },
-  { name: "UI/UX Design", count: 18, isActive: false },
-  { name: "Cyber Security", count: 7, isActive: false }
+  { name: "Cybersecurité", count: 7, isActive: false },
+  { name: "Sensibilisation", count: 8, isActive: false },
+  { name: "IT Consulting", count: 11, isActive: false },
+  { name: "Platformes", count: 12, isActive: true },
+  { name: "Training", count: 18, isActive: false }
 ];
 
 export const tags = [
-  { label: "Security" },
-  { label: "Business" },
+  { label: "Securité" },
+  { label: "Consulting" },
   { label: "Digital" },
-  { label: "Technology" },
-  { label: "Change" },
-  { label: "Video" },
-  { label: "UI/UX Design" },
-  { label: "Startup" },
+  { label: "Technologie" },
+  { label: "Entreprise" },
+  { label: "XDR" },
+  { label: "Formation" },
+  { label: "Partenaire" },
   { label: "Services" }
 ];

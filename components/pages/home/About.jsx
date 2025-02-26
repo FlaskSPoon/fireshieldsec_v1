@@ -139,8 +139,8 @@ export default function About() {
                       />
                     </div>
                     <div className="fancy-box_content">
-                      <h4>Maurice ECHU</h4>
-                      <span>Fondateur</span>
+                      <h4>2018</h4>
+                      <span>Date de création</span>
                     </div>
                   </div>
                 </div>

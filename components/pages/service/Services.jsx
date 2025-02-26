@@ -36,7 +36,7 @@ export default function Services() {
                 </div>
                 <div className="link-wrap">
                   <Link scroll={false} href={`/service-details/${item.id}`}>
-                    More Details
+                    Télecharger
                   </Link>
                 </div>
               </div>

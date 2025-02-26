@@ -9,7 +9,7 @@ export const fancyBoxes = [
     icon: "/assets/img/icon/aboutIcon1_3.png",
     title: "Notre Vision",
     description:
-      "Assurer la protection continue de vos données sensibles, renforcer la securité et prévenir les cyberattaques."
+      "Renforcer les capacités des entreprises partenaires à répondre efficacement aux cybermenaces."
   }
 ];
 

@@ -27,11 +27,11 @@ const menuItems = [
   },
   {
     title: "Ressources",
-    href: "/ressources",
+    href: "/blog",
     subMenu: [
-      { title: "Notre blog", href: "/#" },
-      { title: "Webinaires et événements", href: "/#" },
-      { title: "Guides pratiques", href: "/#" }
+      { title: "Notre blog", href: "/blog" },
+      { title: "Webinaires et événements", href: "/event" },
+      { title: "Guides pratiques", href: "/guide" }
     ]
   },
   {
@@ -49,14 +49,7 @@ const menuItems = [
   },
   {
     title: "A propos de",
-    href: "/",
-    subMenu: [
-      { title: "Qui sommes-nous ?", href: "/#" },
-      { title: "Vision et mission", href: "/#" },
-      { title: "Domaines d'expertise", href: "/#" },
-      { title: "Historique et valeur", href: "/#" },
-      { title: "Notre équipe", href: "/#" }
-    ]
+    href: "/about"
   }
 ];
 
