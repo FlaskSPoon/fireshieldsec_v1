@@ -31,6 +31,13 @@ export default function ContactPage() {
         width: "100vw",
       }}
     >
+      <div 
+    className="position-absolute top-0 start-0 w-100 h-100" 
+    style={{ backgroundColor: "rgba(138, 43, 226, 0.2)", zIndex: 1 , pointerEvents: "none"}}
+  >
+    </div>
+
+      
       {/* Infos de contact */}
       <motion.div 
    className="mt-4 p-4 text-right  text-light rounded-4 w-100" 
@@ -80,7 +87,7 @@ export default function ContactPage() {
       {/* Formulaire de contact */}
       <motion.div 
         className="shadow-lg rounded-4 p-5 bg-white w-50 ms-4" 
-        style={{ maxWidth: "600px", opacity: 0.9 }}
+        style={{ maxWidth: "600px", opacity: 0.9 ,zIndex: 2}}
         initial={{ opacity: 0, y: -50 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.5 }}
