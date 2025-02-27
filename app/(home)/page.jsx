@@ -13,6 +13,7 @@ import Team from "@/components/pages/home/Team";
 import Testimonials from "@/components/pages/home/Testimonials";
 import VideoBox from "@/components/pages/home/VideoBox";
 import SeoMeta from "@/components/common/SeoMeta";
+
 export const metadata = {
   title:
     "Accueil | Fireshield Security - Cybersécurité, protection et détection",

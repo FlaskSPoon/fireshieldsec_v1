@@ -1,6 +1,7 @@
 "use client";
 import Formulaire from "@/components/pages/contact/contact/formulaire";
 import SeoMeta from "@/components/common/SeoMeta";
+
 export default function Home() {
 
 
@@ -16,6 +17,8 @@ export default function Home() {
         
            
             <Formulaire />
+         
+
             </main>
           </>
         );

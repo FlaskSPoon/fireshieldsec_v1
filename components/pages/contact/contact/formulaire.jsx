@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -20,54 +22,75 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row-reverse items-center min-h-screen bg-cover bg-center px-6 py-12 relative" style={{ backgroundImage: "url('https://source.unsplash.com/1600x900/?business,office')" }}>
-      <div className="absolute inset-0 bg-blue-900 opacity-70"></div>
-      
-      {/* Formulaire */}
-      <div className="relative bg-white p-8 rounded-2xl shadow-xl w-full max-w-lg lg:ml-12">
-        <h2 className="text-2xl font-bold text-center mb-4 text-gray-800">NOUS CONTACTER</h2>
-        <p className="text-center text-gray-500 mb-6">PAR MAIL</p>
-        
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input type="text" name="fullName" placeholder="NOM COMPLET" value={formData.fullName} onChange={handleChange} required
-            className="w-full p-3 bg-gray-100 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" />
-          
-          <input type="email" name="email" placeholder="ADRESSE EMAIL" value={formData.email} onChange={handleChange} required
-            className="w-full p-3 bg-gray-100 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" />
-          
-          <input type="text" name="subject" placeholder="OBJET" value={formData.subject} onChange={handleChange} required
-            className="w-full p-3 bg-gray-100 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300" />
-          
-          <textarea name="message" placeholder="Message ..." value={formData.message} onChange={handleChange} required
-            className="w-full p-3 bg-gray-100 border border-gray-300 rounded-lg focus:ring focus:ring-blue-300 h-24"></textarea>
-          
-          <button type="submit" className="w-full bg-yellow-500 text-white py-3 rounded-lg font-semibold hover:bg-yellow-600 transition">Envoyer</button>
+    <div 
+      className="d-flex flex-row align-items-center justify-content-center min-vh-100 p-3" 
+      style={{ 
+        backgroundImage: "url('/assets/img/partenaire/cont.png')", 
+         backgroundSize: "cover", 
+        backgroundPosition: "center",
+        width: "100vw",
+      }}
+    >
+      {/* Infos de contact */}
+      <motion.div 
+   className="mt-4 p-4 text-right  text-light rounded-4 w-100" 
+   style={{ maxWidth: "600px", opacity: 0.9 }}
+   initial={{ opacity: 0, y: 50 }} 
+   animate={{ opacity: 1, y: 0 }} 
+   transition={{ duration: 0.5 }}
+ >
+   <h4 className="fw-bold">vous voulez accéder à nos services ou devenir partenaire ?</h4>
+   <h4 className="fw-bold text-white ">Contactez-nous :</h4>
+   <div className="d-flex align-items-center justify-content-center mb-2">
+     <FaPhone className="me-2" size={25} color="#800020" />
+     <span>(221) 33 801 57 16</span>
+   </div>
+   <div className="d-flex align-items-right justify-content-center mb-2">
+     <FaPhone className="me-2" size={25} color="#800020"/>
+     <span> (221) 77 928 66 82</span>
+   </div>
+   <div className="d-flex align-items-right justify-content-center mb-2">
+     <FaEnvelope className="me-2" size={25} color="#800020"  />
+     <span>contact@Fireshieldsec.com</span>
+   </div>
+   <div className="d-flex align-items-right justify-content-center">
+     <FaMapMarkerAlt className="me-2" size={25} color="#800020" />
+     <span>Mermoz pyrotechnique ,villa 22, Dakar-senegal</span>
+   </div>
+ </motion.div>
+
+      {/* Formulaire de contact */}
+      <motion.div 
+        className="shadow-lg rounded-4 p-5 bg-white w-50 ms-4" 
+        style={{ maxWidth: "600px", opacity: 0.9 }}
+        initial={{ opacity: 0, y: -50 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.5 }}
+      >
+        <h3 className="text-center text-dark fw-bold">NOUS CONTACTER</h3>
+        <p className="text-center text-secondary">PAR MAIL</p>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <input type="text" name="fullName" placeholder="Nom Complet" value={formData.fullName} onChange={handleChange} required className="form-control" />
+          </div>
+          <div className="mb-3">
+            <input type="email" name="email" placeholder="Adresse Email" value={formData.email} onChange={handleChange} required className="form-control" />
+          </div>
+          <div className="mb-3">
+            <input type="text" name="subject" placeholder="Objet" value={formData.subject} onChange={handleChange} required className="form-control" />
+          </div>
+          <div className="mb-3">
+            <textarea name="message" placeholder="Message ..." value={formData.message} onChange={handleChange} required className="form-control" rows="4"></textarea>
+          </div>
+          <motion.button 
+            type="submit"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="gt-btn  w-100 fw-bold">
+            Envoyer
+          </motion.button>
         </form>
-      </div>
-      
-      {/* Informations de contact */}
-      <div className="relative text-white max-w-lg mt-12 lg:mt-0">
-        <h2 className="text-3xl font-bold">Voulez-vous devenir</h2>
-        <h2 className="text-3xl font-bold mb-4">Partenaire ou avoir un Talent ?</h2>
-        <p className="text-gray-300 mb-6">Pour plus d’informations sur Gainde Talent Provider, merci de nous contacter :</p>
-        
-        <div className="space-y-4">
-          <div className="flex items-center space-x-4">
-            <div className="bg-yellow-500 p-3 rounded-lg"><FaPhoneAlt className="text-white text-xl" /></div>
-            <span className="text-lg">33 858 49 75</span>
-          </div>
-          
-          <div className="flex items-center space-x-4">
-            <div className="bg-yellow-500 p-3 rounded-lg"><FaEnvelope className="text-white text-xl" /></div>
-            <span className="text-lg">contact@gaindetalent.com</span>
-          </div>
-          
-          <div className="flex items-center space-x-4">
-            <div className="bg-yellow-500 p-3 rounded-lg"><FaMapMarkerAlt className="text-white text-xl" /></div>
-            <span className="text-lg">12, Rue Fila, Fann Hock, BP 6856 Dakar, Sénégal</span>
-          </div>
-        </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

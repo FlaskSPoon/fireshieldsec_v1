@@ -38,11 +38,11 @@ const menuItems = [
     title: "Partenaires",
     href: "/partenaires",
     subMenu: [
-      { title: "Présentation des collaborations stratégiques", href: "/#" },
-      { title: "Certifications obtenues grâce aux partenaires", href: "/#" },
+      { title: "Présentation des collaborations stratégiques", href: "/presentationsPartenaire" },
+      { title: "Certifications obtenues grâce aux partenaires", href: "/certificationsPartenaire" },
       {
         title: "Opportunités pour devenir partenaire de Fireshield Security",
-        href: "/#"
+        href: "/opportuniteDetrePartenaires"
       },
       { title: "Autres partenariats", href: "/#" }
     ]
