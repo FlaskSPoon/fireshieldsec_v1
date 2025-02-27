@@ -39,8 +39,26 @@ export default function ContactPage() {
    animate={{ opacity: 1, y: 0 }} 
    transition={{ duration: 0.5 }}
  >
-   <h4 className="fw-bold">vous voulez accéder à nos services ou devenir partenaire ?</h4>
-   <h4 className="fw-bold text-white ">Contactez-nous :</h4>
+ <motion.h4 
+  className="fw-bold" 
+  style={{ color: "#4B0082" }}
+  initial={{ x: -100, opacity: 0 }} 
+  animate={{ x: 0, opacity: 1 }} 
+  transition={{ duration: 1 }}
+>
+  Vous voulez accéder à nos services ou devenir partenaire ?
+</motion.h4>
+
+<motion.h4 
+  className="fw-bold" 
+  style={{ color: "#4B0082" }}
+  initial={{ x: -100, opacity: 0 }} 
+  animate={{ x: 0, opacity: 1 }} 
+  transition={{ duration: 1, delay: 0.3 }}
+>
+  Contactez-nous :
+</motion.h4>
+
    <div className="d-flex align-items-center justify-content-center mb-2">
      <FaPhone className="me-2" size={25} color="#800020" />
      <span>(221) 33 801 57 16</span>
