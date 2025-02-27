@@ -81,22 +81,10 @@ export default function Infogerance() {
           </div>
         </div>
       </div>
-      <Hero />
+     
     </div>
   );
 }
 
 
  
-export function Hero(){
-
-  return(
-
-    <>
-   <div className="container-fluid p-0">
-   
-</div>
-
-    </>
-  )
-}

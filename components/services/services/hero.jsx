@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function HeroServices(){
 
-   return(
+   return typeof window !== 'undefined' &&(
     <>
     <div class="container">
     <div className="p-4">

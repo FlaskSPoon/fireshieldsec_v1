@@ -12,9 +12,10 @@ const menuItems = [
     title: "Services",
     href: "/services",
     subMenu: [
-      { title: "Formations et certifications", href: "/formations" },
+      { title: "Formations ", href: "/infogerance" },
       { title: "Stratégie, Cybersécurité et Consulting", href: "/strategies" },
-      { title: "Infogérence et Support SI", href: "/infogerance" },
+      { title: "Sensibilisation en Cybersécurité", href: "/formations" },
+      { title: "Formations et Certifications", href: "/certification" },
       {
         title: "Gouvernance des systèmes ",
         href: "/#"

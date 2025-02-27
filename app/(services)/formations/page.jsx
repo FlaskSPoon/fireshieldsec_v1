@@ -4,14 +4,14 @@ import Link from "next/link";
 import React from "react";
 
 export default function Formation() {
-  return (
+  return typeof window !== 'undefined' &&(
     <div className="container p-2">
       <div className="row d-flex align-items-center">
         {/* Première carte */}
         <div className="col-md-6">
           <div className="card p-3">
-            <h3>Formations et Sensibilisation</h3>
-            <p>
+            <h3 className="card bg-dark text-white text-center">Formations et Sensibilisation</h3>
+            <p className="" style={{}}>
               Notre programme de formation complet est conçu pour permettre à
               votre équipe d'acquérir les connaissances et les compétences
               nécessaires pour identifier, prévenir, et répondre efficacement
@@ -26,7 +26,7 @@ export default function Formation() {
 
         {/* Deuxième carte avec le carrousel */}
         <div className="col-md-6">
-          <div className="card p-3">
+          <div className=" p-3">
             <div
               id="carouselExampleControls"
               className="carousel slide"
@@ -117,7 +117,7 @@ export function Sensibilisation(){
   <div className="container-fluid"><h5 class=" py-2 text-center bg-danger">
           <Image className=""
                               alt="icon"
-                              src="/assets/img/icon/aboutIcon1_2.png"
+                              src="/assets/img/icon/padlock_3055803.png"
                               width="44"
                               height="44"
                             />SENSIBILISATION</h5>
