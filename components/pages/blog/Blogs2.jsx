@@ -54,7 +54,7 @@ export default function Blogs2() {
                       href={`/blog-details`}
                       className="gt-btn mt-1"
                     >
-                      Read More
+                      Lire plus
                       <i className="fa-sharp fa-light fa-arrow-right-long" />
                     </Link>
                   </div>

@@ -1,7 +1,8 @@
-import { blogCards } from "@/data/blogs";
+import { blogCards2 } from "@/data/blogs";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaArrowRightLong, FaCircleUser, FaTag } from "react-icons/fa6";
 
 export default function Blog() {
   return (
@@ -49,16 +50,16 @@ export default function Blog() {
               Consulter nos dernières publications
             </h2>
           </div>
-          <div className="blog-card-wrap style1">
-            {blogCards.map((card, index) => (
+          <div className="blog-card-wrap style1 mb-30">
+            {blogCards2.slice(0, 3).map((card, index) => (
               <div
+                key={index}
                 className="blog-card style1 img-shine wow fadeInUp"
                 data-wow-delay={card.delay}
-                key={index}
               >
                 <div className="blog-card-thumb style1">
                   <Image
-                    src={card.thumb}
+                    src={card.imgSrc}
                     width={322}
                     height={216}
                     alt="thumb"
@@ -66,34 +67,28 @@ export default function Blog() {
                 </div>
                 <div className="blog-card-body">
                   <div className="tag-cloud">
-                    {card.meta.map((metaItem, metaIndex) => (
-                      <div className="meta" key={metaIndex}>
-                        <span className="icon">
-                          <Image
-                            src={metaItem.icon}
-                            width={20}
-                            height={20}
-                            alt="icon"
-                          />
-                        </span>
-                        <span className="text">{metaItem.text}</span>
-                      </div>
-                    ))}
+                    <div className="meta">
+                      <span className="icon">
+                        <FaCircleUser size={22} color="#e02234" />
+                      </span>
+                      <span className="text">{card.userName}</span>
+                    </div>
+                    <div className="meta">
+                      <span className="icon">
+                        <FaTag size={22} color="#e02234" />
+                      </span>
+                      <span className="text">{card.category}</span>
+                    </div>
                   </div>
                   <h3 className="blog-title style1">
-                    <Link scroll={false} href={`/blog-details/${card.id}`}>
+                    <Link scroll={false} href={`/blog`}>
                       {card.title}
                     </Link>
                   </h3>
                   <div className="btn-wrapper">
                     <Link scroll={false} href={`/blog-details/${card.id}`}>
-                      Lire plus{" "}
-                      <Image
-                        alt="icon"
-                        width="16"
-                        height="16"
-                        src="/assets/img/icon/arrowIconDark.png"
-                      />
+                      Lire plus {""}
+                      <FaArrowRightLong size={15} />
                     </Link>
                   </div>
                   <div className="calendar">
