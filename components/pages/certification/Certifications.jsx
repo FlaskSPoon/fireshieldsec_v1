@@ -1,4 +1,4 @@
-import { projectItems } from "@/data/projects";
+import { certificationItems } from "@/data/projects";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,8 +8,11 @@ export default function Projects() {
     <section className="all-project-area mx-auto space-top pb-425">
       <div className="container">
         <div className="row">
-          {projectItems.map((item, index) => (
-            <div key={index} className="col-xl-4 col-md-6 col-12 mb-30">
+          {certificationItems.map((item, index) => (
+            <div
+              key={index}
+              className="col-xl-3 col-sm-6 col-md-6 col-12 mb-30"
+            >
               <div
                 className="project-card style1 img-shine wow fadeInUp"
                 data-wow-delay={item.delay}
@@ -29,13 +32,13 @@ export default function Projects() {
                       {item.title}
                     </Link>
                   </h4>
-                  <Link
+                  {/* <Link
                     scroll={false}
                     href={`/project-details/${item.id}`}
                     className="arrow-icon"
                   >
                     <i className="fa-solid fa-arrow-right"></i>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

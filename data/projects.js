@@ -3,95 +3,109 @@ export const projects1 = [
     id: 1,
     imgSrc: "/assets/img/project/projectThumb1_1.png",
     category: "Software",
-    title: "App Development",
+    title: "App Development"
   },
   {
     id: 2,
     imgSrc: "/assets/img/project/projectThumb1_2.png",
     category: "Technology",
-    title: "Product Design",
+    title: "Product Design"
   },
   {
     id: 3,
     imgSrc: "/assets/img/project/projectThumb1_3.png",
     category: "Security",
-    title: "Data Visualizations",
+    title: "Data Visualizations"
   },
   {
     id: 4,
     imgSrc: "/assets/img/project/projectThumb1_4.png",
     category: "Technology",
-    title: "IT Management",
+    title: "IT Management"
   },
   {
     id: 5,
     imgSrc: "/assets/img/project/projectThumb1_5.png",
     category: "Software",
-    title: "App Development",
+    title: "App Development"
   },
   {
     id: 6,
     imgSrc: "/assets/img/project/projectThumb1_6.png",
     category: "Technology",
-    title: "Product Design",
+    title: "Product Design"
   },
   {
     id: 7,
     imgSrc: "/assets/img/project/projectThumb1_2.png",
     category: "Security",
-    title: "Data Visualizations",
+    title: "Data Visualizations"
   },
   {
     id: 8,
     imgSrc: "/assets/img/project/projectThumb1_3.png",
     category: "Technology",
-    title: "IT Management",
-  },
+    title: "IT Management"
+  }
 ];
 
-export const projectItems = [
+export const certificationItems = [
   {
     id: 9,
     imgSrc: "/assets/img/project/projectThumb2_1.png",
-    category: "Technology",
-    title: "Platform Integration",
-    delay: ".3s",
+    category: "Information Security Management",
+    title: "ISO 27001 LA/LI",
+    delay: ".3s"
   },
   {
     id: 10,
     imgSrc: "/assets/img/project/projectThumb2_2.png",
-    category: "Security",
-    title: "Network Security",
-    delay: ".6s",
+    category: "Risk Management",
+    title: "ISO 27005 Risk Manager",
+    delay: ".6s"
   },
   {
     id: 11,
     imgSrc: "/assets/img/project/projectThumb2_3.png",
-    category: "Solution",
-    title: "Web Development",
-    delay: ".9s",
+    category: "Cybersecurity Management",
+    title: "ISO 27032 - Lead Cybersecurity Manager",
+    delay: ".9s"
   },
   {
     id: 12,
     imgSrc: "/assets/img/project/projectThumb2_9.png",
-    category: "Technology",
-    title: "IT Management",
-    delay: "1s",
+    category: "Quality Management",
+    title: "ISO 9001 LI/LA",
+    delay: "1s"
   },
   {
     id: 13,
     imgSrc: "/assets/img/project/projectThumb2_10.png",
-    category: "Technology",
-    title: "Software Development",
-    delay: "1.2s",
+    category: "Cybersecurity & IT Governance",
+    title: "CISSP",
+    delay: "1.2s"
   },
   {
     id: 14,
     imgSrc: "/assets/img/project/projectThumb2_11.png",
-    category: "Solution",
-    title: "Analytic Solutions",
-    delay: "1.4s",
+    category: "IT Audit & Security",
+    title: "CISA",
+    delay: "1.4s"
   },
+  {
+    id: 15,
+    imgSrc: "/assets/img/project/projectThumb2_11.png",
+    category: "Information Security Governance",
+    title: "CISM",
+    delay: "1.6s"
+  },
+  {
+    id: 16,
+    imgSrc: "/assets/img/project/projectThumb2_11.png",
+    category: "Cybersecurity Fundamentals",
+    title: "COMPTIA Security+",
+    delay: "1.8s"
+  }
 ];
 
-export const allProjects = [...projects1, ...projectItems];
+export const allProjects = [...projects1, ...certificationItems];
