@@ -53,8 +53,8 @@ export default function Projects() {
                   <Image
                     alt="icon"
                     src="/assets/img/icon/titleIconWhite.png"
-                    width="28"
-                    height="12"
+                    width="30"
+                    height="20"
                   />
                 </span>
               </h6>
@@ -97,7 +97,7 @@ export default function Projects() {
                       <Image
                         src={slide.imgSrc}
                         width={465}
-                        height={450}
+                        height={370}
                         alt="project image"
                       />
                     </div>
