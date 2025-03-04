@@ -8,15 +8,17 @@ export default  function Certification(){
     return(
         <>
         <div className="container  text-white">
-        <h1 className=""> <Image
+        <h1 className="border"> <Image
       alt="icon"
       src="/assets/img/hero/top-view.png"
       width={140}
       height={20} className="p-2 rounded-circle bg-danger float-end"
       
-    /> Nos Certifications</h1>
-        <p className=" d-flex justify-content-center p-4 " style={{fontSize:20}}> Nous proposons un accompagnement personnalisé pour les certifications <br/>en cybersécurité,
-        avec des formateurs chevronnés et certifiés.</p>
+    /> Nos Certifications
+    <p className=" d-flex justify-content-center p-4" style={{fontSize:15}}> Nous proposons un accompagnement personnalisé pour les certifications <br/>en cybersécurité,
+    avec des formateurs chevronnés et certifiés.</p>
+    </h1>
+        
 
         <div className="d-flex justify-content-between align-items-center">
   <div className="bg-dark">
@@ -54,7 +56,7 @@ export default  function Certification(){
 }
 export  function Specialisation(){
     function handleClick() {
-        alert('demande envoyée!');
+        alert('Message envoyé avec succés!');
       }
     return(
 
@@ -80,10 +82,7 @@ export  function Specialisation(){
       <li>➤ FSEC-WPEN : Test d’intrusion des serveurs et applications Web</li>
       <li>➤ FSEC-PENT1 : Tests d’intrusion</li>
       <li>➤ FSEC-PENT2 : Tests d’intrusion et développement d’exploits</li>
-      <li>➤ FSEC-WEB : Sécurité des serveurs et des applications Web</li>
-      <li>➤ OSINT : Reconnaissance passive</li>
-      <li>➤ FSEC-AR : Conception d’architectures sécurisées</li>
-      <li>➤ FSEC-REV : Rétroingénierie de logiciels malveillants</li>
+      
     </ul>
     <p className=" d-flex justify-content-center"><Link scroll={false} href={`/E-learning`} className="gt-btn gt-btn-icon justify-center flex flex-col items-center ">
               En savoir +

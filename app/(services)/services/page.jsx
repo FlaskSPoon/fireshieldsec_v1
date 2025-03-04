@@ -5,7 +5,6 @@ import About from "@/components/services/services/About";
 import VideoArrier from "@/components/services/services/videoArriere";
 import NosServices from "@/components/services/services/nos-services";
 import Expertise from "@/components/services/services/expertise";
-import Formation from "../formations/page";
 import Strategie from "../strategies/page";
 import Infogerance from "../infogerance/page";
 export const metadata = {
@@ -20,10 +19,9 @@ export default function Home(){
       <main className="main position-relative" id="mains">
         <HeroServices />
         {/* <NosServices/> */}
-       < Expertise/>
+       {/* < Expertise/> */}
        {/* <Strategie /> */}
         {/* <About /> */}
-  
       </main>
     </>
     )

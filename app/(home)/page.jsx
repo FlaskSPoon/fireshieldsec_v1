@@ -36,7 +36,6 @@ export default function Home() {
         <Testimonials />
         <Blog />
         <Cta />
-    
       </main>
     </>
   );
