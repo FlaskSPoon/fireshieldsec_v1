@@ -84,18 +84,12 @@ export default function HeroServices() {
               </motion.div>
             ))}
           </div>
-
           <div
             className="p-4 d-flex justify-content-center"
             style={{ maxWidth: "800px", padding: "10px" }}
           >
-            <p className="text-white text-center border bg-dark bg-dark">
-              La sécurité des systèmes d'information est cruciale pour la
-              pérennité de votre entreprise. Chez FIRESHIELD SECURITY, nous
-              proposons des solutions complètes et adaptées aux besoins
-              spécifiques des petites et moyennes entreprises. Notre mission est
-              de vous aider à protéger vos données sensibles, à prévenir les
-              cyberattaques et à assurer la continuité de vos opérations.
+            <p className="text-dark text-center d-flex justify-content-center justify-items-center ">
+            
             </p>
           </div>
 
@@ -109,28 +103,33 @@ export default function HeroServices() {
                 height="500"
               />
             </div>
-            <div className="col-sm-6 flex flex-col justify-center items-center p-4 bg-red-800 text-white px-2">
-              <div className="profile-wrapper flex justify-start m-5">
-                <Link scroll={false} href={`/contact`} className="gt-btn gt-btn-icon">
-                  En savoir +
-                </Link>
-              </div>
+            <div className="col-sm-6 flex flex-col justify-center items-center p-4 bg-red-800 text-dark px-2">
+            <div>
+          
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+            La sécurité des systèmes d'information est cruciale pour la
+                        pérennité de votre entreprise. Chez FIRESHIELD SECURITY, nous
+                        proposons des solutions complètes et adaptées aux besoins
+                        spécifiques des petites et moyennes entreprises. Notre mission est
+                        de vous aider à protéger vos données sensibles, à prévenir les
+                        cyberattaques et à assurer la continuité de vos opérations.
             </div>
+          </div>
+          <p className="p-4">
+            <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              details
+            </a>
+            
+          </p>
+          </div>
+            </div>
+            <div><Link scroll={false} href={`/contact`} className="gt-btn gt-btn-icon">
+                  En savoir +
+                </Link></div>
           </div>
 
-          <div className="container d-flex justify-content-center">
-            <div className="video-btn-wrap">
-              <a onClick={() => setOpen(true)} className="play-btn popup-video">
-                <Image
-                  alt="icon"
-                  src="/assets/img/icon/playerIcon.png"
-                  width="48"
-                  height="48"
-                />
-              </a>
-           
-            </div>
-          </div>
+          
 
           <ModalVideo
             channel="youtube"

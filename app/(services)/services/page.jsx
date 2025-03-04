@@ -18,10 +18,8 @@ export default function Home(){
       <SeoMeta title={metadata.title} />
       <main className="main position-relative" id="mains">
         <HeroServices />
-        {/* <NosServices/> */}
-       {/* < Expertise/> */}
-       {/* <Strategie /> */}
-        {/* <About /> */}
+     
+        <VideoArrier />
       </main>
     </>
     )
