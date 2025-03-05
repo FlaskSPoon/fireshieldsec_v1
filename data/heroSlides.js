@@ -4,8 +4,8 @@ export const slidesData = [
     bgSrc: "/assets/img/hero/hero-bg1_1.png",
     titleIconSrc: "/assets/img/icon/titleIconWhite.png",
     subtitle: "VOTRE PARTENAIRE EN CYBERSÉCURITÉ",
-    title1: "Sécurisation des Systèmes et",
-    title2: "IT Consulting",
+    title1: "Sécurisation",
+    title2: "et Consulting",
     text: "Protégez vos actifs numériques avec des solutions avancées en cybersécurité, audit et gestion des risques."
   },
   {
@@ -13,8 +13,8 @@ export const slidesData = [
     bgSrc: "/assets/img/hero/hero-bg1_2.png",
     titleIconSrc: "/assets/img/icon/titleIconWhite.png",
     subtitle: "VOTRE PARTENAIRE EN CYBERSÉCURITÉ",
-    title1: "Audit et Conformité",
-    title2: "Aux Normes de Sécurité",
+    title1: "Audit et",
+    title2: "Conformité",
     text: "Fireshield Security vous accompagne dans la mise en conformité ISO 27001, RGPD et autres standards internationaux."
   },
   {
@@ -22,8 +22,8 @@ export const slidesData = [
     bgSrc: "/assets/img/hero/hero-bg1_3.png",
     titleIconSrc: "/assets/img/icon/titleIconWhite.png",
     subtitle: "VOTRE PARTENAIRE EN CYBERSÉCURITÉ",
-    title1: "Surveillance et Réponse",
-    title2: "Aux Incidents de Sécurité",
+    title1: "Surveillance",
+    title2: "Et Détection",
     text: "Détection proactive des menaces, réponse rapide aux cyberattaques et renforcement de la résilience de votre entreprise."
   }
 ];

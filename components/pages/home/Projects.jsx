@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Image from "next/image";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 export default function Projects() {
   const swiperOptions = {
@@ -27,7 +28,10 @@ export default function Projects() {
     <section className="project-area">
       <div
         className="project-wrap style1 space fix"
-        style={{ backgroundImage: "url(/assets/img/bg/portfolioBg1_1.png)" }}
+        style={{
+          backgroundImage: "url(/assets/img/bg/portfolioBg1_1.png)",
+          backgroundSize: "cover"
+        }}
       >
         <div className="container">
           <div className="title-wrap mb-50">
@@ -44,13 +48,13 @@ export default function Projects() {
                     height="12"
                   />
                 </span>
-                NOS PROJETS
+                WEBINAIRES ET EVENEMENTS
                 <span className="ms-1">
                   <Image
                     alt="icon"
                     src="/assets/img/icon/titleIconWhite.png"
-                    width="28"
-                    height="12"
+                    width="30"
+                    height="20"
                   />
                 </span>
               </h6>
@@ -58,7 +62,7 @@ export default function Projects() {
                 className="title text-start text-white wow fadeInUp"
                 data-wow-delay=".6s"
               >
-                Découvrez nos derniers projets
+                Découvrez nos derniers évènements
               </h2>
             </div>
             <div
@@ -66,20 +70,10 @@ export default function Projects() {
               data-wow-delay=".9s"
             >
               <button className="slider-arrow style2 snbp1">
-                <Image
-                  alt="img"
-                  src="/assets/img/icon/arrowLeft.png"
-                  width="20"
-                  height="20"
-                />
+                <FaArrowLeftLong size={18} className="text-white" />
               </button>
               <button className="slider-arrow style2 slider-next snbn1">
-                <Image
-                  alt="img"
-                  src="/assets/img/icon/arrowRight.png"
-                  width="20"
-                  height="20"
-                />
+                <FaArrowRightLong size={18} className="text-white" />
               </button>
             </div>
           </div>
@@ -103,7 +97,7 @@ export default function Projects() {
                       <Image
                         src={slide.imgSrc}
                         width={465}
-                        height={450}
+                        height={370}
                         alt="project image"
                       />
                     </div>

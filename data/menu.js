@@ -31,36 +31,24 @@ const menuItems = [
   },
   {
     title: "Ressources",
-    href: "/ressources",
+    href: "/blog",
     subMenu: [
-      { title: "Notre blog", href: "/#" },
-      { title: "Webinaires et événements", href: "/#" },
-      { title: "Guides pratiques", href: "/#" }
+      { title: "Notre blog", href: "/blog" },
+      { title: "Webinaires et événements", href: "/event" },
+      { title: "Guides pratiques", href: "/guide" }
     ]
   },
   {
     title: "Partenaires",
     href: "/partenaires",
     subMenu: [
-      { title: "Présentation des collaborations stratégiques", href: "/#" },
-      { title: "Certifications obtenues grâce aux partenaires", href: "/#" },
-      {
-        title: "Opportunités pour devenir partenaire de Fireshield Security",
-        href: "/#"
-      },
-      { title: "Autres partenariats", href: "/#" }
+      { title: "Collaborations stratégiques", href: "/partenaires" },
+      { title: "Certifications de nos partenaires", href: "/certifications" }
     ]
   },
   {
     title: "A propos de",
-    href: "/",
-    subMenu: [
-      { title: "Qui sommes-nous ?", href: "/#" },
-      { title: "Vision et mission", href: "/#" },
-      { title: "Domaines d'expertise", href: "/#" },
-      { title: "Historique et valeur", href: "/#" },
-      { title: "Notre équipe", href: "/#" }
-    ]
+    href: "/about"
   }
 ];
 

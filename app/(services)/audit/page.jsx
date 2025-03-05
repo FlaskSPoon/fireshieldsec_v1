@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { conseils, gouvernance } from "@/data/conseilAudit";
-import { audit, servicesG } from "@/data/servicesG";
+import { audit, audits, servicesG } from "@/data/servicesG";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,110 +40,133 @@ export default function Audit() {
 
         <section>
           <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
-            {audit.map((service, index) => (
-              <motion.div
-                className="service-card style2"
-                style={{ width: "600px" }}
-                key={index}
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-              >
-                <div className="service-thumb"></div>
-                <div className="service-content">
-                  <Image
-                    className="d-flex justify-content-center"
-                    alt="icon"
-                    src={service.bgImage}
-                    width={40}
-                    height={30}
-                  />
-                  <h6 className="service-content_title">
-                    <Link scroll={false} href={`/audit/${service.id}`}>
-                      {service.title}
-                    </Link>
-                  </h6>
-                  <p className="service-content_text">{service.description}</p>
-                  <p className="service-content_text text-danger">{service.details}</p>
-                  <span>{service.def}</span>
-                  <p className="service-content_text text-danger">{service.detailsplus}</p>
-                  <span>{service.defs}</span>
-                  <div>
-                    <Link scroll={false} className="link" href={`/service-details/${service.id}`}>
-                      Plus de détails
-                      <i className="fa-sharp fa-light fa-arrow-right-long" />
-                    </Link>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
           <div className="container">
             <div className="row">
-              <div className="col-md-6">
+              <div className="">
                 <div className="bg-base-100 w-96 shadow-sm">
                   <figure className="px-1 pt-1"></figure>
-                  <div className="card-body items-center text-center">
-                    <h2 className="card-title">Conseils</h2>
-                    <div className="flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory p-4 w-full justify-center">
-                      {conseils.map((service, index) => (
-                        <motion.div
-                          className="service-card style2"
-                          key={index}
-                          initial={{ opacity: 0, y: 50 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, delay: index * 0.2 }}
-                        >
-                          <div className="service-thumb"></div>
-                          <div className="service-content text-center">
-                            <em className="service-content_title">
-                              <Link href={`/audit/${service.id}`}>{service.title}</Link>
-                            </em>
-                          </div>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+    
+                  <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
+                  {audits.map((service, index) => (
+            <div
+              className="service-card style4 wow fadeInUp"
+              data-wow-delay={service.delay}
+              key={index}
+            >
+              <div className="service-icon">
+                <Image src={service.icon} width={100} height={20} alt="icon" />
               </div>
-              <div className="col-md-6">
-                <div className="bg-base-10 w-10">
-                  <figure className="px-1 pt-1"></figure>
-                  <div className="card-body items-center text-center">
-                    <h2 className="card-title">Gouvernance</h2>
-                    <div>
-                      {gouvernance.map((service, index) => (
-                        <motion.div
-                          className="service-card style2"
-                          key={index}
-                          initial={{ opacity: 0, y: 50 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, delay: index * 0.2 }}
-                        >
-                          <div className="service-thumb"></div>
-                          <div className="service-content">
-                            <em className="service-content_title">
-                              <Link scroll={false} href={`/audit/${service.id}`}>
-                                {service.title}
-                              </Link>
-                            </em>
-                          </div>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card-actions">
-                <motion.button
-                  className="btn btn-danger d-flex justify-content-center"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
+              <h3 className="service-title">
+                <Link scroll={false} href={`/service-1`}>
+                  {service.title}
+                </Link>
+              </h3>
+              <p className="text">{service.description}</p>
+              <p className="text text-danger">{service.details}</p>
+              <p className="text text-danger"> {service.detailsplus}</p>
+          
+              <div className="btn-wrapper">
+                <Link
+                  scroll={false}
+                  className="link-btn"
+                  href={`/service-details/${service.id}`}
                 >
-                  En Savoir+
-                </motion.button>
+                  En savoir plus{" "}
+                  <i className="fa-sharp fa-light fa-arrow-right-long" />
+                </Link>
               </div>
+            </div>
+          ))}
+          </div>
+                </div>
+              </div>
+             
+             
+            </div>
+          </div>
+          </div>
+               <div className=""><h2>CONSEILS</h2> 
+          <div className="container">
+            <div className="row">
+              <div className="">
+                <div className="bg-base-100 w-96 shadow-sm">
+                  <figure className="px-1 pt-1"></figure>
+             
+                  <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
+                  {conseils.map((service, index) => (
+            <div
+              className="service-card style4 wow fadeInUp"
+              data-wow-delay={service.delay}
+              key={index}
+            >
+              <div className="service-icon">
+                <Image src={service.icon} width={100} height={20} alt="icon" />
+              </div>
+              <h3 className="service-title">
+                <Link scroll={false} href={`/service-1`}>
+                  {service.title}
+                </Link>
+              </h3>
+              <p className="text">{service.description}</p>
+              <div className="btn-wrapper">
+                <Link
+                  scroll={false}
+                  className="link-btn"
+                  href={`/service-details/${service.id}`}
+                >
+                  En savoir plus{" "}
+                  <i className="fa-sharp fa-light fa-arrow-right-long" />
+                </Link>
+              </div>
+            </div>
+          ))}
+          </div>
+                </div>
+              </div>
+             
+             
+            </div>
+          </div>
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="">
+                <div className="bg-base-100 w-96 shadow-sm">
+                  <figure className="px-1 pt-1"></figure>
+                  <h2 className=" p-4 text-dark">GOUVERNANCE</h2>
+                  <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
+                  {gouvernance.map((service, index) => (
+            <div
+              className="service-card style4 wow fadeInUp"
+              data-wow-delay={service.delay}
+              key={index}
+            >
+              <div className="service-icon">
+                <Image src={service.icon} width={100} height={20} alt="icon" />
+              </div>
+              <h3 className="service-title">
+                <Link scroll={false} href={`/service-1`}>
+                  {service.title}
+                </Link>
+              </h3>
+              <p className="text">{service.description}</p>
+              <div className="btn-wrapper">
+                <Link
+                  scroll={false}
+                  className="link-btn"
+                  href={`/service-details/${service.id}`}
+                >
+                  En savoir plus{" "}
+                  <i className="fa-sharp fa-light fa-arrow-right-long" />
+                </Link>
+              </div>
+            </div>
+          ))}
+          </div>
+                </div>
+              </div>
+             
+             
             </div>
           </div>
         </section>

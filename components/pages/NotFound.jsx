@@ -18,16 +18,18 @@ export default function NotFound() {
                 />
               </div>
               <h2>
-                <span>Oops! </span> Page not found
+                <span>Oops! </span> Page non trouvée
               </h2>
-              <p>The page you are looking for does not exist</p>
+              <p>
+                La ressource à la quelle vous éssayez d'accéder n'existe pas
+              </p>
               <Link
                 scroll={false}
                 href={`/`}
                 className="gt-btn gt-btn-icon wow fadeInUp"
                 data-wow-delay=".8s"
               >
-                Go Back Home
+                Retour à l'accueil
               </Link>
             </div>
           </div>

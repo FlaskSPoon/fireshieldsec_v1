@@ -21,7 +21,7 @@ export default function Offering() {
               className="title text-center mb-85 text-white wow fadeInUp"
               data-wow-delay=".6s"
             >
-              FIRESHIELD SECURITY se distingue par :
+              FIRESHIELD SECURITY se distingue par
             </h2>
           </div>
           <div className="offer-box-wrap">

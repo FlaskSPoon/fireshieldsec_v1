@@ -42,46 +42,34 @@ export default function HeroServices() {
           </div>
 
           <div className="service-card-wrapper style2 p-4">
-            {servicesG.map((service, index) => (
-              <motion.div
-                className="service-card style2 wow fadeInUp"
+          {servicesG.map((service, index) => (
+              <div
+                className="service-card style1 wow fadeInUp"
                 data-wow-delay={service.delay}
                 key={index}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                whileHover={{
-                  scale: 1.05, // Effet de zoom
-                  backgroundColor: "#f8f9fa", // Changement de la couleur de fond sur hover
-                  transition: { duration: 0.3 },
-                }}
-                style={{
-                  borderRadius: "10px", // Bordures arrondies pour les cartes
-                  overflow: "hidden", // Empêche que le contenu dépasse
-                  padding: "20px", // Ajout de padding pour que le contenu ne touche pas les bords
-                }}
               >
-                <div className="service-thumb"></div>
-                <div className="service-content">
-                  <h3
-                    className="service-content_title"
-                    style={{ color: "red" }} // Titre en rouge
-                  >
-                    <Link scroll={false} href={`/audit/${service.id}`}>
+                <div className="card_icon">
+                  <Image src={service.icon} width={40} height={40} alt="icon" />
+                </div>
+                <div className="card_content">
+                  <h3>
+                    <Link
+                      scroll={false}
+                      href={`/service-details/${service.id}`}
+                      className="title"
+                    >
                       {service.title}
                     </Link>
                   </h3>
-                  <p className="service-content_text">{service.description}</p>
-                  <Link
-                    scroll={false}
-                    className="link"
-                    href={`/service-details/${service.id}`}
-                  >
-                    Plus de détails
-                    <i className="fa-sharp fa-light fa-arrow-right-long" />
+                  <p className="text">{service.description}</p>
+                </div>
+                <div className="link-btn">
+                  <Link scroll={false} href={`/service-details/${service.id}`}>
+                    <i className="fa-sharp fa-regular fa-arrow-right-long" />
                   </Link>
                 </div>
-              </motion.div>
+               
+              </div>
             ))}
           </div>
           <div
@@ -104,25 +92,24 @@ export default function HeroServices() {
               />
             </div>
             <div className="col-sm-6 flex flex-col justify-center items-center p-4 bg-red-800 text-dark px-2">
-            <div>
-          
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-            La sécurité des systèmes d'information est cruciale pour la
-                        pérennité de votre entreprise. Chez FIRESHIELD SECURITY, nous
-                        proposons des solutions complètes et adaptées aux besoins
-                        spécifiques des petites et moyennes entreprises. Notre mission est
-                        de vous aider à protéger vos données sensibles, à prévenir les
-                        cyberattaques et à assurer la continuité de vos opérations.
-            </div>
-          </div>
-          <p className="p-4">
-            <a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              details
-            </a>
-            
-          </p>
-          </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body border bg-white">
+  La sécurité des systèmes d'information
+est cruciale pour la pérennité de votre
+entreprise. Chez FIRESHIELD SECURITY,
+nous proposons des solutions complètes
+et adaptées aux besoins spécifiques des
+petites et moyennes entreprises. Notre 
+mission est de vous aider à protéger vos 
+données sensibles, à prévenir les 
+cyberattaques et à assurer la continuité 
+de vos opérations.
+  </div>
+</div>
             </div>
             <div><Link scroll={false} href={`/contact`} className="gt-btn gt-btn-icon">
                   En savoir +

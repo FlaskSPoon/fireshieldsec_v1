@@ -4,6 +4,11 @@ import { EffectFade } from "swiper/modules";
 import { slidesData } from "@/data/heroSlides";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  FaArrowLeftLong,
+  FaArrowRightLong,
+  FaShieldHalved
+} from "react-icons/fa6";
 export default function Hero() {
   return (
     <section className="hero-1" id="hero">
@@ -30,12 +35,10 @@ export default function Hero() {
                         data-ani="slideindown"
                         data-ani-delay="0.2s"
                       >
-                        <Image
-                          className="me-1"
-                          src={slide.titleIconSrc}
-                          width={28}
-                          height={12}
-                          alt="icon"
+                        <FaShieldHalved
+                          size={22}
+                          color="#fff"
+                          className="me-2"
                         />
                         {slide.subtitle}
                       </h6>
@@ -64,7 +67,7 @@ export default function Hero() {
                       </p>
                       <Link
                         scroll={false}
-                        href={`/contact`}
+                        href={`/about`}
                         className="gt-btn gt-btn-icon"
                         data-ani="slideinup"
                         data-ani-delay="0.6s"
@@ -80,23 +83,13 @@ export default function Hero() {
         ))}
       </Swiper>
       <button data-slider-prev="#heroSlide1" className="slider-arrow style2">
-        <Image
-          alt="img"
-          src="/assets/img/icon/arrowLeft.png"
-          width="20"
-          height="20"
-        />
+        <FaArrowLeftLong size={18} className="text-white" />
       </button>
       <button
         data-slider-next="#heroSlide1"
         className="slider-arrow style2 slider-next"
       >
-        <Image
-          alt="img"
-          src="/assets/img/icon/arrowRight.png"
-          width="20"
-          height="20"
-        />
+        <FaArrowRightLong size={18} className="text-white" />
       </button>
       <div className="scroll-down">
         <a href="#service-area" className="hero-scroll-wrap">

@@ -3,6 +3,7 @@ import { newsCategories, recentItems, tags } from "@/data/blogs";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { FaCalendarDay, FaCalendarDays } from "react-icons/fa6";
 
 export default function Sidebar() {
   return (
@@ -13,11 +14,11 @@ export default function Sidebar() {
           data-wow-delay=".2s"
         >
           <div className="wid-title">
-            <h3>Search</h3>
+            <h3>Rechercher</h3>
           </div>
           <div className="search-widget">
             <form onSubmit={(e) => e.preventDefault()}>
-              <input type="text" placeholder="Search here" />
+              <input type="text" placeholder="Votre recherche ici..." />
               <button type="submit">
                 <i className="fa-sharp fa-light fa-magnifying-glass" />
               </button>
@@ -48,7 +49,7 @@ export default function Sidebar() {
           data-wow-delay=".6s"
         >
           <div className="wid-title">
-            <h3>Recent Post</h3>
+            <h3>Posts Recents</h3>
           </div>
           <div className="recent-post-area">
             {recentItems.map((item, index) => (
@@ -59,13 +60,8 @@ export default function Sidebar() {
                 <div className="recent-content">
                   <ul>
                     <li>
-                      <Image
-                        alt="icon"
-                        src="/assets/img/icon/calendarIcon.png"
-                        width="20"
-                        height="20"
-                      />
-                      {item.date}
+                      <FaCalendarDays size={16} color="#e02234" />
+                      {" " + item.date}
                     </li>
                   </ul>
                   <h6>
