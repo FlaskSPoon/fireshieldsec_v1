@@ -84,6 +84,7 @@ export const services2 = [
   }
 ];
 
+
 export const servicesStyle2 = [
   {
     id: 14,

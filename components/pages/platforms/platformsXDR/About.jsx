@@ -13,6 +13,7 @@ export default function About() {
           height="486"
         />
       </div>
+      
       <div className="container">
         <div className="about-wrapper style3 pt-50 space-bottom">
           <div className="about-thumb-box wow fadeInLeft" data-wow-delay=".3s">
