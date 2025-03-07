@@ -1,8 +1,5 @@
 "use client"
 
-import { metadata } from "@/app/not-found";
-import SeoMeta from "@/components/common/SeoMeta";
-import { autre, icn, pen } from "@/data/certification";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,69 +7,79 @@ export default  function Certification(){
 
     return(
         <>
-              <SeoMeta title={metadata.title} />
-
-              <div  className="  breadcumb"
-            data-bg-src=""
-            style={{ backgroundImage: "url(/assets/img/hero/breadcumbBg.png)" }}>
-              <div className="container text-center text-white">
-              <div className="page-heading">
-                <h1 className="wow fadeInUp text-white" data-wow-delay=".3s">
-                  Nos Formation & Certifications
-                </h1>
-                <ul
-                  className="breadcrumb-items wow fadeInUp"
-                  data-wow-delay=".5s"
-                >
-                  <li className="text-white">
-                    <Link scroll={false} href={`/`}>
-                      {" "}
-                      Accueil{" "}
-                    </Link>
-                  </li>
-                  <li>
-                    <i className="fas fa-chevrons-right" />
-                  </li>
-                  <li>Formations</li>
-                </ul>
-              </div>
-            </div>
-            </div>
-        <div>
-
-        <div className="d-flex justify-content-between align-items-center">
-  <div className="bg-dark">
-    <h5 className="text-dark bg-danger m-6 d-flex justify-content-center">CERTIFICATIONS PROPOSÉES</h5>
-    <ul className="text-light">
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1 me-2">+</span>ISO 27001 LA/LI</li>
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1 me-2">+</span>ISO 27005 Risk Manager</li>
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1 me-2">+</span>ISO 27032 - Lead Cybersecurity Manager</li>
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1 me-2">+</span>ISO 9001 LI/LA</li>
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1 me-2">+</span>CISSP</li>
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1 me-2">+</span>CISA</li>
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1 me-2">+</span>CISM</li>
-      <li className="mb-3"><span className="bg-danger rounded-circle p-1">+</span>COMPTIA Security</li>
-    </ul>
-    
-  </div>
-  
-  <div className="w-50">
-    <Image
+        <div className="container  text-white">
+        <h1 className="border"> <Image
       alt="icon"
-      src="/assets/img/hero/medium.png"
-      width={1000}
-      height={60}
-      className="w-100 object-cover"
-    />
-  </div>
- 
-</div>
-
-        </div>
+      src="/assets/img/hero/top-view.png"
+      width={140}
+      height={20} className="p-2 rounded-circle bg-danger float-end"
+      
+    /> Nos Certifications
+    <p className=" d-flex justify-content-center p-4" style={{fontSize:15}}> Nous proposons un accompagnement personnalisé pour les certifications <br/>en cybersécurité,
+    avec des formateurs chevronnés et certifiés.</p>
+    </h1>
         
-       <Specialisation />
-        </>
-    )
+
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="bg-dark">
+              <h5 className="text-dark bg-danger p-4 m-6 d-flex justify-content-center">
+                CERTIFICATIONS PROPOSÉES
+              </h5>
+              <ul className="text-light p-4">
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  ISO 27001 LA/LI
+                </li>
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  ISO 27005 Risk Manager
+                </li>
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  ISO 27032 - Lead Cybersecurity Manager
+                </li>
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  ISO 9001 LI/LA
+                </li>
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  CISSP
+                </li>
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  CISA
+                </li>
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  CISM
+                </li>
+                <li className="mb-3">
+                  <span className="bg-danger rounded-circle p-1 me-2">+</span>
+                  COMPTIA Security
+                </li>
+              </ul>
+            </div>
+
+            <div className="w-50">
+              <Image
+                alt="icon"
+                src="/assets/img/hero/medium.png"
+                width={1000}
+                height={60}
+                className="w-100 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <Specialisation />
+
+        <div className="pb-300" />
+        <Cta />
+      </main>
+    </>
+  );
 }
 export  function Specialisation(){
     function handleClick() {
@@ -81,167 +88,69 @@ export  function Specialisation(){
     return(
 
         <>
-        <div class="container-fluid pt-4">
-        <div className="text-center">
-  <div className="bg-white border border-gray-200 rounded-lg shadow-md p-6 inline-block my-4 animate-slideIn">
-    <h5 className="card-title inline-block px-3 py-1">
-      FORMATIONS SPÉCIALISÉES
-    </h5>
-    <p className="card-text mt-2">
-      Nous développons des formations propriétaires pour répondre aux besoins <br/>
-      spécifiques de vos équipes techniques en cybersécurité et sécurité de
-      l’information.
-    </p>
-  </div>
-</div>
-        
-        
-       
-        
-        <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
-                  {icn.map((service, index) => (
-            <div
-              className="service-card style4 wow fadeInUp"
-              data-wow-delay={service.delay}
-              key={index}
-            >
-              <div className="service-icon">
-                <Image src={service.icon} width={100} height={20} alt="icon" />
-              </div>
-              <h3 className="service-title">
-                <Link scroll={false} href={`/service-1`}>
-                  {service.title}
-                </Link>
-              </h3>
-              <p className="text">{service.description}</p>
-              <p className="text ">{service.details}</p>
-              <p className="text "> {service.detailsplus}</p>
-          
-              {/* <div className="btn-wrapper">
-                <Link
-                  scroll={false}
-                  className="link-btn"
-                  href={`/service-details/${service.id}`}
-                >
-                 
-                  <i className="fa-sharp fa-light fa-arrow-right-long" />
-                </Link>
-              </div> */}
-            </div>
-          ))}
-          </div>
-      </div>
-      <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
-                  {pen.map((service, index) => (
-            <div
-              className="service-card style4 wow fadeInUp"
-              data-wow-delay={service.delay}
-              key={index}
-            >
-              <div className="service-icon">
-                <Image src={service.icon} width={100} height={20} alt="icon" />
-              </div>
-              <h3 className="service-title">
-                <Link scroll={false} href={`/service-1`}>
-                  {service.title}
-                </Link>
-              </h3>
-              <p className="text">{service.description}</p>
-              <p className="text ">{service.details}</p>
-              <p className="text "> {service.detailsplus}</p>
-          <p className="image">{service.bgImage}</p>
-              {/* <div className="btn-wrapper">
-                <Link
-                  scroll={false}
-                  className="link-btn"
-                  href={`/service-details/${service.id}`}
-                >
-                 
-                  <i className="fa-sharp fa-light fa-arrow-right-long" />
-                </Link>
-              </div> */}
-            </div>
-          ))}
-          </div>
-     
+        <div className="d-flex justify-content-between align-items-start">
+  
 
-<div className="container fluid">
-<div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
-                  {autre.map((service, index) => (
-            <div
-              className="service-card style4 wow fadeInUp"
-              data-wow-delay={service.delay}
-              key={index}
-            >
-              <div className="service-icon">
-                <Image src={service.icon} width={70} height={20} alt="icon" />
-              </div>
-              <h3 className="service-title">
-                <Link scroll={false} href={`/service-1`}>
-                  {service.title}
-                </Link>
-              </h3>
-              <p className="text">{service.description}</p>
-              <p className="text text-danger">{service.details}</p>
-              <p className="text text-danger"> {service.detailsplus}</p>
-          
-              {/* <div className="btn-wrapper">
-                <Link
-                  scroll={false}
-                  className="link-btn"
-                  href={`/service-details/${service.id}`}
-                >
-                 
-                  <i className="fa-sharp fa-light fa-arrow-right-long" />
-                </Link>
-              </div> */}
-            </div>
-          ))}
-          </div>
+  <div className="w-50 card bg-light">
+    <h5 className="text-danger card text-center">FORMATIONS SPÉCIALISÉES</h5>
+    <ul className="text-dark">
+      <li>➤ FSEC-INT1 : Techniques essentielles de cybersécurité</li>
+      <li>➤ FSEC-INT2 : Fondamentaux techniques de la cybersécurité</li>
+      <li>➤ FSEC-IND : Cybersécurité des systèmes industriels</li>
+      <li>➤ FSEC-IoT : Sécurité des objets connectés</li>
+      <li>➤ FSEC-MOB : Audit sécurité d’applications mobiles Android et iOS</li>
+      <li>➤ FSEC-PKI : Principes et mise en œuvre des PKI</li>
+      <li>➤ FSEC-INC1 : Surveillance, détection et réponse aux incidents de sécurité</li>
+      <li>➤ FSEC-INC2 : Surveillance, détection et réponse aux incidents avancée</li>
+      <li>➤ FCySOC : Détection des incidents de sécurité</li>
+      <li>➤ FSEC-AF2 : Analyse forensique avancée</li>
+      <li>➤ C-AF1 : Analyse inforensique Windows</li>
+      <li>➤ FSEC-iPENT : Tests d’intrusion des systèmes industriels</li>
+      <li>➤ FSEC-WPEN : Test d’intrusion des serveurs et applications Web</li>
+      <li>➤ FSEC-PENT1 : Tests d’intrusion</li>
+      <li>➤ FSEC-PENT2 : Tests d’intrusion et développement d’exploits</li>
+      
+    </ul>
+    <p className=" d-flex justify-content-center"><Link scroll={false} href={`/E-learning`} className="gt-btn gt-btn-icon justify-center flex flex-col items-center ">
+              En savoir +
+            </Link></p>
+  </div>
+
+  <div className="w-50 bg-light p-4 rounded shadow">
+    <h5 className="text-center text-dark bg-danger p-2 rounded">INSCRIPTION</h5>
+    <form>
+      <div className="mb-3">
+        <label className="form-label" required>Nom & Prénom</label>
+        <input type="text" className="form-control" placeholder="Votre Nom" />
+      </div>
+      <div className="mb-3">
+        <label className="form-label" required>Email</label>
+        <input type="email" className="form-control" placeholder="Votre Email" />
+      </div>
+      <div className="mb-3">
+        <label className="form-label" required>Téléphone</label>
+        <input type="tel" className="form-control" placeholder="Votre Téléphone" />
+      </div>
+      <div className="mb-3">
+        <label className="form-label" required>Formation</label>
+        <select className="form-select">
+          <option value="" required>Sélectionnez la formation</option>
+          <option>FSEC-INT1</option>
+          <option>FSEC-INT2</option>
+          <option>FSEC-IND</option>
+          <option>FSEC-IoT</option>
+          <option>FSEC-MOB</option>
+          <option>FSEC-PKI</option>
+          <option> FSEC-PENT1</option>
+          <option>FSEC-WEB</option>
+        </select>
+      </div>
+      <button className="btn btn-danger w-100" onClick={handleClick}>S'inscrire</button>
+    </form>
+  </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div>
         </>
     )
    
 }
-
-{/* <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div> */}

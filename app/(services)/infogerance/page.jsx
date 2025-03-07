@@ -4,19 +4,16 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import { motion } from "framer-motion";
-import SeoMeta from '@/components/common/SeoMeta';
-import { metadata } from '@/app/not-found';
 export default function Infogerance() {
   return (
-    <>      <SeoMeta title={metadata.title} />
-    <div className="">
+    <div className="container">
       <h2 className=" text-center text-dark mt-2"style={{
       backgroundImage: "url('/assets/img/hero/business-person.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       width: "100vw", 
-      minHeight: "60vh",
+      minHeight: "40vh",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
@@ -92,53 +89,49 @@ de métier.{" "}
           </div>
           </div>
 
-          <div className=" text-center p-3">
-            <h5 className="bg-danger text-white p-2 card">SUPPORT SI</h5>
-            <p className="text-dark  card ">
-            Nous proposons une gamme complète 
-de services de support des systèmes<br/> 
-d'information pour garantir la disponibilité 
-et la performance de vos infrastructures.
-            </p>
-            {/* <Image alt="icon" src="/assets/img/hero/undraw_ship.svg" width="280" height="82" /> */}
-            <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
-            {support_si.map((service, index) => (
-              <motion.div
-                className="service-card style2"
-                style={{ width: "600px" }}
-                key={index}
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-              >
-                <div className="service-thumb"></div>
-                <div className="service-content">
-                  {/* <Image
-                    className="d-flex justify-content-center"
-                    alt="icon"
-                    src={service.bgImage}
-                    width={40}
-                    height={30}
-                  /> */}
-                  <h6 className="service-content_title">
-                    <Link scroll={false} href={`/audit/${service.id}`}>
-                      {service.title}
-                    </Link>
-                  </h6>
-                  <p className="service-content_text">{service.description}</p>
-                
-                
-                  
-                  <div>
-                    <Link scroll={false} className="link" href={`/service-details/${service.id}`}>
-                      Plus de détails
-                      <i className="fa-sharp fa-light fa-arrow-right-long" />
-                    </Link>
-                  </div>
+              <div className=" text-center p-3">
+                <h5 className="bg-danger text-white p-2 card">SUPPORT SI</h5>
+                <p className="text-dark">
+                  Nous proposons une gamme complète de services de support des
+                  systèmes
+                  <br />
+                  d'information pour garantir la disponibilité et la performance
+                  de vos infrastructures.
+                </p>
+                <div className="service-card-wrapper style2 p-4 d-flex justify-centent-center">
+                  {support_si.map((service, index) => (
+                    <div
+                      className="service-card style2"
+                      style={{ width: "600px" }}
+                      key={index}
+                    >
+                      <div className="service-thumb"></div>
+                      <div className="service-content">
+                        <h6 className="service-content_title">
+                          <Link scroll={false} href={`/audit/${service.id}`}>
+                            {service.title}
+                          </Link>
+                        </h6>
+                        <p className="service-content_text">
+                          {service.description}
+                        </p>
+
+                        <div>
+                          <Link
+                            scroll={false}
+                            className="link"
+                            href={`/service-details/${service.id}`}
+                          >
+                            Plus de détails
+                            <i className="fa-sharp fa-light fa-arrow-right-long" />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </motion.div>
-            ))}
-          </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -148,9 +141,5 @@ et la performance de vos infrastructures.
       </div>
      
     </div>
-    </>
   );
 }
-
-
- 

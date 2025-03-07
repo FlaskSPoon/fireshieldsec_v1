@@ -1,32 +1,18 @@
-"use client";
-import React from 'react';
-import { motion } from 'framer-motion';
+import SeoMeta from "@/components/common/SeoMeta";
+import Cta from "@/components/footers/Cta";
+import React from "react";
 import Image from "next/image";
 import { detection, proteger, reponse, strategie } from '@/data/strategie';
 import Link from 'next/link';
-import SeoMeta from '@/components/common/SeoMeta';
-import { metadata } from '@/app/not-found';
 
-export default function Strategie() {
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-  };
-
-  const fadeInLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
-  };
-
-  const fadeInRight = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
-  };
-
+export const metadata = {
+  title: "Stratégie, Cybersécurité et Consulting | Fireshield Security",
+  description:
+    "Cybersécurité, Gestion des systèmes d'information (SI), Conseil, Protection et Détection"
+};
+export default function Page() {
   return (
     <>
-    
-    <SeoMeta title={metadata.title}/>
       <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="border rounded text-center">
         <h1 style={{
           backgroundImage: "url('/assets/img/hero/blue-colos.png')",
@@ -82,58 +68,56 @@ export default function Strategie() {
           ))}
         </div>
 
-        <motion.h2 initial="hidden" whileInView="visible" variants={fadeInRight} className="text-white bg-dark text-center" style={{
-          backgroundImage: "url('/assets/img/about/stock.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          width: "100vw",
-          minHeight: "30vh",
-          display: "flex",
-          flexDirection: "column",
-          textAlign: "center",
-          padding: "80px"
-        }}>
-          REPONSE
-        </motion.h2>
-        <div className="service-card-wrapper style2 p-4">
-          {reponse.map((service, index) => (
-            <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} key={index}>
-              <div className="service-content">
-                {/* <Image className="d-flex justify-content-center" alt="icon" src={service.bgImage} width={40} height={10} /> */}
-                <h6 className="service-content_title">
-                  <Link scroll={false} href={`/audit/${service.id}`}>{service.title}</Link>
-                </h6>
-                <p className="service-content_text">{service.description}</p>
-              </div>
-            </motion.div>
-          ))}
+          <div className="mt-50 mb-5">
+            <h5 className="bg-danger text-white text-center fs-3 p-2 card">
+              REPONSE
+            </h5>
+            <div className="service-card-wrapper style2 p-4">
+              {reponse.map((service, index) => (
+                <div className="service-content">
+                  {/* <Image className="d-flex justify-content-center" alt="icon" src={service.bgImage} width={40} height={10} /> */}
+                  <h6 className="service-content_title">
+                    <Link scroll={false} href={`/audit/${service.id}`}>
+                      {service.title}
+                    </Link>
+                  </h6>
+                  <p className="service-content_text">{service.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-50 mb-5">
+            <h5 className="bg-danger text-white text-center fs-3 p-2 card">
+              PROTÉGER
+            </h5>
+            <div className="service-card-wrapper style2 p-4">
+              {proteger.map((service, index) => (
+                <div className="service-content">
+                  <h6 className="service-content_title">
+                    <Link scroll={false} href={`/audit/${service.id}`}>
+                      {service.title}
+                    </Link>
+                  </h6>
+                  <p className="service-content_text">{service.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="ms-3">
+            <Link
+              scroll={false}
+              href={`/contact`}
+              className="gt-btn gt-btn-icon"
+            >
+              EN SAVOIR PLUS
+            </Link>
+          </div>
         </div>
-        <motion.h2 initial="hidden" whileInView="visible" variants={fadeInRight} className="text-center text-danger">
-          PROTÉGER
-        </motion.h2>
-        <div className="service-card-wrapper style2 p-4">
-          {proteger.map((service, index) => (
-            <motion.div initial="hidden" whileInView="visible" variants={fadeInUp} key={index}>
-              <div className="service-content">
-                <h6 className="service-content_title">
-                  <Link scroll={false} href={`/audit/${service.id}`}>{service.title}</Link>
-                </h6>
-                <p className="service-content_text">{service.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        <div className="ms-3">
-        <Link
-                    scroll={false}
-                    href={`/contact`}
-                    className="gt-btn gt-btn-icon"
-                  >
-                    EN SAVOIR PLUS
-                  </Link>
-        </div>
-      </div>
+
+        <div className="pb-300" />
+        <Cta />
+      </main>
     </>
   );
 }

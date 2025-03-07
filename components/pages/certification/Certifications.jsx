@@ -1,4 +1,4 @@
-import { certificationItems } from "@/data/projects";
+import { certificationItems } from "@/data/events";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -22,7 +22,7 @@ export default function Projects() {
                     src={item.imgSrc}
                     width={450}
                     height={450}
-                    alt="project image"
+                    alt="certification image"
                   />
                 </div>
                 <div className="fancy-box style2">

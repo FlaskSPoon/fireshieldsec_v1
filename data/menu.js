@@ -10,23 +10,13 @@ const menuItems = [
   },
   {
     title: "Services",
-    href: "/services",
+    href: "/audit",
     subMenu: [
       { title: "Conseil, Audit & Gouvernance", href: "/audit" },
-      // { title: "Formations ", href: "/infogerance" },
       { title: "Infogérance et Support SI", href: "/infogerance" },
-      
       { title: "Stratégie, Cybersécurité et Consulting", href: "/strategies" },
       { title: "Sensibilisation en Cybersécurité", href: "/sensibilisations" },
-      { title: "Formations et Certifications", href: "/certification" },
-      // {
-      //   title: "Gouvernance des systèmes ",
-      //   href: "/#"
-      // },
-      // { title: "Audit et Mise en conformité réglementaire", href: "/#" },
-      // { title: "Cyber-résilience et réduction des risques", href: "/#" }
-
-      
+      { title: "Formations et Certifications", href: "/certification" }
     ]
   },
   {

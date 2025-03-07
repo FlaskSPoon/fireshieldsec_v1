@@ -54,10 +54,10 @@ export default function Page() {
         <Offering />
         <VideoBox />
         <TextSlider />
+        <AboutCta />
         <div className="pb-300"></div>
         <Facts />
-        <Team />
-        <AboutCta />
+        {/* <Team /> */}
         <Testimonials />
         <div className="pb-300"></div>
 

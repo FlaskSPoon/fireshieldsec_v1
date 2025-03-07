@@ -1,5 +1,5 @@
 "use client";
-import { teamMembers } from "@/data/team";
+import { teamCompanys } from "@/data/team";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -52,7 +52,8 @@ export default function Team() {
               className="title text-center mb-50 wow fadeInUp"
               data-wow-delay=".6s"
             >
-              Quelques membres de notre équipe
+              Une equipe dynamique, expérimentée et engagée pour vous servir.
+              Nos experts sont certifiés.
             </h2>
           </div>
           <div className="slider-area">
@@ -68,7 +69,7 @@ export default function Team() {
               spaceBetween={30}
               className="swiper gt-slider team-slider pb-4 px-1"
             >
-              {teamMembers.map((member, index) => (
+              {teamCompanys.map((member, index) => (
                 <SwiperSlide className="swiper-slide mr-0" key={index}>
                   <div className="team-card style2">
                     <div className="team-thumb">
@@ -78,7 +79,7 @@ export default function Team() {
                         height={241}
                         alt="team-img"
                       />
-                      <div className="social-profile">
+                      {/* <div className="social-profile">
                         <span className="plus-btn">
                           <i className="fas fa-share-alt" />
                         </span>
@@ -99,7 +100,7 @@ export default function Team() {
                             </a>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="team-content text-center">
                       <h3>
@@ -110,7 +111,8 @@ export default function Team() {
                           {member.name}
                         </Link>
                       </h3>
-                      <p>{member.position}</p>
+                      {/* <p className="">{member.position}</p> */}
+                      <span className="">{member.position}</span>
                     </div>
                   </div>
                 </SwiperSlide>

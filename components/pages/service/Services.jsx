@@ -1,4 +1,4 @@
-import { serviceItems } from "@/data/services";
+import { ressourceItems } from "@/data/services";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +8,7 @@ export default function Services() {
     <section className="all-services-area space-top">
       <div className="container">
         <div className="row">
-          {serviceItems.map((item, index) => (
+          {ressourceItems.map((item, index) => (
             <div
               key={index}
               className={`col-12 col-md-6 col-xl-3 ${

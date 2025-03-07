@@ -22,7 +22,7 @@ export default function Page() {
             <div className="container">
               <div className="page-heading">
                 <h1 className="wow fadeInUp" data-wow-delay=".3s">
-                  Nous contacter
+                  Support Technique & Contact
                 </h1>
                 <ul
                   className="breadcrumb-items wow fadeInUp"

@@ -1,8 +1,11 @@
 import SeoMeta from "@/components/common/SeoMeta";
 import Cta from "@/components/footers/Cta";
+import Team from "@/components/pages/home/Team";
 import TextSlider from "@/components/pages/home/TextSlider";
 import VideoBox from "@/components/pages/home/VideoBox";
 import Partenaires from "@/components/pages/partenaire/Partenaires";
+import Team1 from "@/components/pages/team/Team1";
+import Team2 from "@/components/pages/team/Team2";
 import Link from "next/link";
 
 export const metadata = {
@@ -46,9 +49,8 @@ export default function Page() {
           </div>
         </div>
         <Partenaires />
+        <Team />
         <TextSlider />
-        <div className="pb-300"></div>
-        <VideoBox />
         <div className="pb-300"></div>
         <Cta />
       </main>

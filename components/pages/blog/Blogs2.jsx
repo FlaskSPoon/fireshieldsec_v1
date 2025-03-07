@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Sidebar from "./Sidebar";
 import Pagination from "@/components/common/Pagination";
+import { FaCircleUser, FaComments } from "react-icons/fa6";
 
 export default function Blogs2() {
   return (
@@ -35,23 +36,22 @@ export default function Blogs2() {
                   <div className="news-content">
                     <ul>
                       <li>
-                        <i className="fa-light fa-user" />
-                        {item.user}
+                        <FaCircleUser size={22} color="#e02234" /> {item.user}
                       </li>
                       <li>
-                        <i className="fa-light fa-comments" />
-                        {item.comments}
+                        <FaComments size={22} color="#e02234" /> {item.comments}{" "}
+                        Commentaires
                       </li>
                     </ul>
                     <h3>
-                      <Link scroll={false} href={`/blog-details`}>
+                      <Link scroll={false} href={`/blog/blog-details`}>
                         {item.title}
                       </Link>
                     </h3>
                     <p>{item.description}</p>
                     <Link
                       scroll={false}
-                      href={`/blog-details`}
+                      href={`/blog/blog-details`}
                       className="gt-btn mt-1"
                     >
                       Lire plus

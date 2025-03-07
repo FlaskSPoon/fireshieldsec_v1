@@ -4,7 +4,7 @@ import Cta from "@/components/footers/Cta";
 import Hero from "@/components/pages/home/Hero";
 import Offering from "@/components/pages/home/Offering";
 import Process from "@/components/pages/home/Process";
-import Projects from "@/components/pages/home/Projects";
+import Events from "@/components/pages/home/Events";
 import Services from "@/components/pages/home/Services";
 import Services2 from "@/components/pages/home/Services2";
 import VideoBox from "@/components/pages/home/VideoBox";
@@ -26,7 +26,7 @@ export default function Home() {
         <Offering />
         <VideoBox />
         <Process />
-        <Projects />
+        <Events />
         <Blog />
         <Cta />
       </main>
