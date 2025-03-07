@@ -1,5 +1,5 @@
 "use client";
-import { projects1 } from "@/data/projects";
+import { events } from "@/data/events";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
@@ -90,7 +90,7 @@ export default function Projects() {
               id="projectSlider1"
               {...swiperOptions}
             >
-              {projects1.map((slide) => (
+              {events.map((slide) => (
                 <SwiperSlide className="swiper-slide" key={slide.id}>
                   <div className="project-card style1 img-shine">
                     <div className="project-img">

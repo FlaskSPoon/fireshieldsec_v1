@@ -1,4 +1,4 @@
-import { certificationItems } from "@/data/projects";
+import { certificationItems } from "@/data/events";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";

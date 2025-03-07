@@ -84,7 +84,6 @@ export const services2 = [
   }
 ];
 
-
 export const servicesStyle2 = [
   {
     id: 14,
@@ -291,13 +290,73 @@ export const serviceCards = [
   }
 ];
 
+export const ressourceItems = [
+  {
+    id: 21,
+    imgSrc: "/assets/img/icon/serviceIcon1_1.png",
+    title: "Mots de Passe",
+    text: "Créez des mots de passe forts",
+    delay: ".3s"
+  },
+  {
+    id: 22,
+    imgSrc: "/assets/img/icon/serviceIcon1_2.png",
+    title: "Réseaux Wi-Fi",
+    text: "Sécurisation avec des protocoles de cryptage.",
+    delay: ".6s"
+  },
+  {
+    id: 23,
+    imgSrc: "/assets/img/icon/serviceIcon1_3.png",
+    title: "2FA en Ligne",
+    text: "Protégez vos comptes avec 2FA.",
+    delay: ".9s"
+  },
+  {
+    id: 24,
+    imgSrc: "/assets/img/icon/serviceIcon1_4.png",
+    title: "Protection",
+    text: "Identifiez les attaques de phishing.",
+    delay: "1s"
+  },
+  {
+    id: 25,
+    imgSrc: "/assets/img/icon/serviceIcon1_6.png",
+    title: "Dispositifs Mobiles",
+    text: "Sécurisez vos appareils mobiles.",
+    delay: "1.3s"
+  },
+  {
+    id: 26,
+    imgSrc: "/assets/img/icon/serviceIcon1_7.png",
+    title: "Données en Ligne",
+    text: "Protégez vos données lors de leur stockage.",
+    delay: "1.7s"
+  },
+  {
+    id: 27,
+    imgSrc: "/assets/img/icon/serviceIcon1_8.png",
+    title: "Réseaux internes",
+    text: "Gérez pare-feu, VPN et outils de surveillance.",
+    delay: "1.8s"
+  },
+  {
+    id: 28,
+    imgSrc: "/assets/img/icon/serviceIcon1_9.png",
+    title: "Incidents/ménaces",
+    text: "Réagissez aux ménaces de sécurité.",
+    delay: "2s"
+  }
+];
+
 export const allService = [
   ...services,
   ...services2,
   ...servicesStyle2,
   ...services3,
   ...serviceItems,
-  ...serviceCards
+  ...serviceCards,
+  ...ressourceItems
 ];
 
 export const sericeCategories = [

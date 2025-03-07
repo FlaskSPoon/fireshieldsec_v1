@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar";
 import Comments from "./Comments";
 import CommentForm from "./CommentForm";
 import Image from "next/image";
-import { FaTag } from "react-icons/fa6";
+import { FaCircleUser, FaComment, FaComments, FaTag } from "react-icons/fa6";
 
 export default function BlogDetails({ blogItem }) {
   return (
@@ -18,8 +18,7 @@ export default function BlogDetails({ blogItem }) {
                     className="post-featured-thumb"
                     data-bg-src=""
                     style={{
-                      backgroundImage:
-                        "url(/assets/img/blog/blogCardThumb3_1.png)"
+                      backgroundImage: `url(${blogItem.imgSrc})`
                     }}
                   />
                   <div className="post-content">
@@ -28,14 +27,15 @@ export default function BlogDetails({ blogItem }) {
                       data-wow-delay=".2s"
                     >
                       <li>
-                        <i className="fa-light fa-user" />
-                        Par Fireshieldsec
+                        <FaCircleUser size={22} color="#e02234" />{" "}
+                        {blogItem.userName}
                       </li>
                       <li>
-                        <i className="fa-light fa-comments" />2 Commentaires
+                        <FaComments size={22} color="#e02234" />{" "}
+                        {blogItem.comments} Commentaires
                       </li>
                       <li>
-                        <FaTag size={22} color="#e02234" /> IT Services
+                        <FaTag size={22} color="#e02234" /> {blogItem.category}
                       </li>
                     </ul>
                     <h3 className="wow fadeInUp" data-wow-delay=".4s">
