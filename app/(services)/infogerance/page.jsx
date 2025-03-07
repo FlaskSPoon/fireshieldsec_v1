@@ -4,16 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import { motion } from "framer-motion";
+import SeoMeta from '@/components/common/SeoMeta';
+import { metadata } from '@/app/not-found';
 export default function Infogerance() {
   return (
-    <div className="container">
+    <>      <SeoMeta title={metadata.title} />
+    <div className="">
       <h2 className=" text-center text-dark mt-2"style={{
       backgroundImage: "url('/assets/img/hero/business-person.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       width: "100vw", 
-      minHeight: "40vh",
+      minHeight: "60vh",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
@@ -145,6 +148,7 @@ et la performance de vos infrastructures.
       </div>
      
     </div>
+    </>
   );
 }
 

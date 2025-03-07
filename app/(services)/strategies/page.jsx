@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from "next/image";
 import { detection, proteger, reponse, strategie } from '@/data/strategie';
 import Link from 'next/link';
+import SeoMeta from '@/components/common/SeoMeta';
+import { metadata } from '@/app/not-found';
 
 export default function Strategie() {
   const fadeInUp = {
@@ -23,6 +25,8 @@ export default function Strategie() {
 
   return (
     <>
+    
+    <SeoMeta title={metadata.title}/>
       <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="border rounded text-center">
         <h1 style={{
           backgroundImage: "url('/assets/img/hero/blue-colos.png')",

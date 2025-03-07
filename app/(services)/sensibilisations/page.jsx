@@ -1,10 +1,14 @@
 "use client";
+import { metadata } from "@/app/not-found";
+import SeoMeta from "@/components/common/SeoMeta";
 import { sensibilisation } from "@/data/formation";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react"; // Importez useEffect
 
 export default function Sensibilsations() {
+
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
@@ -38,6 +42,8 @@ export default function Sensibilsations() {
 
   return typeof window !== "undefined" && (
     <>
+
+<SeoMeta title={metadata.title} />
       <div className="">
         
       </div>
@@ -106,11 +112,14 @@ export default function Sensibilsations() {
       </div>
     </>
   );
+ 
 }
 
 export function Sensibilisation() {
   return (
+    
     <>
+    <SeoMeta title={metadata.title} />
       <div className="p-4 text-center">
         <h3 className="">SENSIBILISATION</h3>
         <div className="container-fluid">
