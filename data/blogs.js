@@ -60,51 +60,11 @@ export const blogPostsStyle2 = [
 export const blogCards2 = [
   {
     id: 7,
-    imgSrc: "/assets/img/blog/blogCardThumb1_1.png",
-    userIconSrc: "/assets/img/icon/userIcon.png",
-    tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshield Security",
-    category: "Cybersécurité",
-    title: "Les défis de la cybersécurité en Afrique : Menaces et opportunités",
-    date: "20",
-    month: "Dec 2024",
-    delay: ".2s",
-    comments: 5
-  },
-  {
-    id: 8,
-    imgSrc: "/assets/img/blog/blogCardThumb1_2.png",
-    userIconSrc: "/assets/img/icon/userIcon.png",
-    tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshield Security",
-    category: "Solutions",
-    title: "Comment renforcer la sécurité de votre entreprise avec Fireshield",
-    date: "28",
-    month: "Nov 2024",
-    delay: ".4s",
-    comments: 3
-  },
-  {
-    id: 9,
-    imgSrc: "/assets/img/blog/blogCardThumb1_3.png",
-    userIconSrc: "/assets/img/icon/userIcon.png",
-    tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshield Security",
-    category: "Sécurité Offensive",
-    title:
-      "Pentest : Quel type de test d’intrusion choisir pour votre entreprise ?",
-    date: "16",
-    month: "Oct 2024",
-    delay: ".6s",
-    comments: 2
-  },
-  {
-    id: 10,
     imgSrc: "/assets/img/blog/blogCardThumb1_4.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshield Security",
-    category: "Cybersécurité",
+    userName: "Fireshield Security",
+    category: "Cybersécur...",
     title: "Les erreurs de cybersécurité à éviter dans les PME",
     date: "30",
     month: "Sept 2024",
@@ -112,11 +72,11 @@ export const blogCards2 = [
     comments: 4
   },
   {
-    id: 11,
+    id: 8,
     imgSrc: "/assets/img/blog/blogCardThumb1_6.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshield Security",
+    userName: " Fireshield Security",
     category: "Solutions",
     title: "L'importance des sauvegardes et de la récupération des données",
     date: "24",
@@ -125,17 +85,57 @@ export const blogCards2 = [
     comments: 1
   },
   {
-    id: 12,
+    id: 9,
     imgSrc: "/assets/img/blog/blogCardThumb1_5.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshield Security",
-    category: "Sécurité Offensive",
+    userName: " Fireshield Security",
+    category: "Sécurité",
     title: "Les ransomwares en Afrique : Comment s'en protéger efficacement",
     date: "17",
     month: "Juil 2024",
     delay: ".6s",
     comments: 6
+  },
+  {
+    id: 10,
+    imgSrc: "/assets/img/blog/blogCardThumb1_1.png",
+    userIconSrc: "/assets/img/icon/userIcon.png",
+    tagIconSrc: "/assets/img/icon/tagIcon.png",
+    userName: " Fireshield Security",
+    category: "Cybersécurité",
+    title: "Les défis de la cybersécurité en Afrique : Menaces et opportunités",
+    date: "20",
+    month: "Dec 2024",
+    delay: ".2s",
+    comments: 5
+  },
+  {
+    id: 11,
+    imgSrc: "/assets/img/blog/blogCardThumb1_2.png",
+    userIconSrc: "/assets/img/icon/userIcon.png",
+    tagIconSrc: "/assets/img/icon/tagIcon.png",
+    userName: " Fireshield Security",
+    category: "Solutions",
+    title: "Comment renforcer la sécurité de votre entreprise avec Fireshield",
+    date: "28",
+    month: "Nov 2024",
+    delay: ".4s",
+    comments: 3
+  },
+  {
+    id: 12,
+    imgSrc: "/assets/img/blog/blogCardThumb1_3.png",
+    userIconSrc: "/assets/img/icon/userIcon.png",
+    tagIconSrc: "/assets/img/icon/tagIcon.png",
+    userName: " Fireshield Security",
+    category: "Sécurité",
+    title:
+      "Pentest : Quel type de test d’intrusion choisir pour votre entreprise ?",
+    date: "16",
+    month: "Oct 2024",
+    delay: ".6s",
+    comments: 2
   }
 ];
 
@@ -169,7 +169,7 @@ export const newsItems = [
     imgSrc: "/assets/img/blog/blogCardThumb3_3.png",
     date: "05",
     month: "Mar",
-    user: "Par Fireshield security",
+    user: " Fireshield security",
     comments: "15",
     title: "Webinaire : Sécuriser votre entreprise dans l'ère numérique",
     description:

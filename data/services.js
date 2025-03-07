@@ -87,7 +87,7 @@ export const services2 = [
 export const servicesStyle2 = [
   {
     id: 14,
-    thumb: "/assets/img/service/serviceThumb2_1.png",
+    thumb: "/assets/img/service/exp1.png",
     title: "MAÎTRISE",
     description:
       "Une maitrise en gestion stratégique et organisationnelle des risques en cybersécurité.",
@@ -97,7 +97,7 @@ export const servicesStyle2 = [
   },
   {
     id: 15,
-    thumb: "/assets/img/service/serviceThumb2_2.png",
+    thumb: "/assets/img/service/exp3.png",
     title: "ACCOMPAGNEMENT",
     description:
       "Un accompagnement sur mesure qui permet de mettre en place des solutions selon le contexte.",
@@ -107,7 +107,7 @@ export const servicesStyle2 = [
   },
   {
     id: 16,
-    thumb: "/assets/img/service/serviceThumb2_3.png",
+    thumb: "/assets/img/service/exp2.png",
     title: "EXPÉRIENCE",
     description:
       "Eprouvée pour préserver la confidentialité et l’intégrité de vos données et votre infrastructure.",
@@ -117,7 +117,7 @@ export const servicesStyle2 = [
   },
   {
     id: 17,
-    thumb: "/assets/img/service/serviceThumb2_4.png",
+    thumb: "/assets/img/service/exp4.png",
     title: "SAVOIR-FAIRE",
     description:
       "Permettant de faire comprendre facilement les problématiques techniques les plus complexes.",
