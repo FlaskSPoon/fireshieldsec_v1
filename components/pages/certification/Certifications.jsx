@@ -22,7 +22,7 @@ export default function Projects() {
                     src={item.imgSrc}
                     width={450}
                     height={450}
-                    alt="project image"
+                    alt="certification image"
                   />
                 </div>
                 <div className="fancy-box style2">

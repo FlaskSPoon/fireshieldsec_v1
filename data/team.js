@@ -3,50 +3,77 @@ export const teamMembers = [
     id: 1,
     imgSrc: "/assets/img/team/teamThumb2_1.png",
     name: "Ben Stokes",
-    position: "Product Designer",
+    position: "Product Designer"
   },
   {
     id: 2,
     imgSrc: "/assets/img/team/teamThumb2_2.png",
     name: "Marvin McKinney",
-    position: "Web Designer",
+    position: "Web Designer"
   },
   {
     id: 3,
     imgSrc: "/assets/img/team/teamThumb2_3.png",
     name: "Hardson McKinney",
-    position: "Web Specialist",
+    position: "Web Specialist"
   },
   {
     id: 4,
     imgSrc: "/assets/img/team/teamThumb2_4.png",
     name: "Wade Warren",
-    position: "Web Designer",
+    position: "Web Designer"
   },
   {
     id: 5,
     imgSrc: "/assets/img/team/teamThumb2_1.png",
     name: "Ben Stokes",
-    position: "Product Designer",
+    position: "Product Designer"
   },
   {
     id: 6,
     imgSrc: "/assets/img/team/teamThumb2_2.png",
     name: "Marvin McKinney",
-    position: "Web Designer",
+    position: "Web Designer"
   },
   {
     id: 7,
     imgSrc: "/assets/img/team/teamThumb2_3.png",
     name: "Hardson McKinney",
-    position: "Web Specialist",
+    position: "Web Specialist"
   },
   {
     id: 8,
     imgSrc: "/assets/img/team/teamThumb2_4.png",
     name: "Wade Warren",
-    position: "Web Designer",
+    position: "Web Designer"
+  }
+];
+
+export const teamCompanys = [
+  {
+    id: 1,
+    imgSrc: "/assets/img/team/teamThumb2_1.png",
+    name: "CISSP",
+    position: "Certified Information Systems Security Professional"
   },
+  {
+    id: 2,
+    imgSrc: "/assets/img/team/teamThumb2_2.png",
+    name: "CISM",
+    position: "Certified Information Security Manager"
+  },
+  {
+    id: 3,
+    imgSrc: "/assets/img/team/teamThumb2_3.png",
+    name: "CEH",
+    position: "Certified Ethical Hacker"
+  },
+  {
+    id: 4,
+    imgSrc: "/assets/img/team/teamThumb2_4.png",
+    name: "ISO",
+    position: "International Organization for Standardization Expert"
+  }
 ];
 
 export const teamMembers2 = [
@@ -56,7 +83,7 @@ export const teamMembers2 = [
     name: "Wade Warren",
     role: "Warren Designer",
     bgImage: "/assets/img/bg/teamThumbBg1_1.png",
-    delay: ".3s",
+    delay: ".3s"
   },
   {
     id: 10,
@@ -64,7 +91,7 @@ export const teamMembers2 = [
     name: "Wade Warren",
     role: "Warren Designer",
     bgImage: "/assets/img/bg/teamThumbBg1_1.png",
-    delay: ".6s",
+    delay: ".6s"
   },
   {
     id: 11,
@@ -72,8 +99,8 @@ export const teamMembers2 = [
     name: "Albert Flores",
     role: "Marketing",
     bgImage: "/assets/img/bg/teamThumbBg1_1.png",
-    delay: ".9s",
-  },
+    delay: ".9s"
+  }
 ];
 
 export const teamMembers3 = [
@@ -83,7 +110,7 @@ export const teamMembers3 = [
     bgSrc: "/assets/img/bg/teamThumbBg1_1.png",
     name: "Darrell Steward",
     position: "President of Sales",
-    delay: ".3s",
+    delay: ".3s"
   },
   {
     id: 13,
@@ -91,7 +118,7 @@ export const teamMembers3 = [
     bgSrc: "/assets/img/bg/teamThumbBg1_1.png",
     name: "Wade Warren",
     position: "Warren Designer",
-    delay: ".6s",
+    delay: ".6s"
   },
   {
     id: 14,
@@ -99,7 +126,7 @@ export const teamMembers3 = [
     bgSrc: "/assets/img/bg/teamThumbBg1_1.png",
     name: "Albert Flores",
     position: "Marketing",
-    delay: ".9s",
+    delay: ".9s"
   },
   {
     id: 15,
@@ -107,7 +134,7 @@ export const teamMembers3 = [
     bgSrc: "/assets/img/bg/teamThumbBg1_1.png",
     name: "Kathryn Murphy",
     position: "Web Designer",
-    delay: "1.2s",
+    delay: "1.2s"
   },
   {
     id: 16,
@@ -115,7 +142,7 @@ export const teamMembers3 = [
     bgSrc: "/assets/img/bg/teamThumbBg1_1.png",
     name: "Jenny Wilson",
     position: "Medical Assistant",
-    delay: "1.4s",
+    delay: "1.4s"
   },
   {
     id: 17,
@@ -123,8 +150,8 @@ export const teamMembers3 = [
     bgSrc: "/assets/img/bg/teamThumbBg1_1.png",
     name: "Jane Cooper",
     position: "Nursing Assistant",
-    delay: "1.5s",
-  },
+    delay: "1.5s"
+  }
 ];
 
 export const teamMembers4 = [
@@ -137,8 +164,8 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
+      linkedin: "https://www.linkedin.com/"
+    }
   },
   {
     id: 19,
@@ -149,8 +176,8 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
+      linkedin: "https://www.linkedin.com/"
+    }
   },
   {
     id: 20,
@@ -161,8 +188,8 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
+      linkedin: "https://www.linkedin.com/"
+    }
   },
   {
     id: 21,
@@ -173,8 +200,8 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
+      linkedin: "https://www.linkedin.com/"
+    }
   },
   {
     id: 22,
@@ -185,8 +212,8 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
+      linkedin: "https://www.linkedin.com/"
+    }
   },
   {
     id: 23,
@@ -197,8 +224,8 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
+      linkedin: "https://www.linkedin.com/"
+    }
   },
   {
     id: 24,
@@ -209,8 +236,8 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
+      linkedin: "https://www.linkedin.com/"
+    }
   },
   {
     id: 25,
@@ -221,14 +248,14 @@ export const teamMembers4 = [
     socialLinks: {
       facebook: "https://www.facebook.com/",
       twitter: "https://www.twitter.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
-  },
+      linkedin: "https://www.linkedin.com/"
+    }
+  }
 ];
 
 export const allTeammembers = [
   ...teamMembers,
   ...teamMembers2,
   ...teamMembers3,
-  ...teamMembers4,
+  ...teamMembers4
 ];

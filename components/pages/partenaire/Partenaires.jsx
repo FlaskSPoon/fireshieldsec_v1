@@ -69,6 +69,37 @@ export default function Partenaires() {
             </div>
           ))}
         </div>
+        <div className="service-card-wrapper style2 mb-30">
+          {parternCards.slice(8, 12).map((item, index) => (
+            <div
+              key={index}
+              className={`service-card style2 wow fadeInUp`}
+              data-wow-delay={item.delay}
+            >
+              <div className="service-thumb">
+                <Image
+                  className={item.hasRipple ? "img-shine" : ""}
+                  src={item.thumbSrc}
+                  width={270}
+                  height={160}
+                  alt="thumb"
+                />
+              </div>
+              <div className="service-content">
+                <h3 className="service-content_title">
+                  <Link scroll={false} href={item.link}>
+                    {item.title}
+                  </Link>
+                </h3>
+                <p className="service-content_text">{item.text}</p>
+                <Link scroll={false} className="link" href={item.link}>
+                  En savoir plus{" "}
+                  <i className="fa-sharp fa-light fa-arrow-right-long" />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
