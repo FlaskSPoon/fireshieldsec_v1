@@ -1,3 +1,4 @@
+
 import { services3 } from "@/data/services";
 import React from "react";
 import Image from "next/image";
@@ -22,7 +23,10 @@ export default function Services() {
                   {service.title}
                 </Link>
               </h3>
-              <p className="text">{service.description}</p>
+           
+               <p className=" d-flex text-container">{service.description}
+                </p>
+              
               <div className="btn-wrapper">
                 <Link
                   scroll={false}

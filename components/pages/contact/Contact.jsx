@@ -82,9 +82,9 @@ export default function Contact() {
                         <h3>
                           {email1 && <a href={`mailto:${email1}`}>{email1}</a>}
                         </h3>
-                        <h3>
+                        {/* <h3>
                           {email2 && <a href={`mailto:${email2}`}>{email2}</a>}
-                        </h3>
+                        </h3> */}
                       </div>
                     </div>
                     <div className="contact-info-items border-none">

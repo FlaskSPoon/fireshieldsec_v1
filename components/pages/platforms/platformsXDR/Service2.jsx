@@ -65,7 +65,7 @@ export default function Service2() {
                 </span>{" "}
               </h5>
               <h3 className="title text-start">
-                bénéficiez d'une protection renforcée et d'une gestion proactive
+                Bénéficiez d'une protection renforcée et d'une gestion proactive
                 des risques
               </h3>
               <p className="text">

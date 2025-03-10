@@ -35,9 +35,9 @@ export const servicesG = [
       id: 1,
       icon: "/assets/img/icon/serviceIcon1_1.png",
       title: "AUDITS SYSTÈMES",
-      details: "Audit de Sécurité: ",
+      details: "Audit de Sécurité ",
       def:"Évaluation approfondie de la sécurité de votre système informatique",
-      detailsplus:"Audit de système: ",
+      detailsplus:"Audit de système ",
       defs:"Évaluation de l’infrastructure informatique, des réseaux, des applications et des bases de données.",
       bgImage: "/assets/img/icon/internet-security.png",
       delay: ".2s"
@@ -46,7 +46,7 @@ export const servicesG = [
       id: 2,
       icon: "/assets/img/icon/serviceIcon1_2.png",
       title: "ÉVALUATIONS DE LA CONFORMITÉ ",
-      details: "Audit de conformité: ",
+      details: "Audit de conformité ",
       def:" Accompagnement dans votre processus de certification aux normes internationales ISO/IEC 27001, RGPD",
       bgImage: "/assets/img/icon/padlock_3055803.png",
       delay: ".4s"
@@ -55,7 +55,7 @@ export const servicesG = [
       id: 3,
       icon: "/assets/img/icon/serviceIcon1_3.png",
       title: "ANALYSES DES PERFORMANCES",
-      details: "Audit de processus: ",
+      details: "Audit de processus ",
       def:" Examen des politiques et procédures de sécurité",
       bgImage: "/assets/img/icon/shield_17658695.png",
       delay: ".6s"

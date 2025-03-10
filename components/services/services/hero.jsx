@@ -36,9 +36,26 @@ export default function HeroServices() {
               color: "white",
             }}
           >
-            <div>
-              <h2 className="text-center p-3">Services Chez FIRESHIELD SECURITY</h2>
-            </div>
+            <div className="page-heading">
+                <h1 className="wow fadeInUp" data-wow-delay=".3s">
+                  Nos Services
+                </h1>
+                <ul
+                  className="breadcrumb-items wow fadeInUp"
+                  data-wow-delay=".5s"
+                >
+                  <li>
+                    <Link scroll={false} href={`/`}>
+                      {" "}
+                      Accueil{" "}
+                    </Link>
+                  </li>
+                  <li>
+                    <i className="fas fa-chevrons-right" />
+                  </li>
+                  <li>Services</li>
+                </ul>
+              </div>
           </div>
 
           <div className="service-card-wrapper style2 p-4">

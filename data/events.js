@@ -69,28 +69,28 @@ export const certificationItems = [
   {
     id: 9,
     imgSrc: "/assets/img/certification/certi1.jpg",
-    category: "Certifie en Audit et SGSI.",
+    category: "",
     title: "ISO 27001 LA/LI",
     delay: ".3s"
   },
   {
     id: 10,
     imgSrc: "/assets/img/certification/certi2.jpg",
-    category: "Certifie en contrôle des risques en matière de SI",
+    category: "",
     title: "ISO 27005 Risk Manager",
     delay: ".6s"
   },
   {
     id: 11,
     imgSrc: "/assets/img/certification/certi6.jpg",
-    category: "protection du SI contre les cybermenaces ",
+    category: " ",
     title: "ISO 27032 - Lead Cybersecurity Manager",
     delay: ".9s"
   },
   {
     id: 12,
     imgSrc: "/assets/img/certification/certi3.jpg",
-    category: "Quality système de gestion de la qualité (SMQ) efficace",
+    category: "",
     title: "ISO 9001 LI/LA",
     delay: "1s"
   },
@@ -98,21 +98,21 @@ export const certificationItems = [
     id: 13,
     imgSrc: "/assets/img/certification/certi8.jpg",
     category:
-      "une certification avancée destinée à des professionnels expérimentés en cybersécurité",
+      "",
     title: "CISSP",
     delay: "1.2s"
   },
   {
     id: 14,
     imgSrc: "/assets/img/certification/certi9.jpg",
-    category: "(Auditrice certifiée des systèmes d’information)",
+    category: "",
     title: "CISA",
     delay: "1.4s"
   },
   {
     id: 15,
     imgSrc: "/assets/img/certification/pers1.jpg",
-    category: "(Responsable certifiée de la sécurité de l’information)",
+    category: "",
     title: "CISM",
     delay: "1.6s"
   },
@@ -120,7 +120,7 @@ export const certificationItems = [
     id: 16,
     imgSrc: "/assets/img/certification/certi4.jpg",
     category:
-      "certification de niveau intermédiaire en cybersécurité de COMPTIA",
+      "",
     title: "COMPTIA Security+",
     delay: "1.8s"
   }

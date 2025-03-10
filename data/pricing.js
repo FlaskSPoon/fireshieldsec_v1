@@ -1,96 +1,110 @@
 export const pricingPlans = [
   {
-    badge: "Basic Plan",
     price: "$49.00",
-    period: "Per Month",
-    backgroundImage: "url(/assets/img/bg/pricingCardThumbBg1_1.png)",
+    period: "Par mois",
+    badgeText: "FSEC-INC1",
+    buttonClass: "style3",
+    imageUrl: "/assets/img/shape/pricingBadgeShape.png",
     features: [
-      "Branding And Design Identity",
-      "Web Site Marketing Solutions",
-      "Free 15 GB Linux Hosting",
-      "24/7 System Monitoring",
-      "Unlimited Download Data",
-      "Branding and design Identity",
+      " Surveillance, détection et réponse aux incidents de sécurité",
+      
     ],
-    buttonClass: "gt-btn style2 gt-btn-icon",
-    delay: ".3s",
   },
   {
-    badge: "Started Plan",
-    price: "$99.00",
-    period: "Per Month",
-    backgroundImage: "url(/assets/img/bg/pricingCardThumbBg1_1.png)",
+    price: "$9.00",
+    period: "Par mois",
+    badgeText: "FSEC-AF2",
+    buttonClass: "style4",
+    imageUrl: "/assets/img/shape/pricingBadgeShape.png",
     features: [
-      "Branding And Design Identity",
-      "Web Site Marketing Solutions",
-      "Free 15 GB Linux Hosting",
-      "24/7 System Monitoring",
-      "Unlimited Download Data",
-      "Branding and design Identity",
+      "Analyse forensique avancée",
+      
     ],
-    buttonClass: "gt-btn gt-btn-icon",
-    delay: ".6s",
   },
   {
-    badge: "Premium Plan",
-    price: "$149.00",
-    period: "Per Month",
-    backgroundImage: "url(/assets/img/bg/pricingCardThumbBg1_1.png)",
+    price: "$49.00",
+    period: "Par mois",
+    badgeText: "FSEC-INC2",
+    buttonClass: "style3",
+    imageUrl: "/assets/img/shape/pricingBadgeShape.png",
     features: [
-      "Branding And Design Identity",
-      "Web Site Marketing Solutions",
-      "Free 15 GB Linux Hosting",
-      "24/7 System Monitoring",
-      "Unlimited Download Data",
-      "Branding and design Identity",
+      "Surveillance, détection et réponse aux incidents avancée",
+     
     ],
-    buttonClass: "gt-btn style2 gt-btn-icon",
-    delay: ".9s",
   },
 ];
 
 export const pricingCards = [
   {
     price: "$49.00",
-    period: "Per Month",
-    badgeText: "Basic Plan",
+    period: "par mois",
+    badgeText: "FSEC-MOB",
     buttonClass: "style3",
     imageUrl: "/assets/img/shape/pricingBadgeShape.png",
     features: [
-      "Branding And Design Identity",
-      "Web Site Marketing Solutions",
-      "Free 15 GB Linux Hosting",
-      "24/7 System Monitoring",
-      "Unlimited Download Data",
+      "Audit sécurité d’applications mobiles Android et iOS",
+     
     ],
   },
   {
     price: "$9.00",
-    period: "Per Month",
-    badgeText: "Started Plan",
+    period: "Par mois",
+    badgeText: "FSEC-PKI",
     buttonClass: "style4",
     imageUrl: "/assets/img/shape/pricingBadgeShape.png",
     features: [
-      "Branding And Design Identity",
-      "Web Site Marketing Solutions",
-      "Free 15 GB Linux Hosting",
-      "24/7 System Monitoring",
-      "Unlimited Download Data",
+      "Principes et mise en œuvre des PKI",
+     
     ],
   },
   {
     price: "$49.00",
-    period: "Per Month",
-    badgeText: "Basic Plan",
+    period: "Par mois",
+    badgeText: "FCY-SOC",
     buttonClass: "style3",
     imageUrl: "/assets/img/shape/pricingBadgeShape.png",
     features: [
-      "Branding And Design Identity",
-      "Web Site Marketing Solutions",
-      "Free 15 GB Linux Hosting",
-      "24/7 System Monitoring",
-      "Unlimited Download Data",
+      "Détection des incidents de sécurité",
+     
     ],
   },
   // Add more pricing cards here if needed
 ];
+
+export const fricingCards = [
+  {
+    price: "$49.00",
+    period: "par mois",
+    badgeText: "FSEC-iPENT",
+    buttonClass: "style3",
+    imageUrl: "/assets/img/shape/pricingBadgeShape.png",
+    features: [
+      "Tests d’intrusion des systèmes industriels",
+     
+    ],
+  },
+  {
+    price: "$9.00",
+    period: "Par mois",
+    badgeText: "FSEC-PENT2",
+    buttonClass: "style4",
+    imageUrl: "/assets/img/shape/pricingBadgeShape.png",
+    features: [
+      "Tests d’intrusion et développement d’exploits",
+     
+    ],
+  },
+  {
+    price: "$49.00",
+    period: "Par mois",
+    badgeText: "FSEC-WPEN",
+    buttonClass: "style3",
+    imageUrl: "/assets/img/shape/pricingBadgeShape.png",
+    features: [
+      "Test d’intrusion des serveurs et applications Web",
+     
+    ],
+  },
+  
+];
+

@@ -24,10 +24,10 @@
 
   "contact_info": {
     "phone1": "00 (221) 33 801 57 16",
-    "phone2": "00 (221) 77 928 66 82",
+    "phone2": "00 (221) 77 928 26 82",
     "email1": "contact@fireshieldsec.com",
-    "email2": "training@fireshieldsec.com",
-    "location": "Mermoz Pyrotechnique Villa N°22, Dakar, Senegal",
+    
+    "location": "29-31 Voie de degagement N, Dakar",
     "opening": "Lundi-Vendredi, 08h00-17h00"
   },
 
@@ -39,10 +39,10 @@
 
   "call_to_action": {
     "scroll": false,
-    "title": "“Together let’s build your defense”",
+    "title": "“Ensemble, Bâtissons votre cyberdéfense”",
     "content": " ",
     "button": {
-      "label": "REJOINGNEZ-NOUS",
+      "label": "REJOIGNEZ-NOUS",
       "link": "/"
     }
   }

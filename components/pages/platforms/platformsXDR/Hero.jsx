@@ -232,7 +232,7 @@ export default function Hero() {
                   >
                     <span className="title1">Détection et </span>
                     <span className="title2">Réponse aux</span>
-                    <span className="title3"> Ménaces</span>
+                    <span className="title3"> Menaces</span>
                   </h1>
                   <div
                     className="checklist wow fadeInLeft"
