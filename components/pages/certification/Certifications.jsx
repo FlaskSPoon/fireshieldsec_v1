@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
+    <>
     <section className="all-project-area mx-auto space-top pb-425">
       <div className="container">
         <div className="row">
@@ -44,7 +45,12 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
+        
       </div>
+     
     </section>
+    
+   </>
   );
 }

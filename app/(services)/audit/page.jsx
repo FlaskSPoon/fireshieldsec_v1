@@ -1,14 +1,17 @@
+
+"use client"
 import SeoMeta from "@/components/common/SeoMeta";
 import Cta from "@/components/footers/Cta";
 import { conseils, gouvernance } from "@/data/conseilAudit";
 import { audits } from "@/data/servicesG";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Audit() {
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <motion.h2
           className="text-center text-dark mt-2"
           style={{
@@ -34,13 +37,13 @@ export default function Audit() {
           et Gouvernance du SI
         </motion.h2>
       </div>
-      <div className="text-center border w-[200px] p-2 card">
+      <main className="text-center border w-[200px] p-2 card">
         <h2>AUDIT DE SÉCURITÉ</h2>
 
         <div className="text-center w-[200px] p-2 ">
           <section>
             <div className="mt-50">
-              <h2>AUDIT DE SÉCURITÉ</h2>
+            
               <div className="container">
                 <div className="row">
                   <div className="">
@@ -122,8 +125,8 @@ export default function Audit() {
                                 {service.title}
                               </Link>
                             </h3>
-                            <p className="text">{service.description}</p>
-                            <div className="btn-wrapper">
+                            <p className="text-container">{service.description}</p>
+                            <div className="btn-wrapper p-2">
                               <Link
                                 scroll={false}
                                 className="link-btn"
@@ -167,8 +170,8 @@ export default function Audit() {
                                   {service.title}
                                 </Link>
                               </h3>
-                              <p className="text">{service.description}</p>
-                              <div className="btn-wrapper">
+                              <p className="text-container">{service.description}</p>
+                              <div className="btn-wrapper p-2">
                                 <Link
                                   scroll={false}
                                   className="link-btn"

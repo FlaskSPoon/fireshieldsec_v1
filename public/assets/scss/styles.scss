@@ -64,3 +64,11 @@ a {
 .gt-btn-icon {
   text-wrap: nowrap;
 }
+.text-container {
+  text-align: left; /* Alignement à gauche */
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  max-width: 600px; /* Largeur max pour éviter que le texte soit trop étalé */
+  margin: 0 auto; /* Centre le bloc */
+}

@@ -29,7 +29,7 @@ export default function Page() {
                   data-wow-delay=".5s"
                 >
                   <li>
-                    <Link scroll={false} href={`/`}>
+                    <Link scroll={false} href={`/#`}>
                       {" "}
                       Accueil{" "}
                     </Link>

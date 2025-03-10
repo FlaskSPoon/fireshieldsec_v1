@@ -6,14 +6,15 @@ import React from 'react'
 import { motion } from "framer-motion";
 export default function Infogerance() {
   return (
-    <div className="container">
+    <div className="container-fluid">
+      <div className="container-fluid">
       <h2 className=" text-center text-dark mt-2"style={{
-      backgroundImage: "url('/assets/img/hero/business-person.png')",
+      backgroundImage: "url('/assets/img/about/Picture18.png')",
       backgroundSize: "cover",
-      backgroundPosition: "center",
+  
       backgroundRepeat: "no-repeat",
       width: "100vw", 
-      minHeight: "40vh",
+      minHeight: "60vh",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
@@ -24,6 +25,8 @@ export default function Infogerance() {
     }}>
         Infogérance et Support SI
       </h2>
+      </div>
+     
 <div><h5 className="subtitle text-start">
                             <span>
                               <Image
@@ -73,11 +76,11 @@ de métier.{" "}
                       {service.title}
                     </Link>
                   </h6>
-                  <p className="service-content_text">{service.description}</p>
+                  <p className="text-container">{service.description}</p>
                 
                 
                   
-                  <div>
+                  <div className="p-2">
                     <Link scroll={false} className="link" href={`/service-details/${service.id}`}>
                       Plus de détails
                       <i className="fa-sharp fa-light fa-arrow-right-long" />
@@ -112,11 +115,11 @@ de métier.{" "}
                             {service.title}
                           </Link>
                         </h6>
-                        <p className="service-content_text">
+                        <p className="text-container">
                           {service.description}
                         </p>
 
-                        <div>
+                        <div className="p-2">
                           <Link
                             scroll={false}
                             className="link"
@@ -138,8 +141,6 @@ de métier.{" "}
 
 
 
-      </div>
-     
-    </div>
+    
   );
 }

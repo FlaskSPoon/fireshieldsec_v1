@@ -10,6 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import React, { useRef } from "react";
 import Logo from "@/components/common/Logo";
 import config from "@/config/config.json";
+import { activeSideMenu } from "@/utlis/toggleSideMenu";
+import { activePopupSearch } from "@/utlis/togglePopupSearch";
 
 export default function Footer() {
   // data source
@@ -169,41 +171,51 @@ export default function Footer() {
               </div>
               <div className="col-xl-3 col-md-6 col-12">
                 <div
-                  className="widget widget_nav_menu footer-widget wow fadeInUp"
+                  className="widget widget_nav_menu footer-widget wow fadeInUp mt-5"
                   data-wow-delay="1.6s"
                 >
-                  <h3 className="widget_title">Nous contacter</h3>
-                  <div className="checklist">
-                    <ul className="ps-0">
-                      <li className="text-white">
-                        <i className="fa-thin fa-envelope" />
-                      </li>
-                      <li className="text-white">{email1}</li>
-                    </ul>
-                    <ul className="ps-0">
+                  <h3 className="widget_title">
+                   
+                     <Link
+                    scroll={false}
+                    href={`/contact`}
+                    className="gt-btn gt-btn-icon"
+                  >
+                  NOUS CONTACTER
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={activeSideMenu}
+                    className="simple-icon sideMenuInfo sidebar-btn"
+                  >
+                    
+                  </button></h3>
+                  <div className="checklist mt-5">
+                    {/* s */}
+                    {/* <ul className="ps-0">
                       <li className="text-white">
                         <i className="fa-thin fa-envelope" />
                       </li>
                       <li className="text-white">{email2}</li>
-                    </ul>
-                    <ul className="ps-0">
+                    </ul> */}
+                    {/* <ul className="ps-0">
                       <li className="text-white">
                         <i className="fa-light fa-phone-volume" />
                       </li>
                       <li className="text-white">{phone1}</li>
-                    </ul>
-                    <ul className="ps-0">
+                    </ul> */}
+                    {/* <ul className="ps-0">
                       <li className="text-white">
                         <i className="fa-light fa-phone-volume" />
                       </li>
                       <li className="text-white">{phone2}</li>
-                    </ul>
-                    <ul className="ps-0">
+                    </ul> */}
+                    {/* <ul className="ps-0">
                       <li className="text-white">
                         <i className="fa-regular fa-clock" />
                       </li>
                       <li className="text-white">{opening}</li>
-                    </ul>
+                    </ul> */}
                     <form
                       ref={form}
                       onSubmit={sandMail}

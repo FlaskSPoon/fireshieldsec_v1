@@ -22,10 +22,10 @@
   .subtitle {
     text-align: center;
     font-family: "Kumbh Sans", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 35px;
     text-transform: uppercase;
     background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
     background-clip: text;
@@ -37,12 +37,12 @@
   .title {
     color: $title-color;
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: 50px;
   }
-
+ 
   .text {
     color: $body-color;
     font-family: "Plus Jakarta Sans", sans-serif;

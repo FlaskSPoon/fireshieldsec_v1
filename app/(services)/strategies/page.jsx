@@ -1,18 +1,29 @@
-import SeoMeta from "@/components/common/SeoMeta";
+"use client"
+import Link from 'next/link';
+import { motion } from "framer-motion";
 import Cta from "@/components/footers/Cta";
 import React from "react";
 import Image from "next/image";
 import { detection, proteger, reponse, strategie } from '@/data/strategie';
-import Link from 'next/link';
 
-export const metadata = {
-  title: "Stratégie, Cybersécurité et Consulting | Fireshield Security",
-  description:
-    "Cybersécurité, Gestion des systèmes d'information (SI), Conseil, Protection et Détection"
-};
+
+
 export default function Page() {
+
+
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+  const fadeInLeft = {
+    initial: { opacity: 0, x: -20 },
+    animate: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
   return (
     <>
+    
+    <main>
+      
       <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="border rounded text-center">
         <h1 style={{
           backgroundImage: "url('/assets/img/hero/blue-colos.png')",

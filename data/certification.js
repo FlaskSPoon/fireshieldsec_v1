@@ -94,4 +94,8 @@ export const autre=[
     },
 
     
-]
+];
+
+   
+  
+  
