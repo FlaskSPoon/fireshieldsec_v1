@@ -6,7 +6,7 @@ export default function CommentForm() {
       <div className="row g-4">
         <div className="col-lg-6">
           <div className="form-clt">
-            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <input type="text" name="name" id="name" placeholder="Votre nom" />
           </div>
         </div>
         <div className="col-lg-6">
@@ -15,7 +15,7 @@ export default function CommentForm() {
               type="text"
               name="email"
               id="email2"
-              placeholder="Your Email"
+              placeholder="Votre email"
             />
           </div>
         </div>
@@ -24,14 +24,14 @@ export default function CommentForm() {
             <textarea
               name="message"
               id="message"
-              placeholder="Write Message"
+              placeholder="Votre message"
               defaultValue={""}
             />
           </div>
         </div>
         <div className="col-lg-6">
           <button type="submit" className="gt-btn">
-            Post a Comment
+            Poster le commentaire
             <i className="fa-sharp fa-light fa-arrow-right-long ms-1" />
           </button>
         </div>

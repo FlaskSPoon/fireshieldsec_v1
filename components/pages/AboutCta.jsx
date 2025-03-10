@@ -23,8 +23,8 @@ export default function AboutCta() {
                   width="28"
                   height="12"
                 />
-              </span>{' '}
-              Contact Us NOW{' '}
+              </span>{" "}
+              Nous contacter maintenant{" "}
               <span>
                 <Image
                   alt="icon"
@@ -38,8 +38,8 @@ export default function AboutCta() {
               className="title text-center text-white mb-50 wow fadeInUp"
               data-wow-delay=".6s"
             >
-              Talk To About An IT Solution for Your
-              <span className=""> Technology </span>
+              Décrivez nous votre problème et nous vous
+              <span className=""> Aiderons </span>
             </h2>
           </div>
           <div
@@ -51,7 +51,7 @@ export default function AboutCta() {
               className="gt-btn gt-btn-icon"
               href={`/contact`}
             >
-              GET IN TOUCH
+              CONTACTEZ-NOUS
             </Link>
           </div>
         </div>

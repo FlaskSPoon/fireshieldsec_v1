@@ -1,57 +1,16 @@
 export const blogCards = [
   {
     id: 1,
-    thumb: "/assets/img/blog/blogCardThumb1_1.png",
-    meta: [
-      {
-        icon: "/assets/img/icon/userIcon.png",
-        text: "Par Fireshieldsec"
-      },
-      {
-        icon: "/assets/img/icon/tagIcon.png",
-        text: "Technology"
-      }
-    ],
-    title: "Tackling the Changes of Retail Industry",
-    date: "20",
-    month: "June",
-    delay: ".3s"
-  },
-  {
-    id: 2,
-    thumb: "/assets/img/blog/blogCardThumb1_2.png",
-    meta: [
-      {
-        icon: "/assets/img/icon/userIcon.png",
-        text: "Par Fireshieldsec"
-      },
-      {
-        icon: "/assets/img/icon/tagIcon.png",
-        text: "Solutions"
-      }
-    ],
-    title: "Keep Your Business Safe & Ensure High Availability.",
-    date: "28",
-    month: "March",
-    delay: ".6s"
-  },
-  {
-    id: 3,
-    thumb: "/assets/img/blog/blogCardThumb1_3.png",
-    meta: [
-      {
-        icon: "/assets/img/icon/userIcon.png",
-        text: "Par Fireshieldsec"
-      },
-      {
-        icon: "/assets/img/icon/tagIcon.png",
-        text: "UI/UX Design"
-      }
-    ],
-    title: "Which Yoga Hybrid Is Right For You?",
-    date: "16",
-    month: "June",
-    delay: ".9s"
+    imgSrc: "/assets/img/blog/blogCardThumb1_5.png",
+    userIconSrc: "/assets/img/icon/userIcon.png",
+    tagIconSrc: "/assets/img/icon/tagIcon.png",
+    userName: "Par Fireshield Security",
+    category: "Cybersécurité",
+    title: "Les ransomwares  en Afrique : Comment s'en protéger ?",
+    date: "17",
+    month: "Juil 2024",
+    delay: ".3s",
+    comments: 2
   }
 ];
 
@@ -101,78 +60,82 @@ export const blogPostsStyle2 = [
 export const blogCards2 = [
   {
     id: 7,
-    imgSrc: "/assets/img/blog/blogCardThumb1_1.png",
-    userIconSrc: "/assets/img/icon/userIcon.png",
-    tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshieldsec",
-    category: "Technology",
-    title: "Tackling the Changes of Retail Industry",
-    date: "20",
-    month: "June",
-    delay: ".2s",
-    comments: 2
-  },
-  {
-    id: 8,
-    imgSrc: "/assets/img/blog/blogCardThumb1_2.png",
-    userIconSrc: "/assets/img/icon/userIcon.png",
-    tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshieldsec",
-    category: "Solutions",
-    title: "Keep Your Business Safe & Ensure High Availability.",
-    date: "28",
-    month: "March",
-    delay: ".4s",
-    comments: 2
-  },
-  {
-    id: 9,
-    imgSrc: "/assets/img/blog/blogCardThumb1_3.png",
-    userIconSrc: "/assets/img/icon/userIcon.png",
-    tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshieldsec",
-    category: "UI/UX Design",
-    title: "Which Yoga Hybrid Is Right For You?",
-    date: "16",
-    month: "June",
-    delay: ".6s",
-    comments: 2
-  },
-  {
-    id: 10,
     imgSrc: "/assets/img/blog/blogCardThumb1_4.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshieldsec",
-    category: "Technology",
-    title: "Tackling the Changes of Retail Industry",
+    userName: "Fireshield Security",
+    category: "Cybersécur...",
+    title: "Les erreurs de cybersécurité à éviter dans les PME",
     date: "30",
-    month: "June",
-    delay: ".2s"
+    month: "Sept 2024",
+    delay: ".2s",
+    comments: 4
   },
   {
-    id: 11,
+    id: 8,
     imgSrc: "/assets/img/blog/blogCardThumb1_6.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshieldsec",
+    userName: " Fireshield Security",
     category: "Solutions",
-    title: "Keep Your Business Safe & Ensure High Availability.",
+    title: "L'importance des sauvegardes et de la récupération des données",
     date: "24",
-    month: "March",
-    delay: ".4s"
+    month: "Aout 2024",
+    delay: ".4s",
+    comments: 1
   },
   {
-    id: 12,
+    id: 9,
     imgSrc: "/assets/img/blog/blogCardThumb1_5.png",
     userIconSrc: "/assets/img/icon/userIcon.png",
     tagIconSrc: "/assets/img/icon/tagIcon.png",
-    userName: "Par Fireshieldsec",
-    category: "UI/UX Design",
-    title: "Choose The Best IT Service Company in the City.",
+    userName: " Fireshield Security",
+    category: "Sécurité",
+    title: "Les ransomwares en Afrique : Comment s'en protéger efficacement",
     date: "17",
-    month: "June",
-    delay: ".6s"
+    month: "Juil 2024",
+    delay: ".6s",
+    comments: 6
+  },
+  {
+    id: 10,
+    imgSrc: "/assets/img/blog/blogCardThumb1_1.png",
+    userIconSrc: "/assets/img/icon/userIcon.png",
+    tagIconSrc: "/assets/img/icon/tagIcon.png",
+    userName: " Fireshield Security",
+    category: "Cybersécurité",
+    title: "Les défis de la cybersécurité en Afrique : Menaces et opportunités",
+    date: "20",
+    month: "Dec 2024",
+    delay: ".2s",
+    comments: 5
+  },
+  {
+    id: 11,
+    imgSrc: "/assets/img/blog/blogCardThumb1_2.png",
+    userIconSrc: "/assets/img/icon/userIcon.png",
+    tagIconSrc: "/assets/img/icon/tagIcon.png",
+    userName: " Fireshield Security",
+    category: "Solutions",
+    title: "Comment renforcer la sécurité de votre entreprise avec Fireshield",
+    date: "28",
+    month: "Nov 2024",
+    delay: ".4s",
+    comments: 3
+  },
+  {
+    id: 12,
+    imgSrc: "/assets/img/blog/blogCardThumb1_3.png",
+    userIconSrc: "/assets/img/icon/userIcon.png",
+    tagIconSrc: "/assets/img/icon/tagIcon.png",
+    userName: " Fireshield Security",
+    category: "Sécurité",
+    title:
+      "Pentest : Quel type de test d’intrusion choisir pour votre entreprise ?",
+    date: "16",
+    month: "Oct 2024",
+    delay: ".6s",
+    comments: 2
   }
 ];
 
@@ -180,80 +143,59 @@ export const newsItems = [
   {
     id: 13,
     imgSrc: "/assets/img/blog/blogCardThumb3_1.png",
-    date: "27",
-    month: "Feb",
-    user: "Par Fireshieldsec",
-    comments: "3 Comments",
-    title: "Choose The Best IT Service Company in the City.",
+    date: "19",
+    month: "Dec",
+    user: "Par Fireshield security",
+    comments: "22",
+    title: "Webinaire : La cybersécurité dans le Cloud",
     description:
-      "Choosing the best IT service company in your city involves considering several key factors to ensure you receive high-quality and reliable services. Here are some tips to help you make the right decision.",
+      "Apprenez comment sécuriser vos services cloud avec des experts lors de ce webinaire interactif, couvrant les défis et solutions pour la cybersécurité dans le cloud.",
     delay: ".2s"
   },
   {
     id: 14,
     imgSrc: "/assets/img/blog/blogCardThumb3_2.png",
-    date: "19",
-    month: "Feb",
-    user: "Par Fireshieldsec",
-    comments: "2 Comments",
-    title: "Keep Your Business Safe Ensure High Availability",
+    date: "12",
+    month: "Oct",
+    user: "Par Fireshield security",
+    comments: "8",
+    title: "Séminaire : Sécuriser vos données contre les cyberattaques",
     description:
-      "Ensuring the safety and high availability of your business is crucial in today’s competitive and digital-driven environment. Here are some key strategies to help you maintain security and reliability.",
+      "Participez à notre séminaire pour découvrir des stratégies avancées et des outils de sécurité qui vous aideront à protéger vos données sensibles contre les cyberattaques.",
     delay: ".4s"
   },
   {
     id: 15,
     imgSrc: "/assets/img/blog/blogCardThumb3_3.png",
-    date: "28",
-    month: "Feb",
-    user: "Par Fireshieldsec",
-    comments: "0 Comments",
-    title: "Tackling the Changes of Retell Industry",
+    date: "05",
+    month: "Mar",
+    user: " Fireshield security",
+    comments: "15",
+    title: "Webinaire : Sécuriser votre entreprise dans l'ère numérique",
     description:
-      "The retail industry is undergoing significant transformations driven by technological advancements, changing consumer preferences, and evolving market dynamics. To stay competitive and thrive in ...",
+      "Rejoignez notre webinaire où des experts en cybersécurité discuteront des meilleures pratiques pour sécuriser les infrastructures des entreprises à l'ère numérique.",
     delay: ".6s"
-  }
-];
-
-export const recentItems = [
-  {
-    id: 16,
-    imgSrc: "/assets/img/blog/blogRecentThumb3_1.png",
-    date: "18 Dec, 2024",
-    title: "Keep Your Business Safe & \n Endure High Availability"
-  },
-  {
-    id: 17,
-    imgSrc: "/assets/img/blog/blogRecentThumb3_2.png",
-    date: "18 Dec, 2024",
-    title: "Tracking the Changes of \n Retail Industry"
-  },
-  {
-    id: 18,
-    imgSrc: "/assets/img/blog/blogRecentThumb3_3.png",
-    date: "18 Dec, 2024",
-    title: "What’s Holding Back \n the IT Solution"
   }
 ];
 
 export const recentPosts = [
   {
     id: 18,
-    imageUrl: "/assets/img/footer/footerThumb2_1.png",
-    date: "18 Dec, 2024",
-    title: "What’s Holding Back \n the IT Solution"
+    imageUrl: "/assets/img/footer/footerThumb2_3.png",
+    date: "18 Décembre 2024",
+    title: "Les défis de la cybersécurité en entreprise"
   },
   {
     id: 19,
-    imageUrl: "/assets/img/footer/footerThumb2_1.png",
-    date: "15th April, 2024",
-    title: "Top 5 Most Famous Technology Trend In 2024"
+    imageUrl: "/assets/img/footer/footerThumb2_2.png",
+    date: "15 Aout 2024",
+    title: "Top 5 des cybermenaces émergentes en 2024"
   },
   {
     id: 20,
-    imageUrl: "/assets/img/footer/footerThumb2_2.png",
-    date: "20th June, 2024",
-    title: "The Surfing Man Will Blow Your Mind"
+    imageUrl: "/assets/img/footer/footerThumb2_1.png",
+    date: "20 Juin 2024",
+    title: "Pourquoi un audit de sécurité est essentiel pour votre SI ?"
   }
 ];
 
@@ -263,25 +205,25 @@ export const allBlogs = [
   ...blogPostsStyle2,
   ...blogCards2,
   ...newsItems,
-  ...recentItems,
   ...recentPosts
 ];
 export const newsCategories = [
-  { name: "Database Security", count: 8, isActive: false },
-  { name: "IT Consultancy", count: 11, isActive: false },
-  { name: "App Development", count: 12, isActive: true },
-  { name: "UI/UX Design", count: 18, isActive: false },
-  { name: "Cyber Security", count: 7, isActive: false }
+  { name: "Cybersecurité", count: 7, isActive: true },
+  { name: "Sensibilisation", count: 8, isActive: false },
+  { name: "IT Consulting", count: 11, isActive: false },
+  { name: "Platformes", count: 12, isActive: false },
+  { name: "Formations", count: 18, isActive: false },
+  { name: "Certifications", count: 6, isActive: false }
 ];
 
 export const tags = [
-  { label: "Security" },
-  { label: "Business" },
+  { label: "Securité" },
+  { label: "Consulting" },
   { label: "Digital" },
-  { label: "Technology" },
-  { label: "Change" },
-  { label: "Video" },
-  { label: "UI/UX Design" },
-  { label: "Startup" },
+  { label: "Technologie" },
+  { label: "Entreprise" },
+  { label: "XDR" },
+  { label: "Formation" },
+  { label: "Partenaire" },
   { label: "Services" }
 ];

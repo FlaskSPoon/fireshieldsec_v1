@@ -1,7 +1,7 @@
 export const processSteps = [
   {
     title: "Analyse & Diagnostic",
-    text: "RÉvaluer la sécurité et identifier les vulnérabilités du SI",
+    text: "Révaluer la sécurité et identifier les vulnérabilités du SI",
     number: "01",
     iconSrc: "/assets/img/icon/processIcon1_1.png",
     delay: ".3s"

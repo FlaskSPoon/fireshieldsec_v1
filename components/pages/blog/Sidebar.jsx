@@ -1,8 +1,9 @@
 "use client";
-import { newsCategories, recentItems, tags } from "@/data/blogs";
+import { newsCategories, recentPosts, tags } from "@/data/blogs";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { FaCalendarDay, FaCalendarDays } from "react-icons/fa6";
 
 export default function Sidebar() {
   return (
@@ -13,11 +14,11 @@ export default function Sidebar() {
           data-wow-delay=".2s"
         >
           <div className="wid-title">
-            <h3>Search</h3>
+            <h3>Rechercher</h3>
           </div>
           <div className="search-widget">
             <form onSubmit={(e) => e.preventDefault()}>
-              <input type="text" placeholder="Search here" />
+              <input type="text" placeholder="Votre recherche ici..." />
               <button type="submit">
                 <i className="fa-sharp fa-light fa-magnifying-glass" />
               </button>
@@ -35,7 +36,7 @@ export default function Sidebar() {
             <ul>
               {newsCategories.map((category, index) => (
                 <li key={index} className={category.isActive ? "active" : ""}>
-                  <Link scroll={false} href={`/blog-details/1`}>
+                  <Link scroll={false} href={`/blog/blog-details/`}>
                     {category.name} <span>({category.count})</span>
                   </Link>
                 </li>
@@ -48,24 +49,19 @@ export default function Sidebar() {
           data-wow-delay=".6s"
         >
           <div className="wid-title">
-            <h3>Recent Post</h3>
+            <h3>Posts Recents</h3>
           </div>
           <div className="recent-post-area">
-            {recentItems.map((item, index) => (
+            {recentPosts.map((item, index) => (
               <div className="recent-items" key={index}>
                 <div className="recent-thumb">
-                  <Image src={item.imgSrc} width={78} height={79} alt="img" />
+                  <Image src={item.imageUrl} width={78} height={79} alt="img" />
                 </div>
                 <div className="recent-content">
                   <ul>
                     <li>
-                      <Image
-                        alt="icon"
-                        src="/assets/img/icon/calendarIcon.png"
-                        width="20"
-                        height="20"
-                      />
-                      {item.date}
+                      <FaCalendarDays size={16} color="#e02234" />
+                      {" " + item.date}
                     </li>
                   </ul>
                   <h6>

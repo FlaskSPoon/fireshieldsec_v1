@@ -25,9 +25,13 @@ a {
   color: var(--theme-color2) !important;
 }
 .page-nav-wrap .active a {
-  background: linear-gradient(90deg, #384bff 0%, #b42af3 123.82%) !important;
+  background: linear-gradient(
+    90deg,
+    var(--theme-color2) 0%,
+    var(--theme-color) 123.82%
+  ) !important;
   color: var(--white-color) !important;
-  border: 1px solid transparent !important;
+  border: none;
 }
 .gt-mobile-menu {
   .sub-menu {
@@ -59,4 +63,12 @@ a {
 }
 .gt-btn-icon {
   text-wrap: nowrap;
+}
+.text-container {
+  text-align: left; /* Alignement à gauche */
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  max-width: 600px; /* Largeur max pour éviter que le texte soit trop étalé */
+  margin: 0 auto; /* Centre le bloc */
 }

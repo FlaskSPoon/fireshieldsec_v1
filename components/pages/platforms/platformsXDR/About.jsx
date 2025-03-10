@@ -13,6 +13,7 @@ export default function About() {
           height="486"
         />
       </div>
+      
       <div className="container">
         <div className="about-wrapper style3 pt-50 space-bottom">
           <div className="about-thumb-box wow fadeInLeft" data-wow-delay=".3s">
@@ -31,7 +32,7 @@ export default function About() {
                 data-tilt=""
                 data-tilt-max={18}
                 alt="thumb"
-                src="/assets/img/about/aboutThumb3_1.png"
+                src="/assets/img/about/iStock-15.png"
                 width="340"
                 height="548"
               />
@@ -45,12 +46,12 @@ export default function About() {
               />
             </div>
             <div className="about-thumb-box jump about-thumb3">
-              <Image
+              {/* <Image
                 alt="thumb"
                 src="/assets/img/about/aboutThumb3_3.png"
                 width="254"
                 height="145"
-              />
+              /> */}
             </div>
           </div>
           <div className="about-content wow fadeInRight" data-wow-delay=".6s">
@@ -65,7 +66,7 @@ export default function About() {
                     height="12"
                   />
                 </span>{" "}
-                A PROPOS DE LA NOTRE SOLUTION XDR{" "}
+                A PROPOS DE NOTRE SOLUTION XDR{" "}
                 <span>
                   <Image
                     alt="icon"

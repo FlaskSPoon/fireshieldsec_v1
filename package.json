@@ -14,7 +14,11 @@
     "@emailjs/browser": "^4.4.1",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+<<<<<<< HEAD
     "framer-motion": "^12.4.7",
+=======
+    "framer-motion": "^12.4.10",
+>>>>>>> 76ac14aeb8934a3d24f34cc9673eacb586522165
     "github-slugger": "^2.0.0",
     "marked": "^14.1.0",
     "next": "15.1.7",
@@ -32,7 +36,10 @@
     "@eslint/eslintrc": "^3",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
+<<<<<<< HEAD
     "autoprefixer": "^10.4.20",
+=======
+>>>>>>> 76ac14aeb8934a3d24f34cc9673eacb586522165
     "daisyui": "^4.12.23",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",

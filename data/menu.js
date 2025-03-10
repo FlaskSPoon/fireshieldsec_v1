@@ -10,34 +10,29 @@ const menuItems = [
   },
   {
     title: "Services",
-    href: "/services",
+    href: "/audit",
     subMenu: [
-      { title: "Formations et certifications", href: "/#" },
-      { title: "Stratégie, Cybersécurité et Consulting", href: "/#" },
-      { title: "Sensibilisation en Cybersécurité", href: "/#" },
-      {
-        title: "Gouvernance des systèmes de sécurité de l’information",
-        href: "/#"
-      },
-      { title: "Audit et Mise en conformité réglementaire", href: "/#" },
-      { title: "Cyber-résilience et réduction des risques", href: "/#" },
-      { title: "Plan de réponse aux incidents", href: "/#" },
-      { title: "Assistance technique 24/7", href: "/#" }
+      { title: "Conseil, Audit & Gouvernance", href: "/audit" },
+      { title: "Infogérance et Support SI", href: "/infogerance" },
+      { title: "Stratégie, Cybersécurité et Consulting", href: "/strategies" },
+      { title: "Sensibilisation en Cybersécurité", href: "/sensibilisations" },
+      { title: "Formations et Certifications", href: "/certification" }
     ]
   },
   {
     title: "Ressources",
-    href: "/ressources",
+    href: "/blog",
     subMenu: [
-      { title: "Notre blog", href: "/#" },
-      { title: "Webinaires et événements", href: "/#" },
-      { title: "Guides pratiques", href: "/#" }
+      { title: "Notre blog", href: "/blog" },
+      { title: "Webinaires et événements", href: "/event" },
+      { title: "Guides pratiques", href: "/guide" }
     ]
   },
   {
     title: "Partenaires",
     href: "/partenaires",
     subMenu: [
+<<<<<<< HEAD
       { title: "Présentation des collaborations stratégiques", href: "/presentationsPartenaire" },
       { title: "Certifications obtenues grâce aux partenaires", href: "/certificationsPartenaire" },
       {
@@ -45,18 +40,15 @@ const menuItems = [
         href: "/opportuniteDetrePartenaires"
       },
       { title: "Autres partenariats", href: "/#" }
+=======
+      { title: "Collaborations stratégiques", href: "/partenaires" },
+      { title: "Certifications de nos partenaires", href: "/certifications" }
+>>>>>>> 76ac14aeb8934a3d24f34cc9673eacb586522165
     ]
   },
   {
     title: "A propos de",
-    href: "/",
-    subMenu: [
-      { title: "Qui sommes-nous ?", href: "/#" },
-      { title: "Vision et mission", href: "/#" },
-      { title: "Domaines d'expertise", href: "/#" },
-      { title: "Historique et valeur", href: "/#" },
-      { title: "Notre équipe", href: "/#" }
-    ]
+    href: "/about"
   }
 ];
 

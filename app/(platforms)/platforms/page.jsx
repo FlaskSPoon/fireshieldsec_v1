@@ -8,9 +8,9 @@ import Services from "@/components/pages/platforms/platformsXDR/Services";
 
 
 export const metadata = {
-  title:
-    "Plateforme XDR | Fireshield Security - Cybersécurité, protection et détection",
-  description: "Cybersécurité et gestion des systèmes d'information (SI)"
+  title: "Plateforme XDR | Fireshield Security",
+  description:
+    "Cybersécurité, Gestion des systèmes d'information (SI), Conseil, Protection et Détection"
 };
 export default function Home() {
   return (

@@ -133,14 +133,14 @@ export default function About() {
                     <div className="fancy-box_icon">
                       <Image
                         alt="img"
-                        src="/assets/img/about/aboutProfile1_1.png"
+                        src="/assets/img/about/companyIcon.png"
                         width="56"
                         height="56"
                       />
                     </div>
                     <div className="fancy-box_content">
-                      <h4>Maurice ECHU</h4>
-                      <span>Fondateur</span>
+                      <span>Entreprises clientes</span>
+                      <h4>45+</h4>
                     </div>
                   </div>
                 </div>

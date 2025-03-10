@@ -203,7 +203,7 @@ export default function Features() {
                                   height="20"
                                 />
                               </li>
-                              <li>1Détection en profondeur</li>
+                              <li>Détection en profondeur</li>
                             </ul>
                             <ul className="ps-0">
                               <li>

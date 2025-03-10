@@ -64,7 +64,7 @@
     .hero-inner {
       .hero-style1 {
         position: relative;
-        padding: 225px 0 390px 0;
+        padding: 190px 0 390px 0;
         z-index: 9;
 
         .hero-sub-title {
@@ -103,11 +103,15 @@
               display: block;
               color: $white-color;
               font-family: "Montserrat";
-              font-size: 60px;
+              font-size: 50px;
               font-style: normal;
               font-weight: 800;
               line-height: 70px;
               z-index: 999;
+            }
+
+            .hero-sub-title {
+              font-size: 14px;
             }
           }
         }
@@ -344,11 +348,15 @@
               display: block;
               color: $white-color;
               font-family: "Montserrat";
-              font-size: 60px;
+              font-size: 50px;
               font-style: normal;
               font-weight: 800;
               line-height: 70px;
               z-index: 999;
+            }
+
+            .hero-sub-title {
+              font-size: 16px;
             }
           }
         }

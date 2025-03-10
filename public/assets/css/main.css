@@ -1483,7 +1483,7 @@ textarea.is-invalid {
 .gt-btn.style6:hover {
   color: var(--white-color);
   background: linear-gradient(90deg, $theme-color2 0%, $theme-color 123.82%);
-}
+},
 .gt-btn.style6:hover:before,
 .gt-btn.style6:hover:after {
   border-width: 200px 120px;

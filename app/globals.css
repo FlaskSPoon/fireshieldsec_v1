@@ -1,3 +1,4 @@
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -40,5 +41,37 @@ a {
     color-scheme: dark;
   }
 }
+<<<<<<< HEAD
 
 
+=======
+/* Animation pour la main */
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Appliquer l'animation à l'icône */
+.hand-icon {
+  font-size: 80px; /* Taille de l'icône */
+  color: #ff0000; /* Couleur de l'icône */
+  animation: point 1.5s infinite; /* Animation infinie */
+}
+/* Style de l'icône de main */
+.hand-icon {
+  font-size: 80px; /* Taille de l'icône */
+  color: #ff0000; /* Couleur de l'icône */
+}
+#catalogue{
+  width: 1200px;
+  min-height: 600px;
+  background: blueviolet;
+}
+>>>>>>> 76ac14aeb8934a3d24f34cc9673eacb586522165
