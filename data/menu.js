@@ -4,7 +4,7 @@ const menuItems = [
     href: "/platforms",
     subMenu: [
       { title: "Plateforme XDR", href: "/platforms" },
-      { title: "Plateforme de E-learning", href: "/#" },
+      { title: "Plateforme de E-learning", href: "/e-learning" },
       { title: "Plateforme pour la gestion des risques", href: "/#" }
     ]
   },
@@ -32,7 +32,6 @@ const menuItems = [
     title: "Partenaires",
     href: "/partenaires",
     subMenu: [
-<<<<<<< HEAD
       { title: "Présentation des collaborations stratégiques", href: "/presentationsPartenaire" },
       { title: "Certifications obtenues grâce aux partenaires", href: "/certificationsPartenaire" },
       {
@@ -40,10 +39,6 @@ const menuItems = [
         href: "/opportuniteDetrePartenaires"
       },
       { title: "Autres partenariats", href: "/#" }
-=======
-      { title: "Collaborations stratégiques", href: "/partenaires" },
-      { title: "Certifications de nos partenaires", href: "/certifications" }
->>>>>>> 76ac14aeb8934a3d24f34cc9673eacb586522165
     ]
   },
   {

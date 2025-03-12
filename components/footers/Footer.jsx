@@ -71,7 +71,7 @@ export default function Footer() {
           <Image
             src="/assets/img/shape/footerShape2_2.png"
             width={288}
-            height={383}
+            height={250}
             alt="shape"
           />
         </div>
