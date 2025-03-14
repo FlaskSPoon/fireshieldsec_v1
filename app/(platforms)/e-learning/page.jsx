@@ -1,4 +1,5 @@
 import SeoMeta from "@/components/common/SeoMeta";
+import PageCerti from "@/components/e-learning/pageCerti";
 import About2 from "@/components/e-learning/plateformElearning/about";
 import Heros from "@/components/e-learning/plateformElearning/heros";
 import Service21 from "@/components/e-learning/service";
@@ -23,7 +24,11 @@ export const metadata = {
         <main className="main position-relative" id="mains">
           <About2  />
           <Heros />
+          <PageCerti />
+
      <Service21 />
+     
+
      <Blogs1 />
 
      <Cta />
