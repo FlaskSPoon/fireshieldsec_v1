@@ -4,7 +4,7 @@ const menuItems = [
     href: "/platforms",
     subMenu: [
       { title: "Plateforme XDR", href: "/platforms" },
-      { title: "Plateforme de E-learning", href: "/#" },
+      { title: "Plateforme de E-learning", href: "/e-learning" },
       { title: "Plateforme pour la gestion des risques", href: "/#" }
     ]
   },
@@ -32,8 +32,13 @@ const menuItems = [
     title: "Partenaires",
     href: "/partenaires",
     subMenu: [
-      { title: "Collaborations stratégiques", href: "/partenaires" },
-      { title: "Certifications de nos partenaires", href: "/certifications" }
+      { title: "Présentation des collaborations stratégiques", href: "/presentationsPartenaire" },
+      { title: "Certifications obtenues grâce aux partenaires", href: "/certificationsPartenaire" },
+      {
+        title: "Opportunités pour devenir partenaire de Fireshield Security",
+        href: "/opportuniteDetrePartenaires"
+      },
+      { title: "Autres partenariats", href: "/#" }
     ]
   },
   {
