@@ -1,0 +1,36 @@
+name: 🚀 Deploy website using FTP to CPanel
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Running Deployment Process
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: Use Node 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          npm run export
+
+      - name: 📂 Sync only 'out' folder
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: './out'  # Uniquement le dossier à exporter vers le serveur
+          remote-dir: '/public_html'  # Assurez-vous que c'est le bon dossier distant sur votre serveur
