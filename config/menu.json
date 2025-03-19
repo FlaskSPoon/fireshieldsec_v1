@@ -194,6 +194,10 @@
     {
       "name": "Nous Contacter",
       "url": "/Contact"
+    },
+    {
+      "name": "Politiques de confidentialité",
+      "url": "/politiques-de-confidentialite"
     }
   ]
 }
