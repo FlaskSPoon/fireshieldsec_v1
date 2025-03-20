@@ -1,5 +1,5 @@
-"user client";
 import SeoMeta from "@/components/common/SeoMeta";
+import Cta from "@/components/footers/Cta";
 import LegalMentions from "@/components/pages/mentionLegalFireshiel";
 import Link from "next/link";
 export const metadata = {
@@ -21,7 +21,7 @@ export default function Page() {
             <div className="container">
               <div className="page-heading">
                 <h1 className="wow fadeInUp" data-wow-delay=".3s">
-                  Les Mentions Légales
+                  Mentions Légales
                 </h1>
                 <ul
                   className="breadcrumb-items wow fadeInUp"
@@ -42,8 +42,8 @@ export default function Page() {
             </div>
           </div>
         </div>
-    <LegalMentions />
-  
+        <LegalMentions />
+        <Cta />
       </main>
     </>
   );

@@ -1,4 +1,3 @@
-"user client";
 import SeoMeta from "@/components/common/SeoMeta";
 import Cta from "@/components/footers/Cta";
 import TermsAndConditions from "@/components/pages/termesConditionFireshield";
@@ -43,7 +42,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-     <TermsAndConditions />
+        <TermsAndConditions />
         <Cta />
       </main>
     </>

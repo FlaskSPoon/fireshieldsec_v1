@@ -1,5 +1,5 @@
-"user client";
 import SeoMeta from "@/components/common/SeoMeta";
+import Cta from "@/components/footers/Cta";
 
 import PolitiqueConfidentialite from "@/components/pages/politiqueConfidentialite";
 import Link from "next/link";
@@ -43,8 +43,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-       <PolitiqueConfidentialite />
-   
+        <PolitiqueConfidentialite />
+
+        <Cta />
       </main>
     </>
   );

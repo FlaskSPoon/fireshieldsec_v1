@@ -187,7 +187,13 @@ export default function Footer() {
                       className="simple-icon sideMenuInfo sidebar-btn"
                     ></button>
                   </h3>
-                  <div className="checklist mt-5">
+                  <div className="checklist">
+                    <ul className="ps-0">
+                      <li className="text-white">
+                        <i className="fa-thin fa-envelope" />
+                      </li>
+                      <li className="text-white">{email1}</li>
+                    </ul>
                     <ul className="ps-0">
                       <li className="text-white">
                         <i className="fa-thin fa-envelope" />
@@ -239,7 +245,7 @@ export default function Footer() {
                         <Link
                           scroll={false}
                           className="text-underline"
-                          href={`/privacy-policy`}
+                          href={`/privacyPolicy`}
                         >
                           Politiques de confidentialité.
                         </Link>
