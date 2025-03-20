@@ -196,12 +196,6 @@ export default function Footer() {
                     </ul>
                     <ul className="ps-0">
                       <li className="text-white">
-                        <i className="fa-thin fa-envelope" />
-                      </li>
-                      <li className="text-white">{email1}</li>
-                    </ul>
-                    <ul className="ps-0">
-                      <li className="text-white">
                         <i className="fa-light fa-phone-volume" />
                       </li>
                       <li className="text-white">{phone1}</li>
