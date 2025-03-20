@@ -30,16 +30,16 @@ const menuItems = [
   },
   {
     title: "Partenaires",
-    href: "/partenaires",
-    subMenu: [
-      { title: "Présentation des collaborations stratégiques", href: "/presentationsPartenaire" },
-      { title: "Certifications obtenues grâce aux partenaires", href: "/certificationsPartenaire" },
-      {
-        title: "Opportunités pour devenir partenaire de Fireshield Security",
-        href: "/opportuniteDetrePartenaires"
-      },
-      { title: "Autres partenariats", href: "/#" }
-    ]
+    href: "/partenaires"
+    // subMenu: [
+    //   { title: "Présentation des collaborations stratégiques", href: "/presentationsPartenaire" },
+    //   { title: "Certifications obtenues grâce aux partenaires", href: "/certificationsPartenaire" },
+    //   {
+    //     title: "Opportunités pour devenir partenaire de Fireshield Security",
+    //     href: "/opportuniteDetrePartenaires"
+    //   },
+    //   { title: "Autres partenariats", href: "/#" }
+    // ]
   },
   {
     title: "A propos de",
