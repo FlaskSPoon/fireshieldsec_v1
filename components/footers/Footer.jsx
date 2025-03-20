@@ -243,7 +243,7 @@ export default function Footer() {
                         <Link
                           scroll={false}
                           className="text-underline"
-                          href={`/privacyPolicy`}
+                          href={`/privacy-policy`}
                         >
                           Politiques de confidentialité.
                         </Link>
@@ -270,10 +270,13 @@ export default function Footer() {
             </div>
             <div className="layout-link wow fadeInUp" data-wow-delay=".6s">
               <div className="link-wrapper">
-                <Link scroll={false} href={`/CGU`}>
+              <Link scroll={false} href={`/mention-legal`}>
+                  Mentions Légales{" "}
+                </Link>
+                <Link scroll={false} href={`/termes-conditions`}>
                   Termes &amp; Conditions{" "}
                 </Link>
-                <Link scroll={false} href={`/privacyPolicy`}>
+                <Link scroll={false} href={`/privacy-policy`}>
                   Notre politique
                 </Link>
               </div>
