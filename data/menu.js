@@ -17,6 +17,8 @@ const menuItems = [
       { title: "Stratégie, Cybersécurité et Consulting", href: "/strategies" },
       { title: "Sensibilisation en Cybersécurité", href: "/sensibilisations" },
       { title: "Formations et Certifications", href: "/certification" }
+   
+     
     ]
   },
   {
