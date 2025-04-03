@@ -34,9 +34,9 @@ export default function About2() {
                     </span>
                   </h6>
                   <h1 className="hero-title wow fadeInLeft" data-wow-delay=".4s">
-                    <span className="title1">Lancez votre nouvelle carrière  </span>
-                    <span className="title2"> avec un certificat professionnel  </span>
-                    <span className="title3"> sur  Fireshield Security.</span>
+                    <span className="title1">Formations et Certifications </span>
+                    <span className="title2"> sur fireshield </span>
+                    <span className="title3">  Security.</span>
                   </h1>
                   <div className="media-wrapper wow fadeInUp" data-wow-delay="1s">
                     <div className="btn-wrap">
@@ -53,7 +53,7 @@ export default function About2() {
                 <div className="image-container">
                   <Image
                     alt="e-learning illustration"
-                    src="/assets/img/bg/06.png" // Remplace avec le chemin vers ton image
+                    src="assets\img\hero\study-group-african-people.jpg"// Remplace avec le chemin vers ton image
                     width={600} // Taille de l'image
                     height={700}
                     className="img-fluid"

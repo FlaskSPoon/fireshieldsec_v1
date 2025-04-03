@@ -59,7 +59,7 @@ export default function Service21() {
           <Link
             scroll={false}
             className="gt-btn gt-btn-icon"
-            href={`/contact`}
+            href={`/certification`}
           >
             voir tout
           </Link>
@@ -115,7 +115,7 @@ export default function Service21() {
           <Link
             scroll={false}
             className="gt-btn gt-btn-icon"
-            href={`/contact`}
+            href={`/certification`}
           >
             Découvrir certifications
           </Link>
