@@ -10,9 +10,10 @@ export default function Service2() {
     >
       <div className="container">
         <div className="about-wrapper style4">
-          <div className="about-thumb-box  wow fadeInUp" data-wow-delay=".3s">
+          <div className="flex items-center gap-8"data-wow-delay=".3s">
+      
             
-            <div className="about-thumb-box about-thumb2">
+            <div className="w-1/2">
               <Image
                 data-tilt=""
                 data-tilt-max={25}
