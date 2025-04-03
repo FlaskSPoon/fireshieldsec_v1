@@ -147,9 +147,9 @@ export function Sensibilisation() {
     
     <>
     <SeoMeta title={metadata.title}s />
-      <div className="p-4 text-center">
+      <div className="p-2 text-center  pb-425">
         <h3 className="">SENSIBILISATION</h3>
-        <div className="container-fluid">
+        <div className="container pb-425">
           <div className="service-card-wrapper style2 p-4">
             {sensibilisation.map((service, index) => (
               <div
@@ -157,9 +157,9 @@ export function Sensibilisation() {
                 data-wow-delay={service.delay}
                 key={index}
               >
-                <div className="service-thumb"></div>
+                <div className="service-thumb " ></div>
                 <div className="service-content">
-                  <h3 className="service-content_title">
+                  <h3 className="service-content_title ">
                     <Link scroll={false} href={`/audit/${service.id}`}>
                       {service.title}
                     </Link>
@@ -188,4 +188,3 @@ export function Sensibilisation() {
     </>
   );
 }
-

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Heros() {
+export default function PageCerti() {
   return (
     <section className="about-area fix position-relative">
       <div className="shape3_1 d-none d-xl-block">
@@ -16,21 +16,12 @@ export default function Heros() {
       
       <div className="container">
         <div className="about-wrapper style3 pt-50 space-bottom">
-          <div className="about-thumb-box wow fadeInLeft" data-wow-delay=".3s">
-            <div className="about-thumb-box thumb-bg">
+          <div className="flex items-center gap-8" data-wow-delay=".3s">
+            
+            <div className="w-1/2">
               <Image
                 data-tilt=""
-                data-tilt-max={10}
-                alt="bg"
-                src="/assets/img/bg/aboutBg3_1.png"
-                width="465"
-                height="350"
-              />
-            </div>
-            <div className="about-thumb-box about-thumb1">
-              <Image
-                data-tilt=""
-                data-tilt-max={18}
+                data-tilt-max={25}
                 alt="thumb"
                 src="/assets/img/about/t.jpg"
                 width="500"
@@ -45,16 +36,9 @@ export default function Heros() {
                 height="147"
               />
             </div>
-            <div className="about-thumb-box jump about-thumb3">
-              {/* <Image
-                alt="thumb"
-                src="/assets/img/about/aboutThumb3_3.png"
-                width="254"
-                height="145"
-              /> */}
-            </div>
+           
           </div>
-          <div className="about-content wow fadeInRight" data-wow-delay=".6s">
+          <div className="w-1/2" data-wow-delay=".6s">
             <div className="title-area">
               <h5 className="subtitle text-start">
                 {" "}
@@ -78,8 +62,7 @@ export default function Heros() {
               </h5>
               <p className="text">
               Nous développons des formations propriétaires pour répondre aux besoins spécifiques de 
-              vos équipes techniques en cybersécurité et sécurité de l’information.
-              </p>
+              vos équipes techniques en cybersécurité et sécurité de l’information.</p>
             </div>
             <h3 className="text-title">Contactez-nous pour en discuter !</h3>
             <div className="fancy-box-wrapper">
@@ -111,6 +94,7 @@ export default function Heros() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>

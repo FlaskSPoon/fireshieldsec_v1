@@ -16,18 +16,9 @@ export default function PageCerti() {
       
       <div className="container">
         <div className="about-wrapper style3 pt-50 space-bottom">
-          <div className="about-thumb-box wow fadeInLeft" data-wow-delay=".3s">
-            <div className="about-thumb-box thumb-bg">
-              <Image
-                data-tilt=""
-                data-tilt-max={10}
-                alt="bg"
-                src="/assets/img/bg/aboutBg3_1.png"
-                width="465"
-                height="350"
-              />
-            </div>
-            <div className="about-thumb-box about-thumb1">
+          <div className="flex items-center gap-8" data-wow-delay=".3s">
+            
+            <div className="w-1/2">
               <Image
                 data-tilt=""
                 data-tilt-max={25}
@@ -45,16 +36,9 @@ export default function PageCerti() {
                 height="147"
               />
             </div>
-            <div className="about-thumb-box jump about-thumb3">
-              {/* <Image
-                alt="thumb"
-                src="/assets/img/about/aboutThumb3_3.png"
-                width="254"
-                height="145"
-              /> */}
-            </div>
+           
           </div>
-          <div className="about-content wow fadeInRight" data-wow-delay=".6s">
+          <div className="w-1/2" data-wow-delay=".6s">
             <div className="title-area">
               <h5 className="subtitle text-start">
                 {" "}
@@ -111,6 +95,7 @@ export default function PageCerti() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
